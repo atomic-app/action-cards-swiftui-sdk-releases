@@ -34,6 +34,7 @@ Alternatively, you can install Atomic SDK directly through a git path. This will
 ```ruby
 pod 'AtomicCards', :git => 'https://github.com/atomic-app/action-cards-swiftui-sdk-releases.git'
 ```
+**Note**: Currently you may face a known issue of a "Sandbox: rsync" failing message after integration. You can update your Xcode project build option `ENABLE_USER_SCRIPT_SANDBOXING` to 'No' to resolve this issue.
 
 ### Swift Package Manager
 
