@@ -1,0 +1,143 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AtomicSwiftUISDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AtomicSDK
+@_exported import AtomicSwiftUISDK
+import Combine
+import Foundation
+import Network
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct RuntimeVariable {
+  public let name: Swift.String
+  public let defaultValue: Swift.String
+}
+public struct ContainerConfiguration {
+  public enum Event {
+    case actionButtonTapped
+    case linkButtonTapped(cardInstanceId: Swift.String, payload: [Swift.AnyHashable : Any])
+    case submitButtonTapped(cardInstanceId: Swift.String, payload: [Swift.AnyHashable : Any])
+    case cardSubmitted(cardInstanceId: Swift.String)
+    case cardDismissed(cardInstanceId: Swift.String)
+    case cardSnoozed(cardInstanceId: Swift.String)
+    case cardVotedUseful(cardInstanceId: Swift.String)
+    case cardVotedNotUseful(cardInstanceId: Swift.String)
+    case cardSubmitFailed(cardInstanceId: Swift.String)
+    case cardDismissFailed(cardInstanceId: Swift.String)
+    case cardSnoozeFailed(cardInstanceId: Swift.String)
+  }
+  public typealias EventHandler = (_ event: AtomicSwiftUISDK.ContainerConfiguration.Event) -> Swift.Void
+  #if compiler(>=5.3) && $AsyncAwait
+  public typealias RuntimeVariablesHandler = (_ cardsToResolve: [AtomicSwiftUISDK.Card]) async -> [AtomicSwiftUISDK.Card]
+  #endif
+  public enum CustomString {
+    case cardListTitle
+    case snoozeTitle
+    case awaitingFirstCard
+    case allCardsCompleted
+    case votingUseful
+    case votingNotUseful
+    case votingFeedbackTitle
+    case cardListFooterMessage
+    case noInternetConnectionMessage
+    case dataLoadFailedMessage
+    case tryAgainTitle
+    case toastCardDismissedMessage
+    case toastCardCompletedMessage
+    case toastCardSnoozeMessage
+    case toastCardFeedbackMessage
+    public static func == (a: AtomicSwiftUISDK.ContainerConfiguration.CustomString, b: AtomicSwiftUISDK.ContainerConfiguration.CustomString) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public struct VotingOption : Swift.OptionSet {
+    public let rawValue: Swift.Int
+    public static let none: AtomicSwiftUISDK.ContainerConfiguration.VotingOption
+    public static let useful: AtomicSwiftUISDK.ContainerConfiguration.VotingOption
+    public static let notUseful: AtomicSwiftUISDK.ContainerConfiguration.VotingOption
+    public init(rawValue: Swift.Int)
+    public typealias ArrayLiteralElement = AtomicSwiftUISDK.ContainerConfiguration.VotingOption
+    public typealias Element = AtomicSwiftUISDK.ContainerConfiguration.VotingOption
+    public typealias RawValue = Swift.Int
+  }
+  public enum InterfaceStyle {
+    case automatic
+    case light
+    case dark
+    public static func == (a: AtomicSwiftUISDK.ContainerConfiguration.InterfaceStyle, b: AtomicSwiftUISDK.ContainerConfiguration.InterfaceStyle) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public struct UIElement : Swift.OptionSet {
+    public let rawValue: Swift.Int
+    public static let none: AtomicSwiftUISDK.ContainerConfiguration.UIElement
+    public static let cardListToast: AtomicSwiftUISDK.ContainerConfiguration.UIElement
+    public static let cardListFooterMessage: AtomicSwiftUISDK.ContainerConfiguration.UIElement
+    public static let cardListHeader: AtomicSwiftUISDK.ContainerConfiguration.UIElement
+    public init(rawValue: Swift.Int)
+    public typealias ArrayLiteralElement = AtomicSwiftUISDK.ContainerConfiguration.UIElement
+    public typealias Element = AtomicSwiftUISDK.ContainerConfiguration.UIElement
+    public typealias RawValue = Swift.Int
+  }
+  public init()
+  #if compiler(>=5.3) && $AsyncAwait
+  public init(onEvent: AtomicSwiftUISDK.ContainerConfiguration.EventHandler?, onRuntimeVariablesRequested: AtomicSwiftUISDK.ContainerConfiguration.RuntimeVariablesHandler?)
+  #endif
+  public enum PresentationStyle {
+    case withoutButton
+    case withActionButton
+    public static func == (a: AtomicSwiftUISDK.ContainerConfiguration.PresentationStyle, b: AtomicSwiftUISDK.ContainerConfiguration.PresentationStyle) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var presentationStyle: AtomicSwiftUISDK.ContainerConfiguration.PresentationStyle
+  public var onEvent: AtomicSwiftUISDK.ContainerConfiguration.EventHandler?
+  public var onRuntimeVariablesRequested: AtomicSwiftUISDK.ContainerConfiguration.RuntimeVariablesHandler?
+  public var launchBackgroundColor: SwiftUI.Color
+  public var launchLoadingIndicatorColor: SwiftUI.Color
+  public var launchButtonColor: SwiftUI.Color
+  public var launchTextColor: SwiftUI.Color
+  public var cardListRefreshInterval: Swift.Double {
+    get
+    set
+  }
+  public var enabledUIElements: AtomicSwiftUISDK.ContainerConfiguration.UIElement
+  public var runtimeVariableResolutionTimeout: Swift.Double {
+    get
+    set
+  }
+  public var interfaceStyle: AtomicSwiftUISDK.ContainerConfiguration.InterfaceStyle
+  public var cardVotingOptions: AtomicSwiftUISDK.ContainerConfiguration.VotingOption
+  public var sendRuntimeVariableAnalytics: Swift.Bool
+  public mutating func setCustomValue(_ value: Swift.String, for customString: AtomicSwiftUISDK.ContainerConfiguration.CustomString)
+  public var filters: [AtomicSDK.AACCardFilter]?
+}
+public struct Card {
+  public let instanceId: Swift.String
+  public let runtimeVariables: [AtomicSwiftUISDK.RuntimeVariable]
+  public mutating func resolveRuntimeVariable(name: Swift.String, value: Swift.String)
+}
+@_Concurrency.MainActor(unsafe) public struct StreamContainer : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public init(containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK15StreamContainerV4bodyQrvp", 0) __
+}
+extension AtomicSwiftUISDK.ContainerConfiguration.CustomString : Swift.Equatable {}
+extension AtomicSwiftUISDK.ContainerConfiguration.CustomString : Swift.Hashable {}
+extension AtomicSwiftUISDK.ContainerConfiguration.InterfaceStyle : Swift.Equatable {}
+extension AtomicSwiftUISDK.ContainerConfiguration.InterfaceStyle : Swift.Hashable {}
+extension AtomicSwiftUISDK.ContainerConfiguration.PresentationStyle : Swift.Equatable {}
+extension AtomicSwiftUISDK.ContainerConfiguration.PresentationStyle : Swift.Hashable {}

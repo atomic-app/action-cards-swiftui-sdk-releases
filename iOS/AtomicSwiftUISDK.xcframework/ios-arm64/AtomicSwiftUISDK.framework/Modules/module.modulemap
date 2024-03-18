@@ -1,0 +1,11 @@
+framework module AtomicSwiftUISDK {
+  umbrella header "AtomicSwiftUISDK.h"
+  export *
+
+  module * { export * }
+}
+
+module AtomicSwiftUISDK.Swift {
+  header "AtomicSwiftUISDK-Swift.h"
+  requires objc
+}
