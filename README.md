@@ -2,9 +2,11 @@
 
 ## Introduction
 
-The Atomic iOS SwiftUI SDK is a dynamic framework for integrating an Atomic stream container into your iOS SwiftUI app, presenting cards from a stream to your end users.
+The Atomic iOS SwiftUI SDK is a dynamic framework for integrating an Atomic stream container into your SwiftUI app, presenting cards from a stream to your end users.
 
-The SDK is written in Swift and supports iOS 16.0 and above.
+The SwiftUI SDK is written in Swift and supports iOS 16.0 and above.
+
+This guide only includes features and differences introduced in the SwiftUI verison of the iOS SDK. For a full SDK guide of the latest stable version, see the [iOS SDK guide](https://documentation.atomic.io/sdks/ios).
 
 ## Installation
 
@@ -49,3 +51,21 @@ pod 'AtomicCards', :git => 'https://github.com/atomic-app/action-cards-swiftui-s
 2. Once you've downloaded the version you need, navigate to your project in Xcode and select the "General" settings tab.
 3. Drag both `AtomicSDK.xcframework` and `AtomicSwiftUISDK.xcframework` from the directory where you unzipped the release, to the `Embedded Binaries` section.
 4. When prompted, ensure that "Copy items if needed" is selected, and then click "Finish".
+
+## Displaying containers
+You can call `StreamContainer` within your view's `body` by specifying the container ID. It also includes a `configuration` object that can be ignored by default. 
+
+The code snippet below shows how to embed a stream container within a navigation stack.
+```swift
+import AtomicSwiftUISDK
+
+struct TheContainer: View {
+    var body: some View {
+        NavigationStack {
+            NavigationLink(destination: StreamContainer(containerId: "1234")) {
+                Text("Navigate to Atomic stream container")
+            }
+        }
+    }
+}
+```
