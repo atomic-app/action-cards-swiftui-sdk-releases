@@ -23,6 +23,8 @@ typedef void(^AACSessionAppearanceCollectionCompletionHandler)(AACAppearanceColl
  */
 @interface AACSwiftUISession : NSObject
 
+- (instancetype)init NS_UNAVAILABLE;
+
 /**
  Requests an appearance collection for the stream container.
  

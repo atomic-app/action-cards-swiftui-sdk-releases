@@ -200,11 +200,6 @@ typedef NS_OPTIONS(NSUInteger, AACUIElement) {
 @property (nonatomic, strong, nullable) UIColor *launchBackgroundColor;
 
 /**
- (Deprecated) The colour of the icon displayed when the SDK theme is loaded for the first time.
- */
-@property (nonatomic, strong, nullable) UIColor *launchIconColor DEPRECATED_MSG_ATTRIBUTE("The first time loading experience has changed as of release 0.19.0. Please use `launchLoadingIndicatorColor` to change the colour of the loading spinner on the first time load screen.");
-
-/**
  The colour to use for the loading indicator when the SDK theme is loaded for the first time.
  */
 @property (nonatomic, strong, nullable) UIColor *launchLoadingIndicatorColor;

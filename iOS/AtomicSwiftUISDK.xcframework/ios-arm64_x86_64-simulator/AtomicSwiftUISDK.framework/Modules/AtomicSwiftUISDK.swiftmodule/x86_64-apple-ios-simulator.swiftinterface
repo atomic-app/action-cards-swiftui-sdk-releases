@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AtomicSwiftUISDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AtomicSwiftUISDK
 import AtomicSDK
 @_exported import AtomicSwiftUISDK
 import Combine
@@ -122,6 +121,7 @@ public struct ContainerConfiguration {
   public var sendRuntimeVariableAnalytics: Swift.Bool
   public mutating func setCustomValue(_ value: Swift.String, for customString: AtomicSwiftUISDK.ContainerConfiguration.CustomString)
   public var filters: [AtomicSDK.AACCardFilter]?
+  public var ignoresSafeAreaEdges: SwiftUI.Edge.Set?
 }
 public struct Card {
   public let instanceId: Swift.String
@@ -129,7 +129,7 @@ public struct Card {
   public mutating func resolveRuntimeVariable(name: Swift.String, value: Swift.String)
 }
 @_Concurrency.MainActor(unsafe) public struct StreamContainer : SwiftUI.View {
-  @_Concurrency.MainActor(unsafe) public init(containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
+  @_Concurrency.MainActor(unsafe) public init(isInNavigationStack: Swift.Bool, containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
