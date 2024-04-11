@@ -114,7 +114,7 @@
 		</data>
 		<key>AACCardViewText.nib</key>
 		<data>
-		tDSS9nuZKQE2mK7Q0VFiatj6SBE=
+		o/Hz6DJuHTCWPVgH7qwAl6k5RXM=
 		</data>
 		<key>AACCardViewTextInput.nib</key>
 		<data>
@@ -454,7 +454,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4Oy5wCEza/EeSFyTkk7cTjhSn7Y=
+		rav0eD/8aNmiZlQQtHS5ztWVKeY=
 		</data>
 		<key>LICENSE-FontAwesome.txt</key>
 		<data>
@@ -462,7 +462,7 @@
 		</data>
 		<key>LICENSES.html</key>
 		<data>
-		lGYHjSm1j6in3ajV2OsARMPKEbw=
+		BvvDmqS4YSRgVcAC7U6IBzdUDtI=
 		</data>
 		<key>Localizable.strings</key>
 		<data>
@@ -472,9 +472,13 @@
 		<data>
 		SG46tY83z83YWc2U9vc4NMbeRL8=
 		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		L8KEoeSlSmZDTbrf6RH7JoJO7xg=
+		</data>
 		<key>SDKInfo.plist</key>
 		<data>
-		ag+Ucahyjv7yKOSqhXJcE97EQyk=
+		ywrZsoUWZ9+oDrQgZkf0YBcuss0=
 		</data>
 		<key>fontawesome-5-solid.otf</key>
 		<data>
@@ -676,7 +680,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oCuPQI3xw/T7O6g8PZUWfbN1fF5dYjbbvqPWb1IOKm0=
+			KUgxK97L4iQHPGRM3OhlNUmeQf63j1f8n3CXnXJrm8Q=
 			</data>
 		</dict>
 		<key>AACCardViewTextInput.nib</key>
@@ -1278,7 +1282,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W6gomTJFOjdHbFfEHtJ4YUvWB2MzMnD86fIPYJcJcJc=
+			s1ZuPRL+VsVQeeBoo/JCsPuQwbqd1lh94O4Gaug2yRE=
 			</data>
 		</dict>
 		<key>Localizable.strings</key>
@@ -1295,11 +1299,18 @@
 			gAgAYZN30Phk3Fy/Sx5Y7RfGy1C6T5Znmz+qUnvhC6I=
 			</data>
 		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zSJGHqivT0mVzeFKih1Ik1Y7+UbU9TPNZTph+sSRYRc=
+			</data>
+		</dict>
 		<key>SDKInfo.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kRROICanw7OVpT4HprYx+9ronHbeOCAsSkvtpxQ6NYY=
+			HTbPX3yOMXp8SIrn4l9u7ehx0Ifd/bDj7UXQR8eLm3M=
 			</data>
 		</dict>
 		<key>fontawesome-5-solid.otf</key>

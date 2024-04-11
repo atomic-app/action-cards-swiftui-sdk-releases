@@ -409,6 +409,16 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -6116,6 +6126,13 @@
       "offset": 2569,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/DragGestureViewModifier.swift",
+      "kind": "BooleanLiteral",
+      "offset": 358,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/NetworkDetector.swift",
