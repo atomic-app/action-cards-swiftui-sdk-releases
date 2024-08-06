@@ -54,75 +54,75 @@
 		</data>
 		<key>AACCardViewButtonContainer.nib</key>
 		<data>
-		JygmJv+yno6s136y+G4fH7inRIc=
+		cB4KLnSffRjhy3DI8hFnwZjWg5s=
 		</data>
 		<key>AACCardViewCustomHeader.nib</key>
 		<data>
-		5Ma8HfCZQt3E3M9z3G8su7dKUfQ=
+		hGkwT8gzd9L1TSR2UTZlRa0kBlE=
 		</data>
 		<key>AACCardViewDropdown.nib</key>
 		<data>
-		M5m61r4RSB0YcNme86pqz8CR27Q=
+		eVNWLU1YMJzpc4AkdsK/uK/hHwM=
 		</data>
 		<key>AACCardViewDynaWidthButton.nib</key>
 		<data>
-		JygmJv+yno6s136y+G4fH7inRIc=
+		cB4KLnSffRjhy3DI8hFnwZjWg5s=
 		</data>
 		<key>AACCardViewEmpty.nib</key>
 		<data>
-		QOivYvrSJ7V/w3UduUjNoT3tT7k=
+		7FpIwfg4h1CA/MQB1JPjV5iPgA4=
 		</data>
 		<key>AACCardViewExternalWidthButton.nib</key>
 		<data>
-		JygmJv+yno6s136y+G4fH7inRIc=
+		cB4KLnSffRjhy3DI8hFnwZjWg5s=
 		</data>
 		<key>AACCardViewHeading1.nib</key>
 		<data>
-		wtGxIgO9bqPfTSr+NNSJOLc87wA=
+		3TPKcd0+J4n3jioi3S3pQjoRSQc=
 		</data>
 		<key>AACCardViewListComma.nib</key>
 		<data>
-		uSbFdrfi3762gwq31MdzfdoeoOs=
+		cCwnGcAq9CufqliCj6XEbTDZejk=
 		</data>
 		<key>AACCardViewListItem.nib</key>
 		<data>
-		SyiRFnfLbgZpYiEf25MC9bPDO2U=
+		3elXxvWAbOO0LOMZZhDjxqAoey8=
 		</data>
 		<key>AACCardViewMedia.nib</key>
 		<data>
-		WI96nLrV3SEbxe2YFy5AhqBjHe0=
+		m4ZY9gnAbo8Fb/1bDtb8v7wWjb0=
 		</data>
 		<key>AACCardViewPlaceholder.nib</key>
 		<data>
-		4xXuo+Sl+2KyM0MFyi4F6nKZr2s=
+		NqqlFk8J47MwhRYPaDxxw/2XARo=
 		</data>
 		<key>AACCardViewRadioGroup.nib</key>
 		<data>
-		IbuXzPZFkDPtbLM+fsDhYy0Dc1A=
+		P+33tNsIx1QMH1cqe2G0D9WFdc8=
 		</data>
 		<key>AACCardViewRadioItem.nib</key>
 		<data>
-		0BG6TF9MtW+dVgcL/w5EdVg2Gyk=
+		LD1GiSmkS3FlKXAjoNpB9aeaEZc=
 		</data>
 		<key>AACCardViewStepper.nib</key>
 		<data>
-		h2Smdz4rwsk2ZnIkcNg++GKDRes=
+		Cb4hUzlMALTs73KsV/eIkiY751I=
 		</data>
 		<key>AACCardViewSwitch.nib</key>
 		<data>
-		6ZG5Rm1LT8pHKElXix/HvzczMkU=
+		fCT0bepJEd/tgHvnRznEwuqvOec=
 		</data>
 		<key>AACCardViewText.nib</key>
 		<data>
-		o/Hz6DJuHTCWPVgH7qwAl6k5RXM=
+		Z8gxoTAgeET7Eqor+G3JjstU0zY=
 		</data>
 		<key>AACCardViewTextInput.nib</key>
 		<data>
-		6kCpi+Xo9VOdBnRlNdi/lPWH0wk=
+		zWTEJffZi5aApytYjD/vshky1u8=
 		</data>
 		<key>AACCardViewTitle.nib</key>
 		<data>
-		Pvb9ZS9X69jgT0d4mbvGz/bJeDQ=
+		66heGsAkBAo4D5XhSDxfrIEzH94=
 		</data>
 		<key>AACErrorOverlayView.nib</key>
 		<data>
@@ -146,7 +146,7 @@
 		</data>
 		<key>AACNavigationBarView.nib</key>
 		<data>
-		q5I3nve1Uivy1TVZQcKPTdbOfuk=
+		MiIOnFDnjJWVwqA6/wZrPpRB+vA=
 		</data>
 		<key>AACNoCardsView.nib</key>
 		<data>
@@ -158,11 +158,11 @@
 		</data>
 		<key>AACValidationMessageView.nib</key>
 		<data>
-		prh0iYGGbms9IT7NHvF+GZHBmKw=
+		HbHojqW0Xec9RoIklZYCgqyyxtY=
 		</data>
 		<key>AACVideoOverlayView.nib</key>
 		<data>
-		rDtFPrQjTx/pGNacnciDjpamnQI=
+		DBsgI5rs/0jiNvLvPf/2BGIVtSU=
 		</data>
 		<key>Assets.car</key>
 		<data>
@@ -210,7 +210,7 @@
 		</data>
 		<key>Headers/AACCardInstance.h</key>
 		<data>
-		W2yqqN3UQkvqBtjwWVHzsxrQa7s=
+		LxcInWRe70e2Cphh6VJtzvX+YnM=
 		</data>
 		<key>Headers/AACCardLayout.h</key>
 		<data>
@@ -222,7 +222,11 @@
 		</data>
 		<key>Headers/AACCardNode.h</key>
 		<data>
-		wvuJA9YsGiaX2X7yCJcTI3vNDuU=
+		k6TrDRGRekWAZ7PUtHFp22mvG70=
+		</data>
+		<key>Headers/AACCardNodeCustomIcon.h</key>
+		<data>
+		U1lxlN7n4MO0/AMj4hKZaH8fTkM=
 		</data>
 		<key>Headers/AACCardNodeDatePicker.h</key>
 		<data>
@@ -250,11 +254,11 @@
 		</data>
 		<key>Headers/AACCardNodeListItem.h</key>
 		<data>
-		6AvddcRK/5mhvQqSvki3jw7frmI=
+		twuoQrb6a9Mu2GFh7zcXeb7LGf8=
 		</data>
 		<key>Headers/AACCardNodeMedia.h</key>
 		<data>
-		cddOEcdPn6iirhrp/rZfFXx76qg=
+		dAWl0mNQ4bxR5xJHyj0UjHgxqsk=
 		</data>
 		<key>Headers/AACCardNodeNumberInput.h</key>
 		<data>
@@ -274,7 +278,7 @@
 		</data>
 		<key>Headers/AACCardNodeText.h</key>
 		<data>
-		Hckao+lG4gy8q+KN0kcbB1VlKrg=
+		D775LdZyk75gykZdMf6bgKNiZTE=
 		</data>
 		<key>Headers/AACCardNodeTextInput.h</key>
 		<data>
@@ -298,7 +302,7 @@
 		</data>
 		<key>Headers/AACConfiguration.h</key>
 		<data>
-		Vyk5rFDEqj6OkRvRph+Oeiui6u4=
+		sY6nQSUAulGSTBbZbx372yKH0CQ=
 		</data>
 		<key>Headers/AACCustomEvent.h</key>
 		<data>
@@ -338,7 +342,7 @@
 		</data>
 		<key>Headers/AACHorizontalContainerConfiguration.h</key>
 		<data>
-		xM9cDbJQYEH/FjuC+Op5Ccuz4Lg=
+		zKycaNKHe4PUx+yKaAtRK+lEEYk=
 		</data>
 		<key>Headers/AACHorizontalContainerView.h</key>
 		<data>
@@ -354,7 +358,7 @@
 		</data>
 		<key>Headers/AACRequestDelegate.h</key>
 		<data>
-		h2jEsAlzH/cBAakctlZzt3mOdU4=
+		TRqAP/RYTIqCCFRiDh1Cvp84nwc=
 		</data>
 		<key>Headers/AACRequestDisposition.h</key>
 		<data>
@@ -366,7 +370,7 @@
 		</data>
 		<key>Headers/AACSDKEvent.h</key>
 		<data>
-		UjHEi+88xNN2heRsBC142b/ed/0=
+		eh6HTO0BOn5qZFcno+HMIZ1BKyY=
 		</data>
 		<key>Headers/AACSession.h</key>
 		<data>
@@ -374,7 +378,7 @@
 		</data>
 		<key>Headers/AACSessionCardAction.h</key>
 		<data>
-		lflnUPa/xKiv7kC1q+T247862ts=
+		blK+PnSQ87aKDn5YWj8lPkXBYVo=
 		</data>
 		<key>Headers/AACSessionDelegate.h</key>
 		<data>
@@ -414,11 +418,11 @@
 		</data>
 		<key>Headers/AACSwiftUISession.h</key>
 		<data>
-		mpxM8OZeu/9d8YSnAF5ILZtzNhc=
+		/K28Jxl2Rd4Wth1EB0KfmGbmr+E=
 		</data>
 		<key>Headers/AACTheme.h</key>
 		<data>
-		VXVT/6MJDdir69Em+d2gBsH0AmA=
+		R92JM2hZw73S7Zs0WbNw64TQAV8=
 		</data>
 		<key>Headers/AACThemeShadow.h</key>
 		<data>
@@ -426,7 +430,7 @@
 		</data>
 		<key>Headers/AACTypography.h</key>
 		<data>
-		j7HiP343nGhoE+UA9QH/qDopbhc=
+		NIaoGG/fohPov/cadijyLC32bGM=
 		</data>
 		<key>Headers/AACUserMetrics.h</key>
 		<data>
@@ -448,13 +452,17 @@
 		<data>
 		+4S7PFDNNgHEBWWKk8X2z89arl0=
 		</data>
+		<key>Headers/AtomicSDK-Swift.h</key>
+		<data>
+		k+j5l9EGAKpPBO+d8c6s91bMGto=
+		</data>
 		<key>Headers/AtomicSDK.h</key>
 		<data>
-		yN2TNNTOWoei9qEQvVT8h7zgqJM=
+		n1a3g2bb3Rd2sG4MDYSZbkTrIL8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rav0eD/8aNmiZlQQtHS5ztWVKeY=
+		SZ238Bc5Mkm5mF5ntQkkoCf7e14=
 		</data>
 		<key>LICENSE-FontAwesome.txt</key>
 		<data>
@@ -462,15 +470,63 @@
 		</data>
 		<key>LICENSES.html</key>
 		<data>
-		BvvDmqS4YSRgVcAC7U6IBzdUDtI=
+		ky+Sy8XdbUSH3p/pxLardXn5BQ8=
 		</data>
 		<key>Localizable.strings</key>
 		<data>
 		YU5p0QNxXflMCY9WZJasVKIHe18=
 		</data>
+		<key>Modules/AtomicSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<data>
+		NRnzXV5yuURts0Q0TZlE/ToAcLM=
+		</data>
+		<key>Modules/AtomicSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<data>
+		QxCTEbJUkzbf/2FQY7kZJt2phGA=
+		</data>
+		<key>Modules/AtomicSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		0K0bPwwn4D6BhvhGP5TY0o5XZgI=
+		</data>
+		<key>Modules/AtomicSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		UiuuKBeO9kocNnoGGX0HmkG54yk=
+		</data>
+		<key>Modules/AtomicSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		G5TCGhsahEK98a2Jc0KDNZUxT48=
+		</data>
+		<key>Modules/AtomicSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		UiuuKBeO9kocNnoGGX0HmkG54yk=
+		</data>
+		<key>Modules/AtomicSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		OGP2iuNuT8uJjHmXBd2NZd7FTXE=
+		</data>
+		<key>Modules/AtomicSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		0K0bPwwn4D6BhvhGP5TY0o5XZgI=
+		</data>
+		<key>Modules/AtomicSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		EAmt8mGaIY6gjuKUYWDbZel69Nk=
+		</data>
+		<key>Modules/AtomicSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		1JxmZH2jqYcNifGkvJGdPbxjZU4=
+		</data>
+		<key>Modules/AtomicSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		EAmt8mGaIY6gjuKUYWDbZel69Nk=
+		</data>
+		<key>Modules/AtomicSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		4i46ZNsLRuvwZyKH7+Hq0tYS1Fw=
+		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		SG46tY83z83YWc2U9vc4NMbeRL8=
+		RDuI24AcfS511SPrSE2ZFVDJRyU=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -478,11 +534,11 @@
 		</data>
 		<key>SDKInfo.plist</key>
 		<data>
-		ywrZsoUWZ9+oDrQgZkf0YBcuss0=
+		yMHhVu9t0nxWayxrVNcuiN5AiHw=
 		</data>
 		<key>fontawesome-5-solid.otf</key>
 		<data>
-		4/V8+sjFjdNet7j8RMEb3OS33CQ=
+		H7ZzYPgGtnwc7NWEejiAWDD7eKg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -575,126 +631,126 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J672Zlm8d8xKLLy+0kS5p7gu0zQvnJ3Vhaw/kGue/ZY=
+			7YeTMWWWOHf00BS/1JpOby5kU13FgJrcjK6mW9HSKWM=
 			</data>
 		</dict>
 		<key>AACCardViewCustomHeader.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1pX0CZW10j8pM8xzb0ySDzgJcJy0685GGzGmbwg6EoI=
+			sAAxasTzWCI7vDMTRlS62+Eopht5F7/mFLqeEOm4vzc=
 			</data>
 		</dict>
 		<key>AACCardViewDropdown.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BtDDhhR1/CTvK+V7qsvcWm8oOt6zWF/Hjh0pqFVImZ8=
+			9USCcWlnb5EQFLlEPjcauXsayeRemM3jMVgFbUTGtWY=
 			</data>
 		</dict>
 		<key>AACCardViewDynaWidthButton.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J672Zlm8d8xKLLy+0kS5p7gu0zQvnJ3Vhaw/kGue/ZY=
+			7YeTMWWWOHf00BS/1JpOby5kU13FgJrcjK6mW9HSKWM=
 			</data>
 		</dict>
 		<key>AACCardViewEmpty.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GuiqJhcOjR6Kqf3dQNnnLbABmXVas/WU247VLY6qszM=
+			tyvQ8obLtB4pz0TrHnBtvvvMBLnKSJjGuQDE1A0LKhk=
 			</data>
 		</dict>
 		<key>AACCardViewExternalWidthButton.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J672Zlm8d8xKLLy+0kS5p7gu0zQvnJ3Vhaw/kGue/ZY=
+			7YeTMWWWOHf00BS/1JpOby5kU13FgJrcjK6mW9HSKWM=
 			</data>
 		</dict>
 		<key>AACCardViewHeading1.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Frt4JtTVko9+ko5S3/esHIQDKLedHyzN8ALuaJ0HdQE=
+			XVjYoMzifWdCs9zgrkRdpQbsPcv+PeQNoBVO8RgeMoQ=
 			</data>
 		</dict>
 		<key>AACCardViewListComma.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/W/8hS91GOvNyCia6mbHCzjwzePRf3D7TKzp9nSHcgY=
+			956kQ6xn7Qg0IKBM5r3k3lFMUhR6nP0+gjG4Gz9pM3I=
 			</data>
 		</dict>
 		<key>AACCardViewListItem.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2RJ5MoB8G97+UXUmZhPIZROawfO4fZCnrcAG4EMeeOQ=
+			EIIZEfoKMzlctmw2WCHUObNVwLgo8hzRqiTNCtYCljg=
 			</data>
 		</dict>
 		<key>AACCardViewMedia.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gq836/X5F8Px9lHPI6xH/5gRE5Oo+meQ/5RuGskmXPI=
+			xWCDL+32ZBKRosYg3FczwWnJy3ouae+Oqe8CCd0m1rM=
 			</data>
 		</dict>
 		<key>AACCardViewPlaceholder.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NlU+nT5kdCXZuvfyKAMUNhjmAluchkCSyiCGLWMi2Uk=
+			0vaFPL5FZYQJMx1flM04xGbs56tko3Czyr61+8PApPw=
 			</data>
 		</dict>
 		<key>AACCardViewRadioGroup.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JxVMJz8DQvaGgqkA7R+3xx0mfIs6ihCbqFC4/gVdHcQ=
+			abO8uroCEfw5wSV8c7hZv7BYk3iFgTONY4byH6U8wko=
 			</data>
 		</dict>
 		<key>AACCardViewRadioItem.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7AnQKZjliU+E/Tp1Xv+HDZe/gTBt+NTz5erNvEuxV9c=
+			pnS7Q95MCo8KT8pPvDsBZIzTJkU2lVRxiOc61/4cXzE=
 			</data>
 		</dict>
 		<key>AACCardViewStepper.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W8ZD+/PS2vsisvW6CyfCczYRjSVlohWKdICdsLhEFWA=
+			vDRjqMnGbUSEpe9EVUj+z5f/jUD97gk0TG1f2Q8fxlo=
 			</data>
 		</dict>
 		<key>AACCardViewSwitch.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Te1ro2y3l6oqcYyexECD6uvUgHsV7MhJ+jfE3fVs1U0=
+			6dQO6VoTN/Jr0AvblnfssRKghFZU9oR+oFi+zR6dy54=
 			</data>
 		</dict>
 		<key>AACCardViewText.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KUgxK97L4iQHPGRM3OhlNUmeQf63j1f8n3CXnXJrm8Q=
+			I99lPv6d1+Hd67guIFmsiCpJSwdDCrRKeEft8S9FPDs=
 			</data>
 		</dict>
 		<key>AACCardViewTextInput.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KUjseOqYqzUscZwBPfPA2Aubq7IQn0BdPkDoqerKHSU=
+			lUTVvrgEs2HYr84KLnMF3TbdrBZf8q1XGO0psS6WKVE=
 			</data>
 		</dict>
 		<key>AACCardViewTitle.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ot7Y1MNJbEPhwSglqdJLxvfJL43GbMNjhdINZY/ZqzY=
+			75uo8I7GxRrdsZBag41uI1uT5WKU9ssl87V3r1BGkf4=
 			</data>
 		</dict>
 		<key>AACErrorOverlayView.nib</key>
@@ -736,7 +792,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ozJrhTCWCgLSnjF/U/bL3GadutFCqR+fpEGUswFnVs0=
+			k6VfnSDYvxEoRr4X9a2ntD49e/HJr5FEKnp1nM93zC0=
 			</data>
 		</dict>
 		<key>AACNoCardsView.nib</key>
@@ -757,14 +813,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MpsFcSsEFdpo+YN9FrXk8dtdbKM83iFQh71Erp6APms=
+			Eef8jM+2v6FHTkf8FNkm5XDxU9NM9dkt5TgOOtmNLtk=
 			</data>
 		</dict>
 		<key>AACVideoOverlayView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8JkjuIAYe6ZXJw25sdBmn0IzleHVVoZw5Grumbpcx3A=
+			+Up0BVDahApxcTywMnTEXQYnAwpUcCsYTW7nuyfuqB0=
 			</data>
 		</dict>
 		<key>Assets.car</key>
@@ -848,7 +904,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			172rB4jckIs/kN9GzoUMH7GM4DFemu/7xPvVmdshi98=
+			j3GS6HdmLKKpu6kBJl5Lcl4rCHpmXIu7hv7eMM/Vf/I=
 			</data>
 		</dict>
 		<key>Headers/AACCardLayout.h</key>
@@ -869,7 +925,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cElobPP7jvDGqjGkFLx6DJvHsmGz/fh6AyF0MdRmrLg=
+			AeNVX2NAKsbgrIBMp9HIYDivEo9Ay+OlpQX3O9S2gnU=
+			</data>
+		</dict>
+		<key>Headers/AACCardNodeCustomIcon.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k7PGQic0vd8Ua/tWtQbi0vfnLGBCr9oQacW3w06i0JE=
 			</data>
 		</dict>
 		<key>Headers/AACCardNodeDatePicker.h</key>
@@ -918,14 +981,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y3Jek6k95huBLME75CP9OpgjYtNuLojZDa6MrPB5Hmo=
+			n/cjZul1fWmuWP5/8gCUMgbiBuHKpw1/I6e356LaIj4=
 			</data>
 		</dict>
 		<key>Headers/AACCardNodeMedia.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U5A2ZJKrbMe0PgBf8UXA8mwQD+ijr2S/pc1w00LSHsI=
+			xlU02qsydqmHOoVLkzGfptM8KsIC5PA098tDOp3W4Sw=
 			</data>
 		</dict>
 		<key>Headers/AACCardNodeNumberInput.h</key>
@@ -960,7 +1023,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eF6Q4rR5FP3A916mHyW6YBho62hGhyOhPHvhP9gnnDk=
+			DcmANRVRk1nE9r2AQx7zaQY3rzHcy3nREHLXJZJAP9s=
 			</data>
 		</dict>
 		<key>Headers/AACCardNodeTextInput.h</key>
@@ -1002,7 +1065,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A+ervuNmju5WEQqxJ2b6WrP5UaZARJbGX9noSVvvRQo=
+			R6g1QkhGdOV5n+TjCKybZJ4EAMn2M60MEj5QnlmFJfo=
 			</data>
 		</dict>
 		<key>Headers/AACCustomEvent.h</key>
@@ -1072,7 +1135,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/I3AMG04GH6qCbOVii0M0BgidV6P7RFZzVujzumIvHo=
+			/ACppmYEIfwM0qkipRgLrUIMPz/kiCco1bHPBs9jeK4=
 			</data>
 		</dict>
 		<key>Headers/AACHorizontalContainerView.h</key>
@@ -1100,7 +1163,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9WTlQyoEDjHtZjFOR2SpXWY4wSAstEqNJAcGgcOtNh0=
+			Kmgl8V7HBDo2166Pifo5sfZw7mxi7YH0aWRWG3tLxi0=
 			</data>
 		</dict>
 		<key>Headers/AACRequestDisposition.h</key>
@@ -1121,7 +1184,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9m9Pr+e4OF5cbi79bsqop1NoRvHbbi48hzzJYOjkDs0=
+			d7apKRYBG7qp14yfL95UXgF73PP6GcR/wkIoe2G5Buw=
 			</data>
 		</dict>
 		<key>Headers/AACSession.h</key>
@@ -1135,7 +1198,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UaxzRYPzW1NJVJGi3EJUEKke6hxst5iM1LGXzXvdTvU=
+			Cb0ZX7z3VzX6yqFKmRW7Jqx6I5rNo54fBX6NeXdizJ4=
 			</data>
 		</dict>
 		<key>Headers/AACSessionDelegate.h</key>
@@ -1205,14 +1268,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			62wNn6kyl+NCryeJEDpFYW/yaR67w6Aiam5eC4qw9dg=
+			VXrSIJoMs528hvbTjYGYtMDfozvj3uR4XCP/2MKivgo=
 			</data>
 		</dict>
 		<key>Headers/AACTheme.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hcXtG5YXYo2//ECCK50BTJ6ouq4WNyPdXpO3pmS9xB8=
+			cDoMz5x/LBkBDGj0c0/OBGWmm5YvjDoMSo7qtQDTrFI=
 			</data>
 		</dict>
 		<key>Headers/AACThemeShadow.h</key>
@@ -1226,7 +1289,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zDvtTWtfpYYK82ZkkDnVfLjGtxnSqQZE9HybKGK3sBU=
+			PZAQeRoceeE5Mnm0hqtRvIjLR6it9l6cN56kiZupQoc=
 			</data>
 		</dict>
 		<key>Headers/AACUserMetrics.h</key>
@@ -1264,11 +1327,18 @@
 			DGbeFijFRx7ZCViG4RITp5EaW5U+ZTFrTNtgl3j/5p0=
 			</data>
 		</dict>
+		<key>Headers/AtomicSDK-Swift.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ff0kp0LBX19I4Vf1SiR5u0gQiRbE4FSi2ns7aGfNwTg=
+			</data>
+		</dict>
 		<key>Headers/AtomicSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cp72ujj2U7MBiw3DPpZgwU2AiZhLW5KcR0alary7BNs=
+			S5ft5i/yN9xxFllSDvS1ESbkTIX24s4hlPA8rbiGP+o=
 			</data>
 		</dict>
 		<key>LICENSE-FontAwesome.txt</key>
@@ -1282,7 +1352,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			s1ZuPRL+VsVQeeBoo/JCsPuQwbqd1lh94O4Gaug2yRE=
+			CaypZvL2xhupl8yGbyUrn4GQgmq5xZzGxfzQ7oqHDbM=
 			</data>
 		</dict>
 		<key>Localizable.strings</key>
@@ -1292,11 +1362,95 @@
 			J/n1I5AW8DnRIFITd5Y7YqI9ytNxsHZD50T7ml9XaDQ=
 			</data>
 		</dict>
+		<key>Modules/AtomicSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pWjUns1L/N7+6BEvjFGEkNsKV0lBM0ap89tmTz7u/yc=
+			</data>
+		</dict>
+		<key>Modules/AtomicSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			K99csd5U5r3yS357NpB8JExG9ynAFI8L5fl9ToWG+HU=
+			</data>
+		</dict>
+		<key>Modules/AtomicSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BVwpJyFVMEPxp0Um85CzgSGojHJgLWaRaLziTW0dQXg=
+			</data>
+		</dict>
+		<key>Modules/AtomicSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3RGJ2zpR/zdF5qo7r7mDWvJp6ymei3V7zcWNuUtpiyA=
+			</data>
+		</dict>
+		<key>Modules/AtomicSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hxurzGu+1xx6LSzWOz5XZHG6tbFsiQGJGD1HeY27Yeg=
+			</data>
+		</dict>
+		<key>Modules/AtomicSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3RGJ2zpR/zdF5qo7r7mDWvJp6ymei3V7zcWNuUtpiyA=
+			</data>
+		</dict>
+		<key>Modules/AtomicSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Fffk8pnkva9faBuP8oxIu+BZbaX2HLGTDUvUVC0GNcA=
+			</data>
+		</dict>
+		<key>Modules/AtomicSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BVwpJyFVMEPxp0Um85CzgSGojHJgLWaRaLziTW0dQXg=
+			</data>
+		</dict>
+		<key>Modules/AtomicSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7fKt3/1otFyeM8vJW8bI+7medEMjlCBxawM2rjtv0Mw=
+			</data>
+		</dict>
+		<key>Modules/AtomicSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HMx1y5cairHckFKGYSqeoFlJjRTxaS3M0pxbPS07c2E=
+			</data>
+		</dict>
+		<key>Modules/AtomicSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7fKt3/1otFyeM8vJW8bI+7medEMjlCBxawM2rjtv0Mw=
+			</data>
+		</dict>
+		<key>Modules/AtomicSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LO8KhOes6LL07CZHsGMwWBiJqL3lVA0fNuIVB4OcWFc=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gAgAYZN30Phk3Fy/Sx5Y7RfGy1C6T5Znmz+qUnvhC6I=
+			Xo0PRZf25M9wnbnvJ8VV8r2Mrpz5b/5Yi9ROOxU5p84=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
@@ -1310,14 +1464,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HTbPX3yOMXp8SIrn4l9u7ehx0Ifd/bDj7UXQR8eLm3M=
+			GXxm/hXPIZRXW1iJPs2pSMr48u7xxLwetH5P0lDmrHE=
 			</data>
 		</dict>
 		<key>fontawesome-5-solid.otf</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xQfbmPZ3I+LntwnrFj0mcAmx8TYGgIQjhyk3c1w19jw=
+			e97haet/BLPgjeYp+1MOx/7Y8dG0qYJ9cCMx0ifiQkA=
 			</data>
 		</dict>
 	</dict>

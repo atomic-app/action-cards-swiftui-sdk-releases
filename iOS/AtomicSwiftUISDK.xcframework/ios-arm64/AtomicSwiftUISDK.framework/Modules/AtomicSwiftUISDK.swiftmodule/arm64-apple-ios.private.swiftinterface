@@ -12,6 +12,13 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_Concurrency.MainActor(unsafe) public struct SingleCardContainer : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public init(containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK19SingleCardContainerV4bodyQrvp", 0) __
+}
 public struct RuntimeVariable {
   public let name: Swift.String
   public let defaultValue: Swift.String
@@ -20,8 +27,8 @@ public struct ContainerConfiguration {
   public enum Event {
     case actionButtonTapped
     case linkButtonTapped(cardInstanceId: Swift.String, payload: [Swift.AnyHashable : Any])
-    case submitButtonTapped(cardInstanceId: Swift.String, payload: [Swift.AnyHashable : Any])
-    case cardSubmitted(cardInstanceId: Swift.String)
+    case submitButtonTappedWithName(cardInstanceId: Swift.String, buttonName: Swift.String, payload: [Swift.AnyHashable : Any])
+    case cardSubmittedWithName(cardInstanceId: Swift.String, buttonName: Swift.String)
     case cardDismissed(cardInstanceId: Swift.String)
     case cardSnoozed(cardInstanceId: Swift.String)
     case cardVotedUseful(cardInstanceId: Swift.String)
