@@ -277,6 +277,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import AVKit;
 #endif
 
 #endif
@@ -302,6 +303,12 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+
+
+@interface AVPlayerViewController (SWIFT_EXTENSION(AtomicSwiftUISDK))
+- (void)viewDidLoad;
+@end
 
 
 
@@ -598,6 +605,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import AVKit;
 #endif
 
 #endif
@@ -623,6 +631,12 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+
+
+@interface AVPlayerViewController (SWIFT_EXTENSION(AtomicSwiftUISDK))
+- (void)viewDidLoad;
+@end
 
 
 
