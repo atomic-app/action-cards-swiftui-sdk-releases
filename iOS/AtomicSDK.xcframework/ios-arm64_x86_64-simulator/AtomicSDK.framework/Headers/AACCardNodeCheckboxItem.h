@@ -28,6 +28,17 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic) BOOL defaultValue;
 
+/**
+ The index of the item in its checkbox group, starting from `1`.
+ */
+@property (nonatomic) NSUInteger indexOfItem;
+
+/**
+ The total number of items in its checkbox group.
+ */
+@property (nonatomic) NSUInteger groupItemTotalNumber;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

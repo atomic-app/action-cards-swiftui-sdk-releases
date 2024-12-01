@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AtomicSwiftUISDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVKit
 import AtomicSDK
 @_exported import AtomicSwiftUISDK
@@ -15,15 +16,15 @@ import _AVKit_SwiftUI
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_Concurrency.MainActor(unsafe) public struct SingleCardContainer : SwiftUI.View {
-  @_Concurrency.MainActor(unsafe) public init(containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+@_Concurrency.MainActor @preconcurrency public struct SingleCardContainer : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK19SingleCardContainerV4bodyQrvp", 0) __
 }
 extension AVKit.AVPlayerViewController {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
 }
 public struct RuntimeVariable {
   public let name: Swift.String
@@ -44,9 +45,7 @@ public struct ContainerConfiguration {
     case cardSnoozeFailed(cardInstanceId: Swift.String)
   }
   public typealias EventHandler = (_ event: AtomicSwiftUISDK.ContainerConfiguration.Event) -> Swift.Void
-  #if compiler(>=5.3) && $AsyncAwait
   public typealias RuntimeVariablesHandler = (_ cardsToResolve: [AtomicSwiftUISDK.Card]) async -> [AtomicSwiftUISDK.Card]
-  #endif
   public enum CustomString {
     case cardListTitle
     case snoozeTitle
@@ -101,9 +100,7 @@ public struct ContainerConfiguration {
     public typealias RawValue = Swift.Int
   }
   public init()
-  #if compiler(>=5.3) && $AsyncAwait
   public init(onEvent: AtomicSwiftUISDK.ContainerConfiguration.EventHandler?, onRuntimeVariablesRequested: AtomicSwiftUISDK.ContainerConfiguration.RuntimeVariablesHandler?)
-  #endif
   public enum PresentationStyle {
     case withoutButton
     case withActionButton
@@ -116,10 +113,10 @@ public struct ContainerConfiguration {
   public var presentationStyle: AtomicSwiftUISDK.ContainerConfiguration.PresentationStyle
   public var onEvent: AtomicSwiftUISDK.ContainerConfiguration.EventHandler?
   public var onRuntimeVariablesRequested: AtomicSwiftUISDK.ContainerConfiguration.RuntimeVariablesHandler?
-  public var launchBackgroundColor: SwiftUI.Color
-  public var launchLoadingIndicatorColor: SwiftUI.Color
-  public var launchButtonColor: SwiftUI.Color
-  public var launchTextColor: SwiftUI.Color
+  public var launchBackgroundColor: SwiftUICore.Color
+  public var launchLoadingIndicatorColor: SwiftUICore.Color
+  public var launchButtonColor: SwiftUICore.Color
+  public var launchTextColor: SwiftUICore.Color
   public var cardListRefreshInterval: Swift.Double {
     get
     set
@@ -134,23 +131,25 @@ public struct ContainerConfiguration {
   public var sendRuntimeVariableAnalytics: Swift.Bool
   public mutating func setCustomValue(_ value: Swift.String, for customString: AtomicSwiftUISDK.ContainerConfiguration.CustomString)
   public var filters: [AtomicSDK.AACCardFilter]?
-  public var ignoresSafeAreaEdges: SwiftUI.Edge.Set?
+  public var ignoresSafeAreaEdges: SwiftUICore.Edge.Set?
 }
 public struct Card {
   public let instanceId: Swift.String
   public let runtimeVariables: [AtomicSwiftUISDK.RuntimeVariable]
   public mutating func resolveRuntimeVariable(name: Swift.String, value: Swift.String)
 }
-@_Concurrency.MainActor(unsafe) public struct StreamContainer : SwiftUI.View {
-  @_Concurrency.MainActor(unsafe) public init(isInNavigationStack: Swift.Bool, containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+@_Concurrency.MainActor @preconcurrency public struct StreamContainer : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(isInNavigationStack: Swift.Bool, containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK15StreamContainerV4bodyQrvp", 0) __
 }
+extension AtomicSwiftUISDK.SingleCardContainer : Swift.Sendable {}
 extension AtomicSwiftUISDK.ContainerConfiguration.CustomString : Swift.Equatable {}
 extension AtomicSwiftUISDK.ContainerConfiguration.CustomString : Swift.Hashable {}
 extension AtomicSwiftUISDK.ContainerConfiguration.InterfaceStyle : Swift.Equatable {}
 extension AtomicSwiftUISDK.ContainerConfiguration.InterfaceStyle : Swift.Hashable {}
 extension AtomicSwiftUISDK.ContainerConfiguration.PresentationStyle : Swift.Equatable {}
 extension AtomicSwiftUISDK.ContainerConfiguration.PresentationStyle : Swift.Hashable {}
+extension AtomicSwiftUISDK.StreamContainer : Swift.Sendable {}
