@@ -34,6 +34,7 @@ public struct ContainerConfiguration {
   public enum Event {
     case actionButtonTapped
     case linkButtonTapped(cardInstanceId: Swift.String, payload: [Swift.AnyHashable : Any])
+    case imageTapped(cardInstanceId: Swift.String, payload: [Swift.AnyHashable : Any])
     case submitButtonTappedWithName(cardInstanceId: Swift.String, buttonName: Swift.String, payload: [Swift.AnyHashable : Any])
     case cardSubmittedWithName(cardInstanceId: Swift.String, buttonName: Swift.String)
     case cardDismissed(cardInstanceId: Swift.String)
