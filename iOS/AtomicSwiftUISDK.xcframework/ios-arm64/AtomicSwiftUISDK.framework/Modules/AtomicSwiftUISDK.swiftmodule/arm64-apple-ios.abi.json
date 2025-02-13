@@ -6,8 +6,8 @@
     "children": [
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "AVKit",
+        "printedName": "AVKit",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
@@ -23,8 +23,8 @@
       },
       {
         "kind": "Import",
-        "name": "AVKit",
-        "printedName": "AVKit",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK"
       },
@@ -44,8 +44,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "SwiftUICore",
+        "printedName": "SwiftUICore",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
@@ -57,13 +57,6 @@
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
           "RawDocComment"
@@ -74,78 +67,10 @@
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
@@ -156,8 +81,8 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
@@ -166,25 +91,15 @@
       },
       {
         "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
@@ -206,12 +121,22 @@
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
@@ -223,10 +148,7 @@
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
@@ -240,17 +162,75 @@
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
@@ -267,6 +247,33 @@
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK"
       },
       {
@@ -284,17 +291,34 @@
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
@@ -311,57 +335,6 @@
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
           "RawDocComment"
@@ -371,16 +344,6 @@
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK"
       },
@@ -558,35 +521,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
@@ -602,10 +538,13 @@
       },
       {
         "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -622,64 +561,57 @@
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
           "RawDocComment"
@@ -690,23 +622,13 @@
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
         "name": "AVKit",
         "printedName": "AVKit",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
           "RawDocComment"
@@ -714,66 +636,15 @@
       },
       {
         "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
@@ -785,6 +656,13 @@
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
           "RawDocComment"
@@ -792,8 +670,59 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK"
       },
@@ -819,20 +748,13 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
@@ -843,13 +765,10 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
@@ -863,40 +782,6 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
@@ -914,18 +799,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
@@ -937,13 +812,6 @@
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
           "RawDocComment"
@@ -954,12 +822,22 @@
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
@@ -968,8 +846,49 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
@@ -981,7 +900,10 @@
         "name": "Network",
         "printedName": "Network",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -995,8 +917,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
@@ -1008,40 +930,13 @@
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
           "RawDocComment"
@@ -1052,132 +947,7 @@
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -1204,6 +974,67 @@
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK"
       },
       {
@@ -1221,12 +1052,15 @@
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
@@ -1237,6 +1071,70 @@
         "kind": "Import",
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK"
       },
@@ -1245,6 +1143,36 @@
         "name": "OSLog",
         "printedName": "OSLog",
         "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK"
       },
       {
@@ -1259,8 +1187,35 @@
       },
       {
         "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
@@ -1282,41 +1237,37 @@
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "TypeDecl",
@@ -1441,6 +1392,23 @@
       },
       {
         "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -1454,13 +1422,6 @@
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
           "RawDocComment"
@@ -1471,27 +1432,7 @@
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -1512,86 +1453,52 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
@@ -1613,30 +1520,6 @@
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
           "RawDocComment"
@@ -1646,6 +1529,13 @@
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
@@ -1677,13 +1567,6 @@
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
           "RawDocComment"
@@ -1691,8 +1574,8 @@
       },
       {
         "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK"
       },
@@ -1711,13 +1594,6 @@
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
           "RawDocComment"
@@ -1727,6 +1603,16 @@
         "kind": "Import",
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK"
       },
@@ -3135,6 +3021,86 @@
                 "declKind": "EnumElement",
                 "usr": "s:16AtomicSwiftUISDK22ContainerConfigurationV12CustomStringO24toastCardFeedbackMessageyA2EmF",
                 "mangledName": "$s16AtomicSwiftUISDK22ContainerConfigurationV12CustomStringO24toastCardFeedbackMessageyA2EmF",
+                "moduleName": "AtomicSwiftUISDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "thumbnailImageActionLinkTitle",
+                "printedName": "thumbnailImageActionLinkTitle",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AtomicSwiftUISDK.ContainerConfiguration.CustomString.Type) -> AtomicSwiftUISDK.ContainerConfiguration.CustomString",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CustomString",
+                        "printedName": "AtomicSwiftUISDK.ContainerConfiguration.CustomString",
+                        "usr": "s:16AtomicSwiftUISDK22ContainerConfigurationV12CustomStringO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AtomicSwiftUISDK.ContainerConfiguration.CustomString.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CustomString",
+                            "printedName": "AtomicSwiftUISDK.ContainerConfiguration.CustomString",
+                            "usr": "s:16AtomicSwiftUISDK22ContainerConfigurationV12CustomStringO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16AtomicSwiftUISDK22ContainerConfigurationV12CustomStringO29thumbnailImageActionLinkTitleyA2EmF",
+                "mangledName": "$s16AtomicSwiftUISDK22ContainerConfigurationV12CustomStringO29thumbnailImageActionLinkTitleyA2EmF",
+                "moduleName": "AtomicSwiftUISDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "thumbnailVideoActionLinkTitle",
+                "printedName": "thumbnailVideoActionLinkTitle",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AtomicSwiftUISDK.ContainerConfiguration.CustomString.Type) -> AtomicSwiftUISDK.ContainerConfiguration.CustomString",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CustomString",
+                        "printedName": "AtomicSwiftUISDK.ContainerConfiguration.CustomString",
+                        "usr": "s:16AtomicSwiftUISDK22ContainerConfigurationV12CustomStringO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AtomicSwiftUISDK.ContainerConfiguration.CustomString.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CustomString",
+                            "printedName": "AtomicSwiftUISDK.ContainerConfiguration.CustomString",
+                            "usr": "s:16AtomicSwiftUISDK22ContainerConfigurationV12CustomStringO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16AtomicSwiftUISDK22ContainerConfigurationV12CustomStringO29thumbnailVideoActionLinkTitleyA2EmF",
+                "mangledName": "$s16AtomicSwiftUISDK22ContainerConfigurationV12CustomStringO29thumbnailVideoActionLinkTitleyA2EmF",
                 "moduleName": "AtomicSwiftUISDK",
                 "declAttributes": [
                   "RawDocComment"
@@ -6182,6 +6148,93 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "cardMaxWidth",
+            "printedName": "cardMaxWidth",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16AtomicSwiftUISDK22ContainerConfigurationV12cardMaxWidth14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s16AtomicSwiftUISDK22ContainerConfigurationV12cardMaxWidth12CoreGraphics7CGFloatVvp",
+            "moduleName": "AtomicSwiftUISDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AtomicSwiftUISDK22ContainerConfigurationV12cardMaxWidth14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s16AtomicSwiftUISDK22ContainerConfigurationV12cardMaxWidth12CoreGraphics7CGFloatVvg",
+                "moduleName": "AtomicSwiftUISDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AtomicSwiftUISDK22ContainerConfigurationV12cardMaxWidth14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s16AtomicSwiftUISDK22ContainerConfigurationV12cardMaxWidth12CoreGraphics7CGFloatVvs",
+                "moduleName": "AtomicSwiftUISDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AtomicSwiftUISDK22ContainerConfigurationV12cardMaxWidth14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s16AtomicSwiftUISDK22ContainerConfigurationV12cardMaxWidth12CoreGraphics7CGFloatVvM",
+                "moduleName": "AtomicSwiftUISDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
           }
         ],
         "declKind": "Struct",
@@ -6211,8 +6264,8 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
@@ -6221,8 +6274,25 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
         "name": "AtomicSDK",
         "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK"
       },
@@ -6231,10 +6301,7 @@
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
@@ -6242,23 +6309,6 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "TypeDecl",
@@ -6433,8 +6483,8 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
@@ -6443,15 +6493,15 @@
       },
       {
         "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
@@ -6460,8 +6510,8 @@
       },
       {
         "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK"
       },
@@ -6981,147 +7031,147 @@
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/VideoPlayerViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 749,
+      "offset": 754,
       "length": 22,
       "value": "\"videoPlaybackChanged\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/VideoPlayerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1037,
+      "offset": 1034,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/VideoPlayerViewModel.swift",
       "kind": "Array",
-      "offset": 1270,
+      "offset": 1263,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Models\/Components\/StepperNode.swift",
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Models\/Components\/Editors\/StepperNode.swift",
       "kind": "IntegerLiteral",
-      "offset": 249,
+      "offset": 209,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/ContainerErrorView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1138,
+      "offset": 1126,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/ContainerErrorView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1185,
+      "offset": 1173,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Models\/LocalSettings.swift",
       "kind": "StringLiteral",
-      "offset": 604,
+      "offset": 585,
       "length": 44,
       "value": "\"AACLocalSettingContainersWhereTutorialSeen\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Models\/LocalSettings.swift",
       "kind": "StringLiteral",
-      "offset": 747,
+      "offset": 728,
       "length": 35,
       "value": "\"io.atomic.LocalSettings.syncQueue\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Components\/ButtonView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1336,
+      "offset": 1320,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/InputElements\/TextEditorViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 267,
+      "offset": 272,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/InputElements\/TextEditorViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 319,
+      "offset": 324,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/InputElements\/StepperViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 206,
+      "offset": 211,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/InputElements\/StepperViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 251,
+      "offset": 256,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/OverflowIconView.swift",
       "kind": "BooleanLiteral",
-      "offset": 322,
+      "offset": 318,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/OverflowIconView.swift",
       "kind": "IntegerLiteral",
-      "offset": 426,
+      "offset": 418,
       "length": 2,
       "value": "-5"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/OverflowIconView.swift",
       "kind": "IntegerLiteral",
-      "offset": 433,
+      "offset": 425,
       "length": 3,
       "value": "-11"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/OverflowIconView.swift",
       "kind": "IntegerLiteral",
-      "offset": 445,
+      "offset": 437,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/OverflowIconView.swift",
       "kind": "IntegerLiteral",
-      "offset": 457,
+      "offset": 449,
       "length": 2,
       "value": "52"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/SnoozeDatePickerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 460,
+      "offset": 448,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/SnoozeDatePickerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 620,
+      "offset": 608,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/SnoozeDatePickerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 746,
+      "offset": 727,
       "length": 2,
       "value": "15"
     },
@@ -7149,177 +7199,163 @@
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1774,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1975,
+      "offset": 2083,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2026,
+      "offset": 2134,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2084,
+      "offset": 2192,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2138,
+      "offset": 2246,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2338,
+      "offset": 2442,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2393,
+      "offset": 2497,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2587,
+      "offset": 2687,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2713,
+      "offset": 2813,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2766,
+      "offset": 2866,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2824,
+      "offset": 2924,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2969,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3055,
+      "offset": 3077,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3107,
+      "offset": 3129,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3162,
+      "offset": 3184,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3304,
+      "offset": 3398,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3395,
+      "offset": 3485,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3689,
+      "offset": 3779,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3734,
+      "offset": 3824,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3867,
+      "offset": 3957,
       "length": 1,
       "value": "0"
     },
     {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Models\/Components\/Editors\/NumberEditorNode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 219,
+      "length": 1,
+      "value": "1"
+    },
+    {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Subview.swift",
       "kind": "BooleanLiteral",
-      "offset": 411,
+      "offset": 407,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Subview.swift",
       "kind": "BooleanLiteral",
-      "offset": 452,
+      "offset": 448,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Subview.swift",
       "kind": "StringLiteral",
-      "offset": 497,
+      "offset": 493,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Subview.swift",
       "kind": "BooleanLiteral",
-      "offset": 544,
+      "offset": 540,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Models\/Components\/TextEditorNode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1277,
-      "length": 1,
-      "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/EditorValueStore.swift",
@@ -7345,63 +7381,63 @@
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/ToastViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 526,
+      "offset": 514,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/ToastViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 580,
+      "offset": 568,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/ToastViewController.swift",
       "kind": "StringLiteral",
-      "offset": 688,
+      "offset": 668,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/ContainerHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 417,
+      "offset": 409,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Containers\/ContainerVariantWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1380,
+      "offset": 1368,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Containers\/ContainerVariantWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1506,
+      "offset": 1494,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Containers\/ContainerVariantWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 1552,
+      "offset": 1540,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Containers\/ContainerVariantWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1655,
+      "offset": 1643,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Containers\/ContainerVariantWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1750,
+      "offset": 1738,
       "length": 5,
       "value": "false"
     },
@@ -7443,161 +7479,168 @@
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/CardsViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4891,
+      "offset": 4963,
       "length": 11,
       "value": "\"Try again\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/CardsViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5127,
+      "offset": 5187,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/CardsViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5291,
+      "offset": 5351,
       "length": 6,
       "value": "864000"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/CardsViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9232,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/CardsViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9479,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/CardsViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 25038,
+      "offset": 26386,
       "length": 9,
       "value": "\"h:mm aa\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/CardsViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 25233,
+      "offset": 26577,
       "length": 21,
       "value": "\"d MMM YYYY, h:mm aa\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/SwipeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 441,
+      "offset": 419,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/SwipeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 486,
+      "offset": 464,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/SwipeView.swift",
-      "kind": "FloatLiteral",
-      "offset": 539,
-      "length": 3,
-      "value": "0.3"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/SwipeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 867,
+      "offset": 987,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/SwipeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1368,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/SwipeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1551,
+      "offset": 1072,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/SwipeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2433,
+      "offset": 1310,
       "length": 1,
-      "value": "1"
+      "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/SwipeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2619,
+      "offset": 2252,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/SwipeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2493,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Shared\/NavigationBar.swift",
       "kind": "IntegerLiteral",
-      "offset": 607,
+      "offset": 603,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Shared\/NavigationBar.swift",
       "kind": "IntegerLiteral",
-      "offset": 705,
+      "offset": 701,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Shared\/NavigationBar.swift",
       "kind": "FloatLiteral",
-      "offset": 805,
+      "offset": 801,
       "length": 3,
       "value": "6.5"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Shared\/NavigationBar.swift",
       "kind": "IntegerLiteral",
-      "offset": 811,
+      "offset": 807,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Shared\/NavigationBar.swift",
       "kind": "IntegerLiteral",
-      "offset": 907,
+      "offset": 903,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Shared\/NavigationBar.swift",
       "kind": "IntegerLiteral",
-      "offset": 912,
+      "offset": 908,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Shared\/NavigationBar.swift",
       "kind": "IntegerLiteral",
-      "offset": 1016,
+      "offset": 1012,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/DragGestureViewModifier.swift",
       "kind": "BooleanLiteral",
-      "offset": 1459,
+      "offset": 1423,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/NetworkDetector.swift",
       "kind": "StringLiteral",
-      "offset": 289,
+      "offset": 271,
       "length": 27,
       "value": "\"io.atomic.NetworkDetector\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/NetworkDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 353,
+      "offset": 335,
       "length": 5,
       "value": "false"
     },
@@ -7609,163 +7652,198 @@
       "value": "4"
     },
     {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/CardAnimationManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1713,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/CardAnimationManager.swift",
+      "kind": "Array",
+      "offset": 1787,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/AppearanceViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 667,
+      "offset": 659,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/DownVoteView.swift",
       "kind": "StringLiteral",
-      "offset": 390,
+      "offset": 405,
       "length": 19,
       "value": "\"It's not relevant\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/DownVoteView.swift",
       "kind": "StringLiteral",
-      "offset": 434,
+      "offset": 449,
       "length": 22,
       "value": "\"I see this too often\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/DownVoteView.swift",
       "kind": "StringLiteral",
-      "offset": 486,
+      "offset": 501,
       "length": 16,
       "value": "\"Something else\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/DownVoteView.swift",
       "kind": "BooleanLiteral",
-      "offset": 608,
+      "offset": 623,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/DownVoteView.swift",
       "kind": "StringLiteral",
-      "offset": 657,
+      "offset": 668,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/DownVoteView.swift",
       "kind": "IntegerLiteral",
-      "offset": 688,
+      "offset": 699,
       "length": 3,
       "value": "280"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/LogMethods.swift",
       "kind": "StringLiteral",
-      "offset": 205,
+      "offset": 166,
       "length": 23,
       "value": "\"io.atomic.ActionCards\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/LogMethods.swift",
       "kind": "StringLiteral",
-      "offset": 244,
+      "offset": 205,
       "length": 15,
       "value": "\"AtomicSwiftUI\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/LogMethods.swift",
       "kind": "StringLiteral",
-      "offset": 876,
+      "offset": 833,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/LogMethods.swift",
       "kind": "StringLiteral",
-      "offset": 1065,
+      "offset": 1022,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/LogMethods.swift",
       "kind": "StringLiteral",
-      "offset": 1250,
+      "offset": 1207,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/LogMethods.swift",
       "kind": "StringLiteral",
-      "offset": 1439,
+      "offset": 1396,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/LogMethods.swift",
       "kind": "StringLiteral",
-      "offset": 1608,
+      "offset": 1565,
       "length": 3,
       "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/ScrollStatusMonitorModifier.swift",
+      "kind": "BooleanLiteral",
+      "offset": 252,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/ScrollStatusMonitorModifier.swift",
+      "kind": "FloatLiteral",
+      "offset": 393,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/ScrollStatusMonitorModifier.swift",
+      "kind": "FloatLiteral",
+      "offset": 526,
+      "length": 3,
+      "value": "0.1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Components\/ListItemView.swift",
       "kind": "IntegerLiteral",
-      "offset": 804,
+      "offset": 815,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Models\/AnalyticsDefinitions.swift",
       "kind": "StringLiteral",
-      "offset": 188,
+      "offset": 169,
       "length": 12,
       "value": "\"swipe-menu\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Models\/AnalyticsDefinitions.swift",
       "kind": "StringLiteral",
-      "offset": 221,
+      "offset": 202,
       "length": 15,
       "value": "\"overflow-menu\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Models\/AnalyticsDefinitions.swift",
       "kind": "StringLiteral",
-      "offset": 255,
+      "offset": 236,
       "length": 13,
       "value": "\"card-button\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/ActionSheetView.swift",
       "kind": "BooleanLiteral",
-      "offset": 414,
+      "offset": 410,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/ActionSheetView.swift",
       "kind": "BooleanLiteral",
-      "offset": 460,
+      "offset": 456,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/ActionSheetView.swift",
       "kind": "FloatLiteral",
-      "offset": 671,
+      "offset": 659,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/AtomicRuntimeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 309,
+      "offset": 290,
       "length": 11,
       "value": "\"AACLogger\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/AtomicRuntimeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 390,
+      "offset": 371,
       "length": 21,
       "value": "\"currentLoggingLevel\""
     },
@@ -7779,175 +7857,182 @@
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/Extensions\/FontExtension.swift",
       "kind": "BooleanLiteral",
-      "offset": 168,
+      "offset": 164,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "Array",
-      "offset": 9178,
+      "offset": 9491,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 9296,
+      "offset": 9609,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 9301,
+      "offset": 9614,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 9456,
+      "offset": 9769,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 9461,
+      "offset": 9774,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "Array",
-      "offset": 10306,
+      "offset": 10603,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 10463,
+      "offset": 10760,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 10468,
+      "offset": 10765,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 10717,
+      "offset": 11014,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 10722,
+      "offset": 11019,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 10950,
+      "offset": 11247,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 10955,
+      "offset": 11252,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "FloatLiteral",
-      "offset": 18208,
+      "offset": 18567,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 18703,
+      "offset": 19058,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 18734,
+      "offset": 19089,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 18780,
+      "offset": 19135,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 18639,
+      "offset": 18994,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 19597,
+      "offset": 19944,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 19652,
+      "offset": 19999,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 19526,
+      "offset": 19873,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 20691,
+      "offset": 21026,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 20805,
+      "offset": 21136,
       "length": 4,
       "value": "4096"
     },
     {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/Configuration\/ContainerConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 23133,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/ActionSheetListView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1994,
+      "offset": 1995,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/StreamContainer.swift",
       "kind": "StringLiteral",
-      "offset": 1291,
+      "offset": 1287,
       "length": 31,
       "value": "\"Color.clear.frame(height: 10)\""
     }

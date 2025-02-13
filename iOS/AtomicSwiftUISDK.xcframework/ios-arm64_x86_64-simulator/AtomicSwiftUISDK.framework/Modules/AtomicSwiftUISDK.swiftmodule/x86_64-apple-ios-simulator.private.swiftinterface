@@ -6,11 +6,11 @@ import AVKit
 import AtomicSDK
 @_exported import AtomicSwiftUISDK
 import Combine
-import Foundation
 import Network
 import OSLog
 import Swift
 import SwiftUI
+import SwiftUICore
 import UIKit
 import _AVKit_SwiftUI
 import _Concurrency
@@ -63,6 +63,8 @@ public struct ContainerConfiguration {
     case toastCardCompletedMessage
     case toastCardSnoozeMessage
     case toastCardFeedbackMessage
+    case thumbnailImageActionLinkTitle
+    case thumbnailVideoActionLinkTitle
     public static func == (a: AtomicSwiftUISDK.ContainerConfiguration.CustomString, b: AtomicSwiftUISDK.ContainerConfiguration.CustomString) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
@@ -133,6 +135,7 @@ public struct ContainerConfiguration {
   public mutating func setCustomValue(_ value: Swift.String, for customString: AtomicSwiftUISDK.ContainerConfiguration.CustomString)
   public var filters: [AtomicSDK.AACCardFilter]?
   public var ignoresSafeAreaEdges: SwiftUICore.Edge.Set?
+  public var cardMaxWidth: CoreFoundation.CGFloat
 }
 public struct Card {
   public let instanceId: Swift.String
