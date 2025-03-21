@@ -16,19 +16,10 @@ import _AVKit_SwiftUI
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_Concurrency.MainActor @preconcurrency public struct SingleCardContainer : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK19SingleCardContainerV4bodyQrvp", 0) __
-}
-extension AVKit.AVPlayerViewController {
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
-}
-public struct RuntimeVariable {
-  public let name: Swift.String
-  public let defaultValue: Swift.String
+public struct Card {
+  public let instanceId: Swift.String
+  public let runtimeVariables: [AtomicSwiftUISDK.RuntimeVariable]
+  public mutating func resolveRuntimeVariable(name: Swift.String, value: Swift.String)
 }
 public struct ContainerConfiguration {
   public enum Event {
@@ -136,11 +127,69 @@ public struct ContainerConfiguration {
   public var filters: [AtomicSDK.AACCardFilter]?
   public var ignoresSafeAreaEdges: SwiftUICore.Edge.Set?
   public var cardMaxWidth: CoreFoundation.CGFloat
+  public enum HorizontalContainerTitleAlignment {
+    case center
+    case leading
+    public static func == (a: AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerTitleAlignment, b: AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerTitleAlignment) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var horizontalTitleAlignment: AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerTitleAlignment
+  public enum HorizontalContainerEmptyStyle {
+    case standard
+    case shrink
+    public static func == (a: AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerEmptyStyle, b: AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerEmptyStyle) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var horizontalEmptyStyle: AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerEmptyStyle
+  public enum HorizontalContainerScrollMode {
+    @available(iOS 17.0, *)
+    case snap
+    case free
+    public static func == (a: AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerScrollMode, b: AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerScrollMode) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var horizontalScrollMode: AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerScrollMode
+  public enum HorizontalContainerLastCardAlignment {
+    case leading
+    case center
+    public static func == (a: AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerLastCardAlignment, b: AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerLastCardAlignment) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var horizontalLastCardAlignment: AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerLastCardAlignment
 }
-public struct Card {
-  public let instanceId: Swift.String
-  public let runtimeVariables: [AtomicSwiftUISDK.RuntimeVariable]
-  public mutating func resolveRuntimeVariable(name: Swift.String, value: Swift.String)
+@_Concurrency.MainActor @preconcurrency public struct HorizontalContainer : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(containerId: Swift.String, cardWidth: CoreFoundation.CGFloat, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK19HorizontalContainerV4bodyQrvp", 0) __
+}
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func modalContainer(containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init()) -> some SwiftUICore.View
+  
+}
+public struct RuntimeVariable {
+  public let name: Swift.String
+  public let defaultValue: Swift.String
+}
+@_Concurrency.MainActor @preconcurrency public struct SingleCardContainer : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK19SingleCardContainerV4bodyQrvp", 0) __
 }
 @_Concurrency.MainActor @preconcurrency public struct StreamContainer : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init(isInNavigationStack: Swift.Bool, containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
@@ -149,11 +198,23 @@ public struct Card {
   }
   public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK15StreamContainerV4bodyQrvp", 0) __
 }
-extension AtomicSwiftUISDK.SingleCardContainer : Swift.Sendable {}
+extension AVKit.AVPlayerViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
+}
 extension AtomicSwiftUISDK.ContainerConfiguration.CustomString : Swift.Equatable {}
 extension AtomicSwiftUISDK.ContainerConfiguration.CustomString : Swift.Hashable {}
 extension AtomicSwiftUISDK.ContainerConfiguration.InterfaceStyle : Swift.Equatable {}
 extension AtomicSwiftUISDK.ContainerConfiguration.InterfaceStyle : Swift.Hashable {}
 extension AtomicSwiftUISDK.ContainerConfiguration.PresentationStyle : Swift.Equatable {}
 extension AtomicSwiftUISDK.ContainerConfiguration.PresentationStyle : Swift.Hashable {}
+extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerTitleAlignment : Swift.Equatable {}
+extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerTitleAlignment : Swift.Hashable {}
+extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerEmptyStyle : Swift.Equatable {}
+extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerEmptyStyle : Swift.Hashable {}
+extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerScrollMode : Swift.Equatable {}
+extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerScrollMode : Swift.Hashable {}
+extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerLastCardAlignment : Swift.Equatable {}
+extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerLastCardAlignment : Swift.Hashable {}
+extension AtomicSwiftUISDK.HorizontalContainer : Swift.Sendable {}
+extension AtomicSwiftUISDK.SingleCardContainer : Swift.Sendable {}
 extension AtomicSwiftUISDK.StreamContainer : Swift.Sendable {}
