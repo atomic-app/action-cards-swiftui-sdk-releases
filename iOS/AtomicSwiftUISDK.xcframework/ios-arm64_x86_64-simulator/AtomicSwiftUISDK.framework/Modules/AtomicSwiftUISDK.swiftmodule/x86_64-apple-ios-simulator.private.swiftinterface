@@ -161,6 +161,7 @@ public struct ContainerConfiguration {
   public enum HorizontalContainerLastCardAlignment {
     case leading
     case center
+    case scaleToFill
     public static func == (a: AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerLastCardAlignment, b: AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerLastCardAlignment) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {

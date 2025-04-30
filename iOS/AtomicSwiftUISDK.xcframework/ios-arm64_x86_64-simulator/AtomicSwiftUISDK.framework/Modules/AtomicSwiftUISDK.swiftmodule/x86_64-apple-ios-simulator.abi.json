@@ -5887,6 +5887,46 @@
                 ]
               },
               {
+                "kind": "Var",
+                "name": "scaleToFill",
+                "printedName": "scaleToFill",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerLastCardAlignment.Type) -> AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerLastCardAlignment",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HorizontalContainerLastCardAlignment",
+                        "printedName": "AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerLastCardAlignment",
+                        "usr": "s:16AtomicSwiftUISDK22ContainerConfigurationV010HorizontalD17LastCardAlignmentO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerLastCardAlignment.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "HorizontalContainerLastCardAlignment",
+                            "printedName": "AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerLastCardAlignment",
+                            "usr": "s:16AtomicSwiftUISDK22ContainerConfigurationV010HorizontalD17LastCardAlignmentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16AtomicSwiftUISDK22ContainerConfigurationV010HorizontalD17LastCardAlignmentO11scaleToFillyA2EmF",
+                "mangledName": "$s16AtomicSwiftUISDK22ContainerConfigurationV010HorizontalD17LastCardAlignmentO11scaleToFillyA2EmF",
+                "moduleName": "AtomicSwiftUISDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
                 "kind": "Function",
                 "name": "==",
                 "printedName": "==(_:_:)",
@@ -6964,6 +7004,26 @@
       },
       {
         "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -7093,6 +7153,16 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
@@ -7814,6 +7884,23 @@
       },
       {
         "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -7848,6 +7935,57 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AtomicSDK",
+        "printedName": "AtomicSDK",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
@@ -7881,57 +8019,6 @@
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "AtomicSDK",
-        "printedName": "AtomicSDK",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "AtomicSwiftUISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
         "moduleName": "AtomicSwiftUISDK",
         "declAttributes": [
           "RawDocComment"
@@ -8010,6 +8097,54 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AtomicSwiftUISDK"
       },
       {
         "kind": "Import",
@@ -9016,22 +9151,50 @@
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/HorizontalContainer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1682,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/HorizontalContainer.swift",
       "kind": "StringLiteral",
-      "offset": 1873,
+      "offset": 1935,
       "length": 37,
       "value": "\"io.atomic.scrollViewLeadingAnchorId\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/HorizontalContainer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1957,
+      "offset": 2019,
       "length": 2,
       "value": "10"
     },
     {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/HorizontalContainer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2159,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/SingleCardContainer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1226,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/StreamContainer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1000,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/PublicInterface\/StreamContainer.swift",
       "kind": "StringLiteral",
-      "offset": 1274,
+      "offset": 1339,
       "length": 31,
       "value": "\"Color.clear.frame(height: 10)\""
     },
@@ -9046,6 +9209,20 @@
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/Extensions\/ViewExtensions.swift",
       "kind": "BooleanLiteral",
       "offset": 922,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/Extensions\/ViewExtensions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4151,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/Extensions\/ViewExtensions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4800,
       "length": 5,
       "value": "false"
     },
@@ -9143,9 +9320,9 @@
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/NetworkDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 335,
-      "length": 5,
-      "value": "false"
+      "offset": 346,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Utilities\/OverflowViewController.swift",
@@ -9255,49 +9432,42 @@
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/CardsViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5109,
+      "offset": 5371,
       "length": 11,
       "value": "\"Try again\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/CardsViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5333,
+      "offset": 5595,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/CardsViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5497,
+      "offset": 5759,
       "length": 6,
       "value": "864000"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/CardsViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 9372,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/CardsViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9591,
+      "offset": 9740,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/CardsViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 27662,
+      "offset": 28451,
       "length": 9,
       "value": "\"h:mm aa\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/ViewModels\/CardsViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 27853,
+      "offset": 28642,
       "length": 21,
       "value": "\"d MMM YYYY, h:mm aa\""
     },
@@ -9409,42 +9579,35 @@
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/SwipeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 464,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/SwipeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 975,
+      "offset": 930,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/SwipeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1060,
+      "offset": 1015,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/SwipeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1273,
+      "offset": 1078,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/SwipeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2148,
+      "offset": 1908,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Accessories\/SwipeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2364,
+      "offset": 1972,
       "length": 1,
       "value": "0"
     },
@@ -9514,119 +9677,133 @@
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3187,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView\/CardView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3242,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView\/CardView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3432,
+      "offset": 3043,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3558,
+      "offset": 3103,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3611,
+      "offset": 3158,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView\/CardView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3211,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3669,
+      "offset": 3263,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3719,
+      "offset": 3389,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView\/CardView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3442,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3872,
+      "offset": 3500,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView\/CardView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3550,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView\/CardView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3703,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3924,
+      "offset": 3755,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3979,
+      "offset": 3810,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4169,
+      "offset": 4000,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView\/CardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4438,
+      "offset": 4269,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4752,
+      "offset": 4583,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4797,
+      "offset": 4628,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView\/CardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4930,
+      "offset": 4761,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView\/CardView.swift",
       "kind": "FloatLiteral",
-      "offset": 22341,
+      "offset": 21770,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/CardView\/CardView.swift",
       "kind": "FloatLiteral",
-      "offset": 22481,
+      "offset": 21910,
       "length": 4,
       "value": "0.05"
     },
@@ -9636,6 +9813,34 @@
       "offset": 244,
       "length": 1,
       "value": "4"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Components\/Shared\/InputElementView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 489,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Components\/Shared\/InputElementView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 502,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Components\/Shared\/InputElementView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 514,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Components\/Shared\/InputElementView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 528,
+      "length": 2,
+      "value": "20"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Components\/ButtonView.swift",
@@ -9654,9 +9859,16 @@
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Components\/MediaView.swift",
       "kind": "FloatLiteral",
-      "offset": 1437,
+      "offset": 828,
       "length": 4,
       "value": "0.05"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Components\/PickerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9885,
+      "length": 2,
+      "value": "10"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Components\/StepperView.swift",
@@ -9738,9 +9950,23 @@
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Containers\/HorizontalBehaviour.swift",
       "kind": "IntegerLiteral",
-      "offset": 7247,
+      "offset": 7218,
       "length": 2,
       "value": "10"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Shared\/AACDatePicker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2429,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Shared\/AACPicker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2228,
+      "length": 2,
+      "value": "16"
     },
     {
       "filePath": "\/Users\/distiller\/project\/AtomicSwiftUISDK\/AtomicSwiftUISDK\/Views\/Shared\/NavigationBar.swift",

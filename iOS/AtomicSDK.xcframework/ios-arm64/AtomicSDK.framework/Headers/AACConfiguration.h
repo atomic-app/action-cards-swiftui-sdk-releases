@@ -155,7 +155,15 @@ typedef NS_ENUM(NSUInteger, AACCustomString) {
     /**
      The title for the button in the toast message prompting for camera access, which navigates to the Settings app. Defaults to `Settings`.
      */
-    AACCustomStringRequestCameraAccessSettingsTitle
+    AACCustomStringRequestCameraAccessSettingsTitle,
+    /**
+     The call-to-action text displayed at the bottom of a thumbnail image element. Defaults to “View”.
+     */
+    AACCustomStringThumbnailImageActionLinkTitle,
+    /**
+     The call-to-action text displayed at the bottom of a thumbnail video element. Defaults to "Watch".
+     */
+    AACCustomStringThumbnailVideoActionLinkTitle
 };
 
 /**
