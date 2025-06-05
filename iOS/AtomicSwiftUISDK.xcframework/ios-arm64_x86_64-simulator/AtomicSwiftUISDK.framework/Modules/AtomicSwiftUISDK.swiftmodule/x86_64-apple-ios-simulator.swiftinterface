@@ -8,12 +8,15 @@ import AtomicSDK
 import Combine
 import Network
 import OSLog
+import PhotosUI
 import Swift
 import SwiftUI
 import SwiftUICore
 import UIKit
+import UniformTypeIdentifiers
 import _AVKit_SwiftUI
 import _Concurrency
+import _PhotosUI_SwiftUI
 import _StringProcessing
 import _SwiftConcurrencyShims
 public struct Card {
@@ -35,6 +38,8 @@ public struct ContainerConfiguration {
     case cardSubmitFailed(cardInstanceId: Swift.String)
     case cardDismissFailed(cardInstanceId: Swift.String)
     case cardSnoozeFailed(cardInstanceId: Swift.String)
+    case cameraDenied(cardInstanceId: Swift.String)
+    case cameraRestricted(cardInstanceId: Swift.String)
   }
   public typealias EventHandler = (_ event: AtomicSwiftUISDK.ContainerConfiguration.Event) -> Swift.Void
   public typealias RuntimeVariablesHandler = (_ cardsToResolve: [AtomicSwiftUISDK.Card]) async -> [AtomicSwiftUISDK.Card]
@@ -56,6 +61,11 @@ public struct ContainerConfiguration {
     case toastCardFeedbackMessage
     case thumbnailImageActionLinkTitle
     case thumbnailVideoActionLinkTitle
+    case processingStateMessage
+    case processingStateCancelButtonTitle
+    case toastFileUploadFailedMessage
+    case requestCameraAccessMessage
+    case requestCameraAccessSettingsTitle
     public static func == (a: AtomicSwiftUISDK.ContainerConfiguration.CustomString, b: AtomicSwiftUISDK.ContainerConfiguration.CustomString) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
@@ -88,6 +98,7 @@ public struct ContainerConfiguration {
     public static let cardListToast: AtomicSwiftUISDK.ContainerConfiguration.UIElement
     public static let cardListFooterMessage: AtomicSwiftUISDK.ContainerConfiguration.UIElement
     public static let cardListHeader: AtomicSwiftUISDK.ContainerConfiguration.UIElement
+    public static let requestCameraUsage: AtomicSwiftUISDK.ContainerConfiguration.UIElement
     public init(rawValue: Swift.Int)
     public typealias ArrayLiteralElement = AtomicSwiftUISDK.ContainerConfiguration.UIElement
     public typealias Element = AtomicSwiftUISDK.ContainerConfiguration.UIElement

@@ -320,9 +320,12 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
 @interface AVPlayerViewController (SWIFT_EXTENSION(AtomicSwiftUISDK))
 - (void)viewDidLoad;
 @end
+
+
 
 
 

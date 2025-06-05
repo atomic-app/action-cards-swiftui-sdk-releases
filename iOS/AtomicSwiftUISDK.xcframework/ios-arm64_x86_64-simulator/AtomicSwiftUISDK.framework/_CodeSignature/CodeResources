@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		C1INADEpvOUveqmdeyf4YkFaasI=
+		3IXPNRxfnfb7V9X0rFFuz6rynj0=
 		</data>
 		<key>FontAwesome.otf</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/AtomicSwiftUISDK-Swift.h</key>
 		<data>
-		P14UkBsJxrrabkeZ9xWJSVMQJH0=
+		r9iQlPNUE+ankvcBpBZW+ucs63Y=
 		</data>
 		<key>Headers/AtomicSwiftUISDK.h</key>
 		<data>
@@ -26,51 +26,51 @@
 		</data>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		txAq6Bca9SW0J1xR45rfUOHoa+0=
+		kgl3t/s5+L8LgdyHJVg5N4UaFzI=
 		</data>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		xM3aFjkbqJorBlS+2pkYLn4iDR8=
+		ETUzxpgsSnodFXlGvTOxLFuErRc=
 		</data>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		okegoWssYc9yozzRr6r09hpSdwM=
+		+cbhwoqaEmwwwlzfFlc0MawRCHE=
 		</data>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Da0ZK3FASoWdcB07UI72vdhv9vs=
+		4r3qgZEVBEILueMiqUw6OPO+vjE=
 		</data>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Whfcug2vCbqQBaiUraoc12y3Vjw=
+		uMKYLmT/LrdrtigIUDNwOm8mbo4=
 		</data>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Da0ZK3FASoWdcB07UI72vdhv9vs=
+		4r3qgZEVBEILueMiqUw6OPO+vjE=
 		</data>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AodVHbXdemDzZmUPXvoeT5qxMCc=
+		fa8rISMklxiMouy5bQFetbp1dtE=
 		</data>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		okegoWssYc9yozzRr6r09hpSdwM=
+		+cbhwoqaEmwwwlzfFlc0MawRCHE=
 		</data>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		tQLCeu2bZq6UmmBz35LYKfkgTno=
+		ubLuNfdsui6cGPvOVJn6TaqTuwc=
 		</data>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		kfB5B8KVVVS/g5mnn84X2yUmAUI=
+		eNf/x3SlIuD0ses9sRcoGGfaNYo=
 		</data>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		tQLCeu2bZq6UmmBz35LYKfkgTno=
+		ubLuNfdsui6cGPvOVJn6TaqTuwc=
 		</data>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		N8vmNo4trLMOgBU6zli6lizjRxI=
+		oL9KKJAsnsW/XszgsiXhtq1Epmk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>SDKInfo.plist</key>
 		<data>
-		xfR/a20GXld33vQOQeONls+SuvM=
+		HyoMM0mkkL7U3Y+127ZkQ98zA2E=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -91,7 +91,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			K52jI0X5ltZapnH9aHF4hN4OK0+mCBSp3CYpUgmAFoo=
+			36gmGhxaCP9ErqyRJRy6UThkoJmoE65W1YhFdSsXj/o=
 			</data>
 		</dict>
 		<key>FontAwesome.otf</key>
@@ -105,7 +105,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CCmKItETHgHZsC4VMYz+t2bEl3RNta80eGkB8Hv+DIM=
+			jHKN78PL96rdqUeBj1urP8HftlPBCgv2VX5WLsk/+4k=
 			</data>
 		</dict>
 		<key>Headers/AtomicSwiftUISDK.h</key>
@@ -119,84 +119,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PjotWspxuDBr6PXMaON2oeV/5dnopgKD/wiRWptNu88=
+			vFckr0bQleDIUgVJJ1RlPpkEgSVpZGxomUWpFfD7Ihk=
 			</data>
 		</dict>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7E7M060DGlRrfCb6jBk7+CYP9ttsTdiJdFXiMJ6HHs8=
+			85bkkif7RuW+JHxfLOQukTbMzZxwvjkytfYZAuw11Yw=
 			</data>
 		</dict>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+cy1GdC1LvdsL/XpwISZoILJ5mm/8AeQmViCYXYO/6I=
+			HEuxEeJY6Qk1Eva1LSA1SHUTLV69IVEBvrARrBXMtJ4=
 			</data>
 		</dict>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+AUvTydMhImn7gaxg4z2RFTaZra8Yk0ld1EOv14AZF8=
+			gzEoqaMk5H9fxsvZyyONVOMwekUFlgaBJYGsTE2xIaA=
 			</data>
 		</dict>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p5KPbrsCNrTtDgPO9AnIz0mdGqJ0rp7+H7i+JF2gz2k=
+			HFG/a6obK7Mxie8UzBj/iUN3BcNW2GC3A4dSTikivpA=
 			</data>
 		</dict>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+AUvTydMhImn7gaxg4z2RFTaZra8Yk0ld1EOv14AZF8=
+			gzEoqaMk5H9fxsvZyyONVOMwekUFlgaBJYGsTE2xIaA=
 			</data>
 		</dict>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oEE9+7bTfAUNcYSlgYTxaIB7lEF6rUhncq49iFGYpOI=
+			ZlDI3pqU7sUfj/SKB2QP17B049SuzZMcdiNPcKbEhts=
 			</data>
 		</dict>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+cy1GdC1LvdsL/XpwISZoILJ5mm/8AeQmViCYXYO/6I=
+			HEuxEeJY6Qk1Eva1LSA1SHUTLV69IVEBvrARrBXMtJ4=
 			</data>
 		</dict>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vvm7YO/NrNyb+igGPHP+WZ/Dl8jmR14dymub4fE8Q6s=
+			R+zsVE/EWMV3pZe3XbE6/4/ecDb2kRbxObJAMXUCwP0=
 			</data>
 		</dict>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LDV6/QW3LE+RSeGUR9tLbJxoZApfyCVYHXNcGighnHk=
+			TIlqiAkFEErLyFoQv4iZMNUNBkWqN73vgZDsSus1uoE=
 			</data>
 		</dict>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vvm7YO/NrNyb+igGPHP+WZ/Dl8jmR14dymub4fE8Q6s=
+			R+zsVE/EWMV3pZe3XbE6/4/ecDb2kRbxObJAMXUCwP0=
 			</data>
 		</dict>
 		<key>Modules/AtomicSwiftUISDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f53KlnhKfP23bZO9t2tJzh4wG2fhVQGVs/pL7+XEVio=
+			QGht30Vp9A+mPtv5MVtFjsEhEYB6RJZzvmfOgLYYFNU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -217,7 +217,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A+oE3Ow64gixY1YEmyf3Y/aiRj4aicdB4WCpeVVcgQ0=
+			gK7dJ2uC/fwTJKLaiSEIl4udKlSP2pQAuvCeqy558fA=
 			</data>
 		</dict>
 	</dict>

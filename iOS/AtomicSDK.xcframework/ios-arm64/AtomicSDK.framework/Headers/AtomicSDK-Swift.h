@@ -304,8 +304,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-@class UIImage;
 @class NSString;
+
+SWIFT_CLASS("_TtC9AtomicSDK30AACFileUploadValidationContext")
+@interface AACFileUploadValidationContext : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable fileExtension;
+@property (nonatomic, readonly) NSInteger fileSizeBytes;
+- (nonnull instancetype)initWithFileExtension:(NSString * _Nullable)fileExtension fileSizeBytes:(NSInteger)fileSizeBytes OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class UIImage;
 @class UIColor;
 
 /// SVG image presentation provided by Atomic SDK.
