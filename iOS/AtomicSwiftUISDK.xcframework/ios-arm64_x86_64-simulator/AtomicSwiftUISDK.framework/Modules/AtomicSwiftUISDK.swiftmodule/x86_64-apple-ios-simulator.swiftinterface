@@ -19,8 +19,9 @@ import _Concurrency
 import _PhotosUI_SwiftUI
 import _StringProcessing
 import _SwiftConcurrencyShims
-extension AVKit.AVPlayerViewController {
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
+public struct RuntimeVariable {
+  public let name: Swift.String
+  public let defaultValue: Swift.String
 }
 public struct ContainerConfiguration {
   public enum Event {
@@ -185,12 +186,12 @@ public struct ContainerConfiguration {
   }
   public var horizontalLastCardAlignment: AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerLastCardAlignment
 }
-@_Concurrency.MainActor @preconcurrency public struct LazySingleCardContainer : SwiftUICore.View {
+@_Concurrency.MainActor @preconcurrency public struct SingleCardContainer : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init(containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
-  public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK23LazySingleCardContainerV4bodyQrvp", 0) __
+  public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK19SingleCardContainerV4bodyQrvp", 0) __
 }
 @_Concurrency.MainActor @preconcurrency public struct LazyHorizontalContainer : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init(containerId: Swift.String, cardWidth: CoreFoundation.CGFloat, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
@@ -199,32 +200,12 @@ public struct ContainerConfiguration {
   }
   public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK23LazyHorizontalContainerV4bodyQrvp", 0) __
 }
-@_Concurrency.MainActor @preconcurrency public struct SingleCardContainer : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK19SingleCardContainerV4bodyQrvp", 0) __
-}
-@_Concurrency.MainActor @preconcurrency public struct HorizontalContainer : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(containerId: Swift.String, cardWidth: CoreFoundation.CGFloat, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK19HorizontalContainerV4bodyQrvp", 0) __
-}
-public struct Card {
-  public let instanceId: Swift.String
-  public let runtimeVariables: [AtomicSwiftUISDK.RuntimeVariable]
-  public mutating func resolveRuntimeVariable(name: Swift.String, value: Swift.String)
-}
-public struct RuntimeVariable {
-  public let name: Swift.String
-  public let defaultValue: Swift.String
-}
 extension SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public func modalContainer(containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init()) -> some SwiftUICore.View
   
+}
+extension AVKit.AVPlayerViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
 }
 @_Concurrency.MainActor @preconcurrency public struct StreamContainer : SwiftUICore.View {
   @available(*, deprecated, renamed: "init(containerId:configuration:)")
@@ -234,6 +215,25 @@ extension SwiftUICore.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK15StreamContainerV4bodyQrvp", 0) __
+}
+public struct Card {
+  public let instanceId: Swift.String
+  public let runtimeVariables: [AtomicSwiftUISDK.RuntimeVariable]
+  public mutating func resolveRuntimeVariable(name: Swift.String, value: Swift.String)
+}
+@_Concurrency.MainActor @preconcurrency public struct HorizontalContainer : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(containerId: Swift.String, cardWidth: CoreFoundation.CGFloat, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK19HorizontalContainerV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct LazySingleCardContainer : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK23LazySingleCardContainerV4bodyQrvp", 0) __
 }
 extension AtomicSwiftUISDK.ContainerConfiguration.CustomString : Swift.Equatable {}
 extension AtomicSwiftUISDK.ContainerConfiguration.CustomString : Swift.Hashable {}
@@ -249,8 +249,8 @@ extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerScrollMode 
 extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerScrollMode : Swift.Hashable {}
 extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerLastCardAlignment : Swift.Equatable {}
 extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerLastCardAlignment : Swift.Hashable {}
-extension AtomicSwiftUISDK.LazySingleCardContainer : Swift.Sendable {}
-extension AtomicSwiftUISDK.LazyHorizontalContainer : Swift.Sendable {}
 extension AtomicSwiftUISDK.SingleCardContainer : Swift.Sendable {}
-extension AtomicSwiftUISDK.HorizontalContainer : Swift.Sendable {}
+extension AtomicSwiftUISDK.LazyHorizontalContainer : Swift.Sendable {}
 extension AtomicSwiftUISDK.StreamContainer : Swift.Sendable {}
+extension AtomicSwiftUISDK.HorizontalContainer : Swift.Sendable {}
+extension AtomicSwiftUISDK.LazySingleCardContainer : Swift.Sendable {}

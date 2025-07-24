@@ -19,6 +19,18 @@ import _Concurrency
 import _PhotosUI_SwiftUI
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_Concurrency.MainActor @preconcurrency public struct StreamContainer : SwiftUICore.View {
+  @available(*, deprecated, renamed: "init(containerId:configuration:)")
+  @_Concurrency.MainActor @preconcurrency public init(isInNavigationStack: Swift.Bool, containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
+  @_Concurrency.MainActor @preconcurrency public init(containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK15StreamContainerV4bodyQrvp", 0) __
+}
+extension AVKit.AVPlayerViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
+}
 public struct ContainerConfiguration {
   public enum Event {
     case actionButtonTapped
@@ -223,18 +235,7 @@ public struct RuntimeVariable {
   public let name: Swift.String
   public let defaultValue: Swift.String
 }
-@_Concurrency.MainActor @preconcurrency public struct StreamContainer : SwiftUICore.View {
-  @available(*, deprecated, renamed: "init(containerId:configuration:)")
-  @_Concurrency.MainActor @preconcurrency public init(isInNavigationStack: Swift.Bool, containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
-  @_Concurrency.MainActor @preconcurrency public init(containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK15StreamContainerV4bodyQrvp", 0) __
-}
-extension AVKit.AVPlayerViewController {
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
-}
+extension AtomicSwiftUISDK.StreamContainer : Swift.Sendable {}
 extension AtomicSwiftUISDK.ContainerConfiguration.CustomString : Swift.Equatable {}
 extension AtomicSwiftUISDK.ContainerConfiguration.CustomString : Swift.Hashable {}
 extension AtomicSwiftUISDK.ContainerConfiguration.InterfaceStyle : Swift.Equatable {}
@@ -253,4 +254,3 @@ extension AtomicSwiftUISDK.LazyHorizontalContainer : Swift.Sendable {}
 extension AtomicSwiftUISDK.SingleCardContainer : Swift.Sendable {}
 extension AtomicSwiftUISDK.HorizontalContainer : Swift.Sendable {}
 extension AtomicSwiftUISDK.LazySingleCardContainer : Swift.Sendable {}
-extension AtomicSwiftUISDK.StreamContainer : Swift.Sendable {}
