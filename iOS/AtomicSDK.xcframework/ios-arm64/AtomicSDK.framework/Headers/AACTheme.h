@@ -96,6 +96,7 @@ typedef NS_CLOSED_ENUM(NSInteger, AACThemeVerticalAlignment) {
 @property (nonatomic, strong) AACColor *backgroundModalContainer;
 
 - (AACColor *)textButton:(AACCardButtonType)buttonType;
+@property (nonatomic, strong) AACColor *textExpandCollapse;
 @property (nonatomic, strong) AACColor *textListTitle;
 @property (nonatomic, strong) AACColor *textCategory;
 @property (nonatomic, strong) AACColor *textHeadline;
@@ -163,6 +164,7 @@ typedef NS_CLOSED_ENUM(NSInteger, AACThemeVerticalAlignment) {
 - (AACTypography *)typographyButton:(AACCardButtonType)buttonType;
 - (AACThemeAlignment)buttonTitleAlign:(AACCardButtonType)buttonType;
 
+@property (nonatomic, strong) AACTypography *typographyExpandCollapse;
 @property (nonatomic, strong) AACTypography *typographyListTitle;
 @property (nonatomic, strong) AACTypography *typographyCategory;
 @property (nonatomic, strong) AACTypography *typographyHeadline;
@@ -190,6 +192,7 @@ typedef NS_CLOSED_ENUM(NSInteger, AACThemeVerticalAlignment) {
 @property (nonatomic, strong) AACTypography *typographyProcessingStateButtonLabel;
 
 #pragma mark - Shape
+@property (nonatomic, strong) AACMeasurement *expandCollapseLeftPadding;
 @property (nonatomic) AACThemeVerticalAlignment modalContainerAlignment;
 @property (nonatomic, readonly) AACMeasurement *modalContainerPadding;
 
