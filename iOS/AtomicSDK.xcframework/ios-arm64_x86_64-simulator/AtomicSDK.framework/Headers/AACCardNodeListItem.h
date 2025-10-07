@@ -37,6 +37,10 @@
 /// The placeholder used to calculate the width of the list indent. The number is `9` if the max sequence number is `9`. Otherwise it's `99`, `999`, etc.
 @property (nonatomic) NSUInteger sequencePlaceHolder;
 
+/// Whether this item is the first item of a list. The first item should respect the spacing between card elements.
+/// This property is set during parsing the card layout.
+@property (nonatomic) BOOL isFirstItem;
+
 /// Whether this item is the last item of a list. The last item should have more bottom spacing.
 /// This property is set during parsing the card layout.
 @property (nonatomic) BOOL isLastItem;

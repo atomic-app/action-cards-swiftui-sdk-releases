@@ -6,12 +6,12 @@ import AVKit
 import AtomicSDK
 @_exported import AtomicSwiftUISDK
 import Combine
+import Foundation
 import Network
 import OSLog
 import PhotosUI
 import Swift
 import SwiftUI
-import SwiftUICore
 import UIKit
 import UniformTypeIdentifiers
 import _AVKit_SwiftUI
@@ -19,6 +19,39 @@ import _Concurrency
 import _PhotosUI_SwiftUI
 import _StringProcessing
 import _SwiftConcurrencyShims
+@available(iOS 16.0, *)
+public struct Card {
+  public let instanceId: Swift.String
+  public let runtimeVariables: [AtomicSwiftUISDK.RuntimeVariable]
+  public mutating func resolveRuntimeVariable(name: Swift.String, value: Swift.String)
+}
+@available(iOS 16.0, *)
+@_Concurrency.MainActor @preconcurrency public struct HorizontalContainer : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(containerId: Swift.String, cardWidth: CoreFoundation.CGFloat, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 16.0, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK19HorizontalContainerV4bodyQrvp", 0) __
+}
+@available(iOS 16.0, *)
+@_Concurrency.MainActor @preconcurrency public struct LazySingleCardContainer : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 16.0, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK23LazySingleCardContainerV4bodyQrvp", 0) __
+}
+@available(iOS 16.0, *)
+public struct RuntimeVariable {
+  public let name: Swift.String
+  public let defaultValue: Swift.String
+}
+extension AVKit.AVPlayerViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
+}
+@available(iOS 16.0, *)
 @_Concurrency.MainActor @preconcurrency public struct StreamContainer : SwiftUICore.View {
   @available(*, deprecated, renamed: "init(containerId:configuration:)")
   @_Concurrency.MainActor @preconcurrency public init(isInNavigationStack: Swift.Bool, containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
@@ -26,11 +59,10 @@ import _SwiftConcurrencyShims
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
+  @available(iOS 16.0, *)
   public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK15StreamContainerV4bodyQrvp", 0) __
 }
-extension AVKit.AVPlayerViewController {
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
-}
+@available(iOS 16.0, *)
 public struct ContainerConfiguration {
   public enum Event {
     case actionButtonTapped
@@ -88,10 +120,13 @@ public struct ContainerConfiguration {
     public static let notUseful: AtomicSwiftUISDK.ContainerConfiguration.VotingOption
     public init(rawValue: Swift.Int)
     @available(*, deprecated, message: "Use the card voting menu configuration in Atomic Workbench instead.")
+    @available(iOS, introduced: 16.0, message: "Use the card voting menu configuration in Atomic Workbench instead.")
     public typealias ArrayLiteralElement = AtomicSwiftUISDK.ContainerConfiguration.VotingOption
     @available(*, deprecated, message: "Use the card voting menu configuration in Atomic Workbench instead.")
+    @available(iOS, introduced: 16.0, message: "Use the card voting menu configuration in Atomic Workbench instead.")
     public typealias Element = AtomicSwiftUISDK.ContainerConfiguration.VotingOption
     @available(*, deprecated, message: "Use the card voting menu configuration in Atomic Workbench instead.")
+    @available(iOS, introduced: 16.0, message: "Use the card voting menu configuration in Atomic Workbench instead.")
     public typealias RawValue = Swift.Int
   }
   public enum InterfaceStyle {
@@ -112,8 +147,11 @@ public struct ContainerConfiguration {
     public static let cardListHeader: AtomicSwiftUISDK.ContainerConfiguration.UIElement
     public static let requestCameraUsage: AtomicSwiftUISDK.ContainerConfiguration.UIElement
     public init(rawValue: Swift.Int)
+    @available(iOS 16.0, *)
     public typealias ArrayLiteralElement = AtomicSwiftUISDK.ContainerConfiguration.UIElement
+    @available(iOS 16.0, *)
     public typealias Element = AtomicSwiftUISDK.ContainerConfiguration.UIElement
+    @available(iOS 16.0, *)
     public typealias RawValue = Swift.Int
   }
   public init()
@@ -150,7 +188,21 @@ public struct ContainerConfiguration {
   public mutating func setCustomValue(_ value: Swift.String, for customString: AtomicSwiftUISDK.ContainerConfiguration.CustomString)
   public var filters: [AtomicSDK.AACCardFilter]?
   public var ignoresSafeAreaEdges: SwiftUICore.Edge.Set?
-  public var cardMaxWidth: CoreFoundation.CGFloat
+  public enum CardMaxWidthStrategy {
+    public enum Alignment {
+      case leading
+      case center
+      case trailing
+      public static func == (a: AtomicSwiftUISDK.ContainerConfiguration.CardMaxWidthStrategy.Alignment, b: AtomicSwiftUISDK.ContainerConfiguration.CardMaxWidthStrategy.Alignment) -> Swift.Bool
+      public func hash(into hasher: inout Swift.Hasher)
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
+    case fill
+    case fixed(CoreFoundation.CGFloat, alignment: AtomicSwiftUISDK.ContainerConfiguration.CardMaxWidthStrategy.Alignment = .center)
+  }
+  public var cardMaxWidth: AtomicSwiftUISDK.ContainerConfiguration.CardMaxWidthStrategy
   public enum HorizontalContainerTitleAlignment {
     case center
     case leading
@@ -193,64 +245,75 @@ public struct ContainerConfiguration {
     }
   }
   public var horizontalLastCardAlignment: AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerLastCardAlignment
+  public enum ModalContainerPosition {
+    case top(CoreFoundation.CGFloat)
+    case center
+    case bottom(CoreFoundation.CGFloat)
+  }
+  public var modalContainerPosition: AtomicSwiftUISDK.ContainerConfiguration.ModalContainerPosition
 }
+@available(iOS 16.0, *)
 @_Concurrency.MainActor @preconcurrency public struct LazyHorizontalContainer : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init(containerId: Swift.String, cardWidth: CoreFoundation.CGFloat, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
+  @available(iOS 16.0, *)
   public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK23LazyHorizontalContainerV4bodyQrvp", 0) __
 }
 extension SwiftUICore.View {
+  @available(iOS 16.0, *)
   @_Concurrency.MainActor @preconcurrency public func modalContainer(containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init()) -> some SwiftUICore.View
   
 }
+@available(iOS 16.0, *)
 @_Concurrency.MainActor @preconcurrency public struct SingleCardContainer : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init(containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
+  @available(iOS 16.0, *)
   public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK19SingleCardContainerV4bodyQrvp", 0) __
 }
-public struct Card {
-  public let instanceId: Swift.String
-  public let runtimeVariables: [AtomicSwiftUISDK.RuntimeVariable]
-  public mutating func resolveRuntimeVariable(name: Swift.String, value: Swift.String)
-}
-@_Concurrency.MainActor @preconcurrency public struct HorizontalContainer : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(containerId: Swift.String, cardWidth: CoreFoundation.CGFloat, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK19HorizontalContainerV4bodyQrvp", 0) __
-}
-@_Concurrency.MainActor @preconcurrency public struct LazySingleCardContainer : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK23LazySingleCardContainerV4bodyQrvp", 0) __
-}
-public struct RuntimeVariable {
-  public let name: Swift.String
-  public let defaultValue: Swift.String
-}
-extension AtomicSwiftUISDK.StreamContainer : Swift.Sendable {}
-extension AtomicSwiftUISDK.ContainerConfiguration.CustomString : Swift.Equatable {}
-extension AtomicSwiftUISDK.ContainerConfiguration.CustomString : Swift.Hashable {}
-extension AtomicSwiftUISDK.ContainerConfiguration.InterfaceStyle : Swift.Equatable {}
-extension AtomicSwiftUISDK.ContainerConfiguration.InterfaceStyle : Swift.Hashable {}
-extension AtomicSwiftUISDK.ContainerConfiguration.PresentationStyle : Swift.Equatable {}
-extension AtomicSwiftUISDK.ContainerConfiguration.PresentationStyle : Swift.Hashable {}
-extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerTitleAlignment : Swift.Equatable {}
-extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerTitleAlignment : Swift.Hashable {}
-extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerEmptyStyle : Swift.Equatable {}
-extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerEmptyStyle : Swift.Hashable {}
-extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerScrollMode : Swift.Equatable {}
-extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerScrollMode : Swift.Hashable {}
-extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerLastCardAlignment : Swift.Equatable {}
-extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerLastCardAlignment : Swift.Hashable {}
-extension AtomicSwiftUISDK.LazyHorizontalContainer : Swift.Sendable {}
-extension AtomicSwiftUISDK.SingleCardContainer : Swift.Sendable {}
+@available(iOS 16.0, *)
 extension AtomicSwiftUISDK.HorizontalContainer : Swift.Sendable {}
+@available(iOS 16.0, *)
 extension AtomicSwiftUISDK.LazySingleCardContainer : Swift.Sendable {}
+@available(iOS 16.0, *)
+extension AtomicSwiftUISDK.StreamContainer : Swift.Sendable {}
+@available(iOS 16.0, *)
+extension AtomicSwiftUISDK.ContainerConfiguration.CustomString : Swift.Equatable {}
+@available(iOS 16.0, *)
+extension AtomicSwiftUISDK.ContainerConfiguration.CustomString : Swift.Hashable {}
+@available(iOS 16.0, *)
+extension AtomicSwiftUISDK.ContainerConfiguration.InterfaceStyle : Swift.Equatable {}
+@available(iOS 16.0, *)
+extension AtomicSwiftUISDK.ContainerConfiguration.InterfaceStyle : Swift.Hashable {}
+@available(iOS 16.0, *)
+extension AtomicSwiftUISDK.ContainerConfiguration.PresentationStyle : Swift.Equatable {}
+@available(iOS 16.0, *)
+extension AtomicSwiftUISDK.ContainerConfiguration.PresentationStyle : Swift.Hashable {}
+@available(iOS 16.0, *)
+extension AtomicSwiftUISDK.ContainerConfiguration.CardMaxWidthStrategy.Alignment : Swift.Equatable {}
+@available(iOS 16.0, *)
+extension AtomicSwiftUISDK.ContainerConfiguration.CardMaxWidthStrategy.Alignment : Swift.Hashable {}
+@available(iOS 16.0, *)
+extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerTitleAlignment : Swift.Equatable {}
+@available(iOS 16.0, *)
+extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerTitleAlignment : Swift.Hashable {}
+@available(iOS 16.0, *)
+extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerEmptyStyle : Swift.Equatable {}
+@available(iOS 16.0, *)
+extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerEmptyStyle : Swift.Hashable {}
+@available(iOS 16.0, *)
+extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerScrollMode : Swift.Equatable {}
+@available(iOS 16.0, *)
+extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerScrollMode : Swift.Hashable {}
+@available(iOS 16.0, *)
+extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerLastCardAlignment : Swift.Equatable {}
+@available(iOS 16.0, *)
+extension AtomicSwiftUISDK.ContainerConfiguration.HorizontalContainerLastCardAlignment : Swift.Hashable {}
+@available(iOS 16.0, *)
+extension AtomicSwiftUISDK.LazyHorizontalContainer : Swift.Sendable {}
+@available(iOS 16.0, *)
+extension AtomicSwiftUISDK.SingleCardContainer : Swift.Sendable {}

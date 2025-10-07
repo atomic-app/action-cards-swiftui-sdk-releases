@@ -10,6 +10,7 @@
 #import <AtomicSDK/AACCardNode.h>
 #import <AtomicSDK/AACEdgeInsets.h>
 #import <AtomicSDK/AACThemeShadow.h>
+#import <AtomicSDK/AACHorizontalRule.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -63,6 +64,8 @@ typedef NS_CLOSED_ENUM(NSInteger, AACThemeVerticalAlignment) {
 
 - (AACColor *)backgroundButton:(AACCardButtonType)buttonType;
 - (AACColor *)backgroundButtonBorder:(AACCardButtonType)buttonType;
+- (AACColor *)backgroundButtonPressed:(AACCardButtonType)buttonType;
+- (AACColor *)backgroundButtonBorderPressed:(AACCardButtonType)buttonType;
 - (AACColor *)borderCheckbox:(BOOL)isChecked;
 - (AACColor *)backgroundCheckbox:(BOOL)isChecked;
 
@@ -96,6 +99,7 @@ typedef NS_CLOSED_ENUM(NSInteger, AACThemeVerticalAlignment) {
 @property (nonatomic, strong) AACColor *backgroundModalContainer;
 
 - (AACColor *)textButton:(AACCardButtonType)buttonType;
+- (AACColor *)textButtonPressed:(AACCardButtonType)buttonType;
 @property (nonatomic, strong) AACColor *textExpandCollapse;
 @property (nonatomic, strong) AACColor *textListTitle;
 @property (nonatomic, strong) AACColor *textCategory;
@@ -193,12 +197,28 @@ typedef NS_CLOSED_ENUM(NSInteger, AACThemeVerticalAlignment) {
 
 #pragma mark - Shape
 @property (nonatomic, strong) AACMeasurement *expandCollapseLeftPadding;
-@property (nonatomic) AACThemeVerticalAlignment modalContainerAlignment;
-@property (nonatomic, readonly) AACMeasurement *modalContainerPadding;
+// Remove these properties for now as they're removed from workbench.
+//@property (nonatomic) AACThemeVerticalAlignment modalContainerAlignment;
+//@property (nonatomic) AACMeasurement *modalContainerPadding;
+@property (nonatomic) AACEdgeInsets *paddingCard;
+@property (nonatomic) AACEdgeInsets *paddingMenuButton;
+@property (nonatomic) AACEdgeInsets *paddingVerticalStream; // Also affects subview paddings
+/// The following paddings are essentially the same as `paddingVerticalStream`.
+/// They are separated only to allow different default values when `paddingVerticalStream` is not set in the theme editor.
+/// For example, a single card container has default top and bottom paddings of 0.
+@property (nonatomic) AACEdgeInsets *paddingHorizontalStream;
+@property (nonatomic) AACEdgeInsets *paddingModalContainer;
+@property (nonatomic) AACEdgeInsets *paddingSingleCardView;
+@property (nonatomic) AACEdgeInsets *paddingButtonGroup; // Defaults to card padding if not specified in the theme.
+@property (nonatomic) AACMeasurement *spaceBetweenElements;
+@property (nonatomic) AACMeasurement *spaceBetweenCards;
 
 - (AACMeasurement *)borderRadiusButton:(AACCardButtonType)buttonType;
 - (AACMeasurement *)borderWidthButton:(AACCardButtonType)buttonType;
 - (AACEdgeInsets *)paddingsButton:(AACCardButtonType)buttonType;
+- (AACMeasurement *)borderRadiusButtonPressed:(AACCardButtonType)buttonType;
+- (AACMeasurement *)borderWidthButtonPressed:(AACCardButtonType)buttonType;
+- (AACEdgeInsets *)paddingsButtonPressed:(AACCardButtonType)buttonType;
 - (AACMeasurement *)lineHeightButtonIcon:(AACCardButtonType)buttonType;
 /**
  Button icon alignment only has left and right alignment.
@@ -225,8 +245,18 @@ typedef NS_CLOSED_ENUM(NSInteger, AACThemeVerticalAlignment) {
 - (AACMeasurement *)borderWidthCheckbox:(BOOL)isChecked;
 @property (nonatomic, strong) AACMeasurement *borderWidthCard;
 
+@property (nonatomic, nullable) AACHorizontalRule *horizontalRuleTop;
+@property (nonatomic, nullable) AACHorizontalRule *horizontalRuleBetween;
+@property (nonatomic, nullable) AACHorizontalRule *horizontalRuleBottom;
+
 #pragma mark - Button shadow
 - (AACThemeShadow *)shadowButton:(AACCardButtonType)buttonType;
+- (AACThemeShadow *)shadowButtonPressed:(AACCardButtonType)buttonType;
+
+/**
+ Forces the font size for each typography style to be recalculated when next requested.
+ */
+- (void)invalidateTypographyStylesForContentSizeCategory:(UIContentSizeCategory)category;
 
 @end
 
