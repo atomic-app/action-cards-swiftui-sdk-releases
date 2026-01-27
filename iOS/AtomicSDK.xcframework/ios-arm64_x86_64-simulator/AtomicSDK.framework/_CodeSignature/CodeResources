@@ -122,7 +122,7 @@
 		</data>
 		<key>AACCardViewSwitch.nib</key>
 		<data>
-		fCT0bepJEd/tgHvnRznEwuqvOec=
+		mN8OEv22+7VWtbFbHyJjG8ZR4Ng=
 		</data>
 		<key>AACCardViewText.nib</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>AACCardViewTextInput.nib</key>
 		<data>
-		0eHjifw5gwVrXHf86xL+bzjqlMc=
+		N8h+1my/HFcW3cpvuAaMnkZF75g=
 		</data>
 		<key>AACCardViewTitle.nib</key>
 		<data>
@@ -190,11 +190,11 @@
 		</data>
 		<key>AACViewFeedbackInput.nib</key>
 		<data>
-		6Rh/YO7TcSFor5ltVV0lNkd+0Ws=
+		GPfcSgBic6gbEukeZa+3kdqvq6o=
 		</data>
 		<key>Assets.car</key>
 		<data>
-		KchARklBhnQ8q1Tg96UnxtoCthI=
+		RU4ATBzKXkraB/A3rDNtlfFA3Vk=
 		</data>
 		<key>Headers/AACAppearance.h</key>
 		<data>
@@ -408,6 +408,10 @@
 		<data>
 		+ELft70gVQFYQj7J6vL1FuS1YfA=
 		</data>
+		<key>Headers/AACPushNotificationEnvironment.h</key>
+		<data>
+		+7XFQv24AO9hbnR/9ZlrAZQAjCo=
+		</data>
 		<key>Headers/AACRequestDelegate.h</key>
 		<data>
 		TRqAP/RYTIqCCFRiDh1Cvp84nwc=
@@ -426,7 +430,7 @@
 		</data>
 		<key>Headers/AACSession.h</key>
 		<data>
-		HO9zOwTT6I+Syk+brvN+MuEt0Sc=
+		LUqTnYtsc044YbpwwpGyfHKG1AU=
 		</data>
 		<key>Headers/AACSessionCardAction.h</key>
 		<data>
@@ -470,7 +474,7 @@
 		</data>
 		<key>Headers/AACSwiftUISession.h</key>
 		<data>
-		0O1zlQjpCiaahcT5nvlqL1R8unk=
+		fihXVT2MQqIVxUHR2jAwM03svfo=
 		</data>
 		<key>Headers/AACTheme.h</key>
 		<data>
@@ -514,15 +518,15 @@
 		</data>
 		<key>Headers/AtomicSDK-Swift.h</key>
 		<data>
-		9asK0nsftxyoQxOvX+KOq7k25Q4=
+		jyU6FRUGh3y8C483KZHObVNzaJg=
 		</data>
 		<key>Headers/AtomicSDK.h</key>
 		<data>
-		x2DJoqwesnVxgxvMcxdbO4j8Yis=
+		CTgebfiR8/yj61UU3KbAh/DAGpU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aMerWRJ/PfdsZsTBVNbeaxiK0KM=
+		KXe53DN8Fxmt3D95u9EB09ZQwI8=
 		</data>
 		<key>LICENSE-FontAwesome.txt</key>
 		<data>
@@ -538,51 +542,51 @@
 		</data>
 		<key>Modules/AtomicSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		xlxqKp75SSmWHVmxaacFMyd075Q=
+		8vMHu7V7LkmV+PlK+shn0OfO8jk=
 		</data>
 		<key>Modules/AtomicSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		0482YL6ay4XDJDY2KFV9XD0ox58=
+		Wk87FhF+Ls1HldfOwydaFpvI/zg=
 		</data>
 		<key>Modules/AtomicSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		3Fr8dg9mVXZcpF9MpsV55YHIrcE=
+		ticPpxwX6g6LwIbc+kyDhP+HHgo=
 		</data>
 		<key>Modules/AtomicSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ZSy5etxKwJHtql1Lfclsr3umHbM=
+		NZRmN6aw5tPGpb20eQb+LHP5Irc=
 		</data>
 		<key>Modules/AtomicSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Jm8mIUFogHKNUJH0QdGKeWTHun8=
+		szpdkKsuTIO7lUx/kCIyycCXvFQ=
 		</data>
 		<key>Modules/AtomicSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ZSy5etxKwJHtql1Lfclsr3umHbM=
+		NZRmN6aw5tPGpb20eQb+LHP5Irc=
 		</data>
 		<key>Modules/AtomicSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Q3Ua6y7khrFyt0Oz0fQHEzmK4hE=
+		5RZgYteP6XT8w0EsW9+sRr2dF8s=
 		</data>
 		<key>Modules/AtomicSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		3Fr8dg9mVXZcpF9MpsV55YHIrcE=
+		ticPpxwX6g6LwIbc+kyDhP+HHgo=
 		</data>
 		<key>Modules/AtomicSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		GjsR4ks1ey5etqsF8dnU5uZTC6E=
+		Urz1XhXR/l3gIiwzBGsO/D/u580=
 		</data>
 		<key>Modules/AtomicSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		DmRlJpI7FgIJ9g7rrE7vnhf/x0M=
+		RCVW6yLFl1u/B7NhnKfpALRcrDU=
 		</data>
 		<key>Modules/AtomicSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		GjsR4ks1ey5etqsF8dnU5uZTC6E=
+		Urz1XhXR/l3gIiwzBGsO/D/u580=
 		</data>
 		<key>Modules/AtomicSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		E4C07JR8gJNQvjnV+Z1FaOFey2o=
+		pnYRhPVOOjVkTcqj3/AzqLWgtUw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -594,7 +598,7 @@
 		</data>
 		<key>SDKInfo.plist</key>
 		<data>
-		NtagXEW58LfL1XjOeK8jVqPnHmM=
+		6idLqOGiYV2FFP2xPNQQyXvTpco=
 		</data>
 		<key>fontawesome-5-solid.otf</key>
 		<data>
@@ -810,7 +814,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6dQO6VoTN/Jr0AvblnfssRKghFZU9oR+oFi+zR6dy54=
+			UAhsdd5zymGuff0L5ABV/d/AHba3iJqy934AERmCWKU=
 			</data>
 		</dict>
 		<key>AACCardViewText.nib</key>
@@ -824,7 +828,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xmI0IRJmVHv4n5PvfpOglZLoZZHHSybN8myjtlMh9BY=
+			0Xry+OHBFim1c2eNstwut+vgu4t9Mxr0Ngduy5sFvBI=
 			</data>
 		</dict>
 		<key>AACCardViewTitle.nib</key>
@@ -929,14 +933,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sJeF8AjhO0thYh1Ravi1+WNPUwQXAeqlOSZZ0mC/3vY=
+			OrMtCQ6AwaN9X6BTXWubnnca2FjCvRPpXiHAwNCIR8Q=
 			</data>
 		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZFbDdnNcem4LaMEtmnt6cLk01R7rqGVRiSNeCWw7J6s=
+			PARjwuTbNGjQGH5klG9Wa2+cYNdwSqY5KNivSPaJPhE=
 			</data>
 		</dict>
 		<key>Headers/AACAppearance.h</key>
@@ -1310,6 +1314,13 @@
 			Bk3es25eHoxpn0TnFhcRSo04g03A4uWudw1uH5+nR30=
 			</data>
 		</dict>
+		<key>Headers/AACPushNotificationEnvironment.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cVnYZnIgJnnqFyMZeSU6Z4v7zvC6uWZdHwFcQlzQpLk=
+			</data>
+		</dict>
 		<key>Headers/AACRequestDelegate.h</key>
 		<dict>
 			<key>hash2</key>
@@ -1342,7 +1353,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a8u7c567Z/hXiY44d7bOobzYFDpLLOPAFY38JrDExIQ=
+			Xlw/RG4+shVg6Hjwqh/rndW7F4DT9rcKb22LxNPYaUw=
 			</data>
 		</dict>
 		<key>Headers/AACSessionCardAction.h</key>
@@ -1419,7 +1430,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3F50YisdieLUMkF23/mA8IoJGgTGiriljEAIi7h9xfU=
+			Ukk9oka8S43bZ7Rm4ahmjM1l2xj34T9j760x3JRWwSU=
 			</data>
 		</dict>
 		<key>Headers/AACTheme.h</key>
@@ -1496,14 +1507,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JroRRHGr0kuva/wP3VUeieNTV6dfP3yhqTlXIj9czrI=
+			W9+wg8N+saabiXZzh4q/+jsVF+hQAKg2fIFBWc4wDC0=
 			</data>
 		</dict>
 		<key>Headers/AtomicSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i/Ly1/IBFP9SIxcfwl+Wx75r1NFdPy/f4yZ+yr3kjOo=
+			1lg8swz+MQI0GAsqrePHSy/v1dVfJtHjsd96qMGSj+s=
 			</data>
 		</dict>
 		<key>LICENSE-FontAwesome.txt</key>
@@ -1531,84 +1542,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FyM3CPvVKsyS6gYBO8BYXvkHx8LOR8O/fMZsJEIfmQc=
+			IZLXyPNpzz6fth+phoX3t1xE+d2wBr+J97KNEtHdlGI=
 			</data>
 		</dict>
 		<key>Modules/AtomicSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lLcWEZuQ2qu9xfwYshGPqLnvMO0SmqWbxm+ahlQnS9Q=
+			qV0ad14wf/+9NtPuUlKv0mrz0vscPgtHSwvCWcy96ak=
 			</data>
 		</dict>
 		<key>Modules/AtomicSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s5pDfQdQ+duNq0JVPpP12R5O0gALA0+WnaB6f/ou4Ak=
+			6ma3CwkUr1Ii5TuOocsMXEUCAVyj0VWqhsXgkk7DiEI=
 			</data>
 		</dict>
 		<key>Modules/AtomicSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DqkWI4wU1agGV83X43FAJLq3wPrwWxFAnAuV8LZccRk=
+			WqCt/nQgAma5BscGo35TaKc8cVWTvQr+shL8CL9lYW8=
 			</data>
 		</dict>
 		<key>Modules/AtomicSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/UhWCHNHPaZx6l3Kg9m18GBhoxa4RlZ6G9oLPxjzwlE=
+			E0QdJPSc0kNm5/+kK+rWghXZUyg/f21mWg2YP90Xx6Q=
 			</data>
 		</dict>
 		<key>Modules/AtomicSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DqkWI4wU1agGV83X43FAJLq3wPrwWxFAnAuV8LZccRk=
+			WqCt/nQgAma5BscGo35TaKc8cVWTvQr+shL8CL9lYW8=
 			</data>
 		</dict>
 		<key>Modules/AtomicSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C95PX3yw8jhw9p8TXpmS2iXAqvtnkgxkzDjK2a9YsSs=
+			03GvFkioN52JicpEyEkPwgXvl1kNPXbOnBgMlcKm4Lc=
 			</data>
 		</dict>
 		<key>Modules/AtomicSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s5pDfQdQ+duNq0JVPpP12R5O0gALA0+WnaB6f/ou4Ak=
+			6ma3CwkUr1Ii5TuOocsMXEUCAVyj0VWqhsXgkk7DiEI=
 			</data>
 		</dict>
 		<key>Modules/AtomicSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PQSU0KhXojtzBnUoXrZu3u72H9AoKC/uNYW2OMX6wQY=
+			TK48anBzl1L2hacEk1+HvrWYEA6PiIJZ0NgjJu3HM3k=
 			</data>
 		</dict>
 		<key>Modules/AtomicSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fIHLgUsxPcgjeExeB6F62bNNWZP9gqct94ga5kEyRKA=
+			KyUZm2cv2GRnIzRmf+FETJ4mo0icZOoZiWZBsYy4g34=
 			</data>
 		</dict>
 		<key>Modules/AtomicSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PQSU0KhXojtzBnUoXrZu3u72H9AoKC/uNYW2OMX6wQY=
+			TK48anBzl1L2hacEk1+HvrWYEA6PiIJZ0NgjJu3HM3k=
 			</data>
 		</dict>
 		<key>Modules/AtomicSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aERmru28VsCxDWOfwntVEsYkE/qcM7BOlgxCymgaGvs=
+			5tz/UiJR7NJ81F4rOMKH3q6jOhyLzd57KH0m21kVmuI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1629,7 +1640,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eILTVkvtCVqR6MKkMkjYwLWJv90Rt9TV/vRP8gd48i8=
+			wMkM5A+qUn4fdgyF6E+VhSNgcj+vGhUJAPsemyY+3l8=
 			</data>
 		</dict>
 		<key>fontawesome-5-solid.otf</key>

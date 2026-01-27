@@ -20,6 +20,7 @@
 #import <AtomicSDK/AACStreamContainerObserverConfiguration.h>
 #import <AtomicSDK/AACSessionCardAction.h>
 #import <AtomicSDK/AACAppearanceCollection.h>
+#import <AtomicSDK/AACPushNotificationEnvironment.h>
 
 /**
  Handler called whenever a card action returns a result.
@@ -297,6 +298,7 @@ typedef NS_ERROR_ENUM(AACSessionUpdateUserErrorDomain, AACSessionUpdateUserError
  Sets global state such as whether logging is enabled, and supports the purging of locally cached
  data when required.
  */
+DEPRECATED_MSG_ATTRIBUTE("The class name persists, but import AtomicSwiftUISDK instead.")
 @interface AACSession: NSObject
 
 - (instancetype __nonnull)init NS_UNAVAILABLE;
@@ -405,7 +407,7 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
  
  - After logging out, you must log in to the SDK (by calling either `+[AACSession loginWithEnvironmentId:...]` or the appropriate initialisation methods) to proceed with another user. Otherwise, the Atomic SDK will raise exceptions.
  
- @param deregisterNotifications Whether push notifications, for the current user, should also be deregistered.
+ @param deregisterNotifications Whether push notifications, for the current user, should also be deregistered. If this parameter is `YES`, the SDK deregisters the device for both `Production` and `Sandbox` environments.
  @param completionHandler (Optional) A completion handler invoked with a nil error object if any pending
  analytics events were successfully sent, or a non-nil error object if the sending of pending analytics failed.
  If the `error` object is non-nil, the error domain will be `AACSessionLogoutErrorDomain` -
@@ -479,6 +481,9 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
  Asks the SDK to register the given device token against the currently logged in user. The logged in user
  is specified by the authentication token provided by the session delegate that is registered when initialising the SDK.
  
+ ***Deprecated**: Use `registerDeviceForNotifications:environment:completionHandler:` instead. Legacy behaviour only
+ registers against the first Workbench notification configuration match and does nothing if multiple configurations share the app ID.
+ 
  @param deviceToken (Required) A device token supplied from `application:didRegisterForRemoteNotificationsWithDeviceToken:`
  in your app delegate.
  @param completionHandler (Optional) Completion handler called when the request completes. If `error` is nil,
@@ -487,17 +492,46 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
  enumeration to determine the cause of the error. `NSUnderlyingErrorKey` will also be populated in the error's `userInfo` dictionary.
  */
 + (void)registerDeviceForNotifications:(NSData* __nonnull)deviceToken
+                     completionHandler:(AACSessionPushNotificationRegistrationHandler __nullable)completionHandler DEPRECATED_MSG_ATTRIBUTE("Use registerDeviceForNotifications:environment:completionHandler: instead.");
+
+/**
+ Asks the SDK to register the given device token against the currently logged in user for the specified APNs environment.
+ 
+ @param deviceToken (Required) A device token supplied from `application:didRegisterForRemoteNotificationsWithDeviceToken:` in your app delegate.
+ @param environment (Required) The APNs environment (sandbox, production, or both) that should be used.
+ @param completionHandler (Optional) Completion handler called when the request completes. If `error` is nil,
+ the request succeeded, otherwise the request failed.  If the `error` object is non-nil, the error domain will
+ be `AACSessionPushRegistrationErrorDomain` - look for a specific error code in the `AACSessionPushRegistrationErrorCode`
+ enumeration to determine the cause of the error. `NSUnderlyingErrorKey` will also be populated in the error's `userInfo` dictionary.
+ */
++ (void)registerDeviceForNotifications:(NSData* __nonnull)deviceToken
+                           environment:(AACPushNotificationEnvironment)environment
                      completionHandler:(AACSessionPushNotificationRegistrationHandler __nullable)completionHandler;
 
 /**
  Asks the SDK to deregister the current device for Atomic push notifications, within the current app.
  
+ ***Deprecated**: Use `deregisterDeviceForNotificationsWithEnvironment:completionHandler:` instead. Legacy behaviour
+ only deregisters against the first Workbench notification configuration match and does nothing if multiple configurations share the app ID.
+ 
+ @param completionHandler (Optional) Completion handler called when the de-registration request completes.
+ If an error occurred, the handler is passed a non-nil error object. If the `error` object is non-nil, the error domain will
+ be `AACSessionPushRegistrationErrorDomain` - look for a specific error code in the `AACSessionPushRegistrationErrorCode`
+ enumeration to determine the cause of the error. `NSUnderlyingErrorKey` will also be populated in the error's `userInfo` dictionary.
+ */
++ (void)deregisterDeviceForNotificationsWithCompletionHandler:(AACSessionPushNotificationDeregisterHandler __nullable)completionHandler DEPRECATED_MSG_ATTRIBUTE("Use deregisterDeviceForNotificationsWithEnvironment:completionHandler: instead.");
+
+/**
+ Asks the SDK to deregister the current device for Atomic push notifications for the specified APNs environment.
+ 
+ @param environment (Required) The APNs environment (sandbox, production, or both) that should be used during deregistration.
  @param completionHandler (Optional) Completion handler called when the deregistration request completes.
  If an error occurred, the handler is passed a non-nil error object. If the `error` object is non-nil, the error domain will
  be `AACSessionPushRegistrationErrorDomain` - look for a specific error code in the `AACSessionPushRegistrationErrorCode`
  enumeration to determine the cause of the error. `NSUnderlyingErrorKey` will also be populated in the error's `userInfo` dictionary.
  */
-+ (void)deregisterDeviceForNotificationsWithCompletionHandler:(AACSessionPushNotificationDeregisterHandler __nullable)completionHandler;
++ (void)deregisterDeviceForNotificationsWithEnvironment:(AACPushNotificationEnvironment)environment
+                                      completionHandler:(AACSessionPushNotificationDeregisterHandler __nullable)completionHandler;
 
 /**
  Asks the SDK to register the currently logged in user for push notifications on the stream container IDs in the provided

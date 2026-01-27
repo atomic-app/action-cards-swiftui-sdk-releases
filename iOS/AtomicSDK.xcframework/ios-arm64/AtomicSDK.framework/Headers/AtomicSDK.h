@@ -94,3 +94,4 @@ FOUNDATION_EXPORT const unsigned char AtomicSDKVersionString[];
 #import <AtomicSDK/AACCardNodeTextClickToExpandInfo.h>
 
 #import <AtomicSDK/AACHorizontalRule.h>
+#import <AtomicSDK/AACPushNotificationEnvironment.h>
