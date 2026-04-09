@@ -21,4 +21,9 @@
  */
 @property (nonatomic, readonly, nullable) NSString* fontAwesomeIconName;
 
+/**
+ The optional alternative text of the icon defined in Workbench.
+ */
+@property (nonatomic, readonly, nullable) NSString* alternativeText;
+
 @end

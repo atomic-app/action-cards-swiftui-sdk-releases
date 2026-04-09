@@ -17,6 +17,9 @@
 /// An optional image to display to the left of the switch's label.
 @property (nonatomic, strong, nullable) NSURL* thumbnailUrl;
 
+/// The alternative text of the thumbnailUrl.
+@property (nonatomic, copy, nullable) NSString* thumbnailAltText;
+
 /// The default value of the switch.
 @property (nonatomic) BOOL defaultValue;
 

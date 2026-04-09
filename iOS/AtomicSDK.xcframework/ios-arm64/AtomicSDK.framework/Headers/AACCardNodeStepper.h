@@ -18,6 +18,9 @@
 /// An optional image to display to the left of the stepper's label.
 @property (nonatomic, strong, nullable) NSURL* thumbnailUrl;
 
+/// The alternative text of the thumbnailUrl.
+@property (nonatomic, copy, nullable) NSString* thumbnailAltText;
+
 /// The minimum value the stepper supports.
 @property (nonatomic, copy, nullable) NSNumber *minimumValue;
 

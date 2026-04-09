@@ -59,7 +59,7 @@ public struct FileUploadAllowedType : Swift.OptionSet {
   public typealias Element = AtomicSwiftUISDK.FileUploadAllowedType
   public typealias RawValue = Swift.Int
 }
-public struct FileUploadNode {
+public struct FileUploadNode : AtomicSwiftUISDK.LayoutDescribable {
   public let cardId: Swift.String
   public let subviewId: Swift.String?
   public let editorName: Swift.String
@@ -67,7 +67,7 @@ public struct FileUploadNode {
   public let displayThumbnailPlaceholder: Swift.Bool
   public let allowedTypes: AtomicSwiftUISDK.FileUploadAllowedType
   public let bucketId: Swift.String
-  public let placeholder: Swift.String?
+  public let componentLayout: AtomicSwiftUISDK.ComponentLayout
 }
 extension AtomicSwiftUISDK.FileUploadNode {
   public static func == (lhs: AtomicSwiftUISDK.FileUploadNode, rhs: AtomicSwiftUISDK.FileUploadNode) -> Swift.Bool
@@ -97,10 +97,14 @@ public struct DatePickerNode : Swift.Equatable {
   public let editorName: Swift.String
   public let defaultValue: Foundation.Date?
   public let validator: (any AtomicSwiftUISDK.Validator)?
-  public let layout: AtomicSwiftUISDK.PickerLayout
-  public let label: Swift.String
-  public let placeholder: Swift.String?
-  public let thumbnailUrl: Foundation.URL?
+  public let componentLayout: AtomicSwiftUISDK.ComponentLayout
+  public let icon: AtomicSwiftUISDK.CustomIcon?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Use 'icon' property instead.")
+  public var thumbnailUrl: Foundation.URL? {
+    get
+  }
+  #endif
   public let minimumDate: Foundation.Date?
   public let maximumDate: Foundation.Date?
   public var arePickerOptionsEmpty: Swift.Bool {
@@ -121,17 +125,51 @@ public struct DropdownNode : Swift.Equatable {
   public let editorName: Swift.String
   public let defaultValue: AtomicSwiftUISDK.DropdownItem?
   public let validator: (any AtomicSwiftUISDK.Validator)?
-  public let layout: AtomicSwiftUISDK.PickerLayout
+  public let componentLayout: AtomicSwiftUISDK.ComponentLayout
   public let items: [AtomicSwiftUISDK.DropdownItem]
-  public let label: Swift.String
-  public let placeholder: Swift.String?
-  public let thumbnailUrl: Foundation.URL?
+  public let icon: AtomicSwiftUISDK.CustomIcon?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Use 'icon' property instead.")
+  public var thumbnailUrl: Foundation.URL? {
+    get
+  }
+  #endif
   public var arePickerOptionsEmpty: Swift.Bool {
     get
   }
 }
 extension AtomicSwiftUISDK.DropdownNode {
   public static func == (lhs: AtomicSwiftUISDK.DropdownNode, rhs: AtomicSwiftUISDK.DropdownNode) -> Swift.Bool
+}
+public enum ComponentLayoutKind : Swift.Equatable {
+  case inline
+  case stacked
+  case external
+  public static func == (a: AtomicSwiftUISDK.ComponentLayoutKind, b: AtomicSwiftUISDK.ComponentLayoutKind) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct ComponentLayout : Swift.Equatable {
+  public let kind: AtomicSwiftUISDK.ComponentLayoutKind
+  public let placeholder: Swift.String?
+  public let label: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(kind: AtomicSwiftUISDK.ComponentLayoutKind, placeholder: Swift.String? = nil, label: Swift.String? = nil)
+  #endif
+  public static func == (a: AtomicSwiftUISDK.ComponentLayout, b: AtomicSwiftUISDK.ComponentLayout) -> Swift.Bool
+}
+public protocol LayoutDescribable {
+  var componentLayout: AtomicSwiftUISDK.ComponentLayout { get }
+}
+extension AtomicSwiftUISDK.LayoutDescribable {
+  public var placeholder: Swift.String {
+    get
+  }
+  public var label: Swift.String {
+    get
+  }
 }
 public struct NumberInputData : Swift.Equatable {
   public let stringValue: Swift.String?
@@ -142,26 +180,24 @@ public struct NumberInputData : Swift.Equatable {
   #endif
   public static func == (a: AtomicSwiftUISDK.NumberInputData, b: AtomicSwiftUISDK.NumberInputData) -> Swift.Bool
 }
-public struct NumberEditorNode : Swift.Equatable {
+public struct NumberEditorNode : Swift.Equatable, AtomicSwiftUISDK.LayoutDescribable {
   public let numberOfLines: Swift.Int
   public let cardId: Swift.String
   public let subviewId: Swift.String?
   public let editorName: Swift.String
   public let defaultValue: Swift.String?
-  public let placeholder: Swift.String?
-  public let thumbnailUrl: Foundation.URL?
+  public let componentLayout: AtomicSwiftUISDK.ComponentLayout
+  public let icon: AtomicSwiftUISDK.CustomIcon?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Use 'icon' property instead.")
+  public var thumbnailUrl: Foundation.URL? {
+    get
+  }
+  #endif
   public let validator: (any AtomicSwiftUISDK.Validator)?
 }
 extension AtomicSwiftUISDK.NumberEditorNode {
   public static func == (lhs: AtomicSwiftUISDK.NumberEditorNode, rhs: AtomicSwiftUISDK.NumberEditorNode) -> Swift.Bool
-}
-public enum PickerLayout : Swift.Equatable {
-  case inline, stacked
-  public static func == (a: AtomicSwiftUISDK.PickerLayout, b: AtomicSwiftUISDK.PickerLayout) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
 }
 public struct StepperNode : Swift.Equatable {
   public let numberOfLines: Swift.Int
@@ -170,15 +206,17 @@ public struct StepperNode : Swift.Equatable {
   public let editorName: Swift.String
   public let label: Swift.String
   public let defaultValue: Swift.String?
-  public let placeholder: Swift.String?
-  public let thumbnailUrl: Foundation.URL?
+  public let icon: AtomicSwiftUISDK.CustomIcon?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Use 'icon' property instead.")
+  public var thumbnailUrl: Foundation.URL? {
+    get
+  }
+  #endif
   public let minimumValue: Foundation.Decimal
   public let maximumValue: Foundation.Decimal
   public let stepValue: Foundation.Decimal
   public let validator: (any AtomicSwiftUISDK.Validator)?
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(cardId: Swift.String, subviewId: Swift.String?, editorName: Swift.String, label: Swift.String, defaultValue: Swift.String?, thumbnailUrl: Foundation.URL?, minimumValue: Foundation.Decimal?, maximumValue: Foundation.Decimal?, stepValue: Foundation.Decimal?, validator: (any AtomicSwiftUISDK.Validator)?)
-  #endif
 }
 extension AtomicSwiftUISDK.StepperNode {
   public static func == (lhs: AtomicSwiftUISDK.StepperNode, rhs: AtomicSwiftUISDK.StepperNode) -> Swift.Bool
@@ -189,21 +227,33 @@ public struct SwitchNode : Swift.Equatable {
   public let editorName: Swift.String
   public let defaultValue: Swift.Bool?
   public let label: Swift.String
-  public let thumbnailUrl: Foundation.URL?
+  public let icon: AtomicSwiftUISDK.CustomIcon?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Use 'icon' property instead.")
+  public var thumbnailUrl: Foundation.URL? {
+    get
+  }
+  #endif
   public let validator: (any AtomicSwiftUISDK.Validator)?
 }
 extension AtomicSwiftUISDK.SwitchNode {
   public static func == (lhs: AtomicSwiftUISDK.SwitchNode, rhs: AtomicSwiftUISDK.SwitchNode) -> Swift.Bool
 }
-public struct TextEditorNode : Swift.Equatable {
+public struct TextEditorNode : Swift.Equatable, AtomicSwiftUISDK.LayoutDescribable {
   public let cardId: Swift.String
   public let subviewId: Swift.String?
   public let editorName: Swift.String
   public let defaultValue: Swift.String?
-  public let placeholder: Swift.String?
+  public let componentLayout: AtomicSwiftUISDK.ComponentLayout
   public let numberOfLines: Swift.Int
-  public let thumbnailUrl: Foundation.URL?
+  public let icon: AtomicSwiftUISDK.CustomIcon?
   public let validator: (any AtomicSwiftUISDK.Validator)?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Use 'icon' property instead.")
+  public var thumbnailUrl: Foundation.URL? {
+    get
+  }
+  #endif
 }
 extension AtomicSwiftUISDK.TextEditorNode {
   public static func == (lhs: AtomicSwiftUISDK.TextEditorNode, rhs: AtomicSwiftUISDK.TextEditorNode) -> Swift.Bool
@@ -433,6 +483,7 @@ extension AtomicSwiftUISDK.Component {
 public struct CustomIcon : Swift.Equatable {
   public let url: Foundation.URL?
   public let fontAwesomeIconName: Swift.String?
+  public let alternativeText: Swift.String?
   public static func == (a: AtomicSwiftUISDK.CustomIcon, b: AtomicSwiftUISDK.CustomIcon) -> Swift.Bool
 }
 public struct SubviewCoreData : Swift.Hashable, Swift.CustomDebugStringConvertible {
@@ -1190,16 +1241,22 @@ final public class StreamContainerObserverConfiguration {
 @available(iOS 16.0, *)
 public struct Card {
   public let instanceId: Swift.String
+  @available(*, deprecated, message: "Use `instanceId` instead.")
   public var cardId: Swift.String {
     get
   }
+  public let lifecycleId: Swift.String
+  public let status: Swift.String
+  public let createdDate: Foundation.Date?
   public let runtimeVariables: [AtomicSwiftUISDK.RuntimeVariable]
-  public let components: [AtomicSwiftUISDK.CardComponent]
-  public let actionProperties: AtomicSwiftUISDK.CardActionProperties
   public let updatedTime: Foundation.Date
-  public let hasButtons: Swift.Bool
-  public let payloadMetadata: [Swift.String : Any]?
+  public let lastCardActiveTime: Foundation.Date?
   public let expiryDate: Foundation.Date?
+  public let priority: Swift.Int
+  public let payloadMetadata: [Swift.String : Any]?
+  public let actionProperties: AtomicSwiftUISDK.CardActionProperties
+  public let components: [AtomicSwiftUISDK.CardComponent]
+  public let hasButtons: Swift.Bool
   public let subviewIds: Swift.Set<Swift.String>
   #if compiler(>=5.3) && $NonescapableTypes
   public func subview(id: Swift.String) -> AtomicSwiftUISDK.SubviewData?
@@ -1446,10 +1503,20 @@ public struct RuntimeVariable {
   public typealias Body = @_opaqueReturnTypeOf("$s16AtomicSwiftUISDK19SingleCardContainerV4bodyQrvp", 0) __
 }
 @available(iOS 16.0, *)
+public enum AtomicContainerNavigationMode : Swift.Sendable {
+  case automatic
+  case forceModal
+  public static func == (a: AtomicSwiftUISDK.AtomicContainerNavigationMode, b: AtomicSwiftUISDK.AtomicContainerNavigationMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 16.0, *)
 @_Concurrency.MainActor @preconcurrency public struct StreamContainer : SwiftUICore.View {
   @available(*, deprecated, renamed: "init(containerId:configuration:)")
   @_Concurrency.MainActor @preconcurrency public init(isInNavigationStack: Swift.Bool, containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
-  @_Concurrency.MainActor @preconcurrency public init(containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init())
+  @_Concurrency.MainActor @preconcurrency public init(containerId: Swift.String, configuration: AtomicSwiftUISDK.ContainerConfiguration = .init(), navigationMode: AtomicSwiftUISDK.AtomicContainerNavigationMode = .automatic)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -1495,7 +1562,9 @@ extension AtomicSwiftUISDK.AACFontStyle : Swift.Hashable {}
 extension AtomicSwiftUISDK.CardActionProperties.OverflowMenuStyle : Swift.Equatable {}
 extension AtomicSwiftUISDK.CardActionProperties.OverflowMenuStyle : Swift.Hashable {}
 extension AtomicSwiftUISDK.FileUploadNode : Swift.Equatable {}
-extension AtomicSwiftUISDK.PickerLayout : Swift.Hashable {}
+extension AtomicSwiftUISDK.DatePickerNode : AtomicSwiftUISDK.LayoutDescribable {}
+extension AtomicSwiftUISDK.DropdownNode : AtomicSwiftUISDK.LayoutDescribable {}
+extension AtomicSwiftUISDK.ComponentLayoutKind : Swift.Hashable {}
 extension AtomicSwiftUISDK.ButtonType : Swift.Hashable {}
 extension AtomicSwiftUISDK.ClickToExpandAction : Swift.Equatable {}
 extension AtomicSwiftUISDK.ClickToExpandAction : Swift.Hashable {}
@@ -1560,5 +1629,9 @@ extension AtomicSwiftUISDK.LazyHorizontalContainer : Swift.Sendable {}
 extension AtomicSwiftUISDK.LazySingleCardContainer : Swift.Sendable {}
 @available(iOS 16.0, *)
 extension AtomicSwiftUISDK.SingleCardContainer : Swift.Sendable {}
+@available(iOS 16.0, *)
+extension AtomicSwiftUISDK.AtomicContainerNavigationMode : Swift.Equatable {}
+@available(iOS 16.0, *)
+extension AtomicSwiftUISDK.AtomicContainerNavigationMode : Swift.Hashable {}
 @available(iOS 16.0, *)
 extension AtomicSwiftUISDK.StreamContainer : Swift.Sendable {}

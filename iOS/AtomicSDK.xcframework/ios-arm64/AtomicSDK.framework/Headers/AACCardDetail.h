@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface AACCardDetail: NSObject<AACDeserializable>
 
-@property (nonatomic, strong, readonly) NSDate *createdDate;
+@property (nonatomic, strong, readonly, nullable) NSDate *createdDate;
 @property (nonatomic, copy, readonly) NSString *cardId;
 @property (nonatomic, copy, readonly) NSString* status;
 

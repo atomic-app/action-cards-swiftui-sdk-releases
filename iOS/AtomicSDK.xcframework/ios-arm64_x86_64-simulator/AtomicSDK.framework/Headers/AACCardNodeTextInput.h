@@ -11,7 +11,10 @@
  */
 @interface AACCardNodeTextInput: AACCardNodeSubmittable
 
-/// The text to display before editing begins.
+/// Label describing the text input.
+@property (nonatomic, copy, nullable) NSString* label;
+
+/// The placeholder to display before editing begins.
 @property (nonatomic, copy, nullable) NSString* placeholder;
 
 /// The default value to display in the input.
@@ -22,6 +25,12 @@
 
 /// An optional image to display to the left of the text input.
 @property (nonatomic, strong, nullable) NSURL* thumbnailUrl;
+
+/// The alternative text of the thumbnailUrl.
+@property (nonatomic, copy, nullable) NSString* thumbnailAltText;
+
+/// The format for rendering the text input.
+@property (nonatomic) AACCardNodeInputFormat format;
 
 /**
  The total number of characters the user is permitted to enter.

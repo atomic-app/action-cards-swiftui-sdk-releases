@@ -23,7 +23,10 @@ typedef NS_OPTIONS(NSUInteger, AACCardNodeFileUploadType) {
  */
 @interface AACCardNodeFileUpload: AACCardNodeSubmittable
 
-/// Text displayed before a file is selected.
+/// Label displayed before a file is selected.
+@property (nonatomic, copy, nullable) NSString* label;
+
+/// Placeholder displayed before a file is selected.
 @property (nonatomic, copy, nullable) NSString* placeholder;
 
 /// Indicates whether a thumbnail placeholder is shown before a file is uploaded.
@@ -31,6 +34,9 @@ typedef NS_OPTIONS(NSUInteger, AACCardNodeFileUploadType) {
 
 /// Specifies the allowed file types for upload. Currently, only static images are supported. Future updates will include additional file types.
 @property (nonatomic) AACCardNodeFileUploadType allowedTypes;
+
+/// The format for rendering the file upload input.
+@property (nonatomic) AACCardNodeInputFormat format;
 
 /// The ID of the bucket where the file will be uploaded.
 @property (nonatomic, nonnull) NSString *bucketId;

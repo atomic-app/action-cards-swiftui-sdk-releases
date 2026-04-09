@@ -110,7 +110,7 @@ typedef NS_CLOSED_ENUM(NSInteger, AACThemeVerticalAlignment) {
 @property (nonatomic, strong) AACColor *textMediaSubtitle;
 @property (nonatomic, strong) AACColor *textMediaAction;
 @property (nonatomic, strong) AACColor *textToast;
-@property (nonatomic, strong) AACColor *textPrimary;
+@property (nonatomic, strong) AACColor *textPrimary __attribute__((deprecated("Use `inline label or value stacked` instead.")));
 @property (nonatomic, strong) AACColor *textError;
 @property (nonatomic, strong) AACColor *textHint;
 @property (nonatomic, strong) AACColor *textSecondary;
@@ -127,6 +127,9 @@ typedef NS_CLOSED_ENUM(NSInteger, AACThemeVerticalAlignment) {
 @property (nonatomic, strong) AACColor *textFooterMessage;
 @property (nonatomic, strong) AACColor *textProcessingStateMessage;
 @property (nonatomic, strong) AACColor *textProcessingStateButtonLabel;
+@property (nonatomic, strong) AACColor *textLabelInline;
+@property (nonatomic, strong) AACColor *textLabelExternal;
+@property (nonatomic, strong) AACColor *textValueStacked;
 
 - (AACColor *__nullable)iconButton:(AACCardButtonType)buttonType;
 @property (nonatomic, strong) AACColor *iconOptions;
@@ -179,7 +182,7 @@ typedef NS_CLOSED_ENUM(NSInteger, AACThemeVerticalAlignment) {
 @property (nonatomic, strong) AACTypography *typographyMediaAction;
 @property (nonatomic, strong) AACTypography *typographyMediaTruncation;
 @property (nonatomic, strong) AACTypography *typographyToast;
-@property (nonatomic, strong) AACTypography *typographyPrimary;
+@property (nonatomic, strong) AACTypography *typographyPrimary __attribute__((deprecated("Use `typographyLabelInline` or `typographyValueStacked` instead.")));
 @property (nonatomic, strong) AACTypography *typographySecondary;
 @property (nonatomic, strong) AACTypography *typographyPinned;
 @property (nonatomic, strong) AACTypography *typographySheetItem;
@@ -194,6 +197,9 @@ typedef NS_CLOSED_ENUM(NSInteger, AACThemeVerticalAlignment) {
 @property (nonatomic, strong) AACTypography *typographyFooterMessage;
 @property (nonatomic, strong) AACTypography *typographyProcessingStateMessage;
 @property (nonatomic, strong) AACTypography *typographyProcessingStateButtonLabel;
+@property (nonatomic, strong) AACTypography *typographyLabelInline;
+@property (nonatomic, strong) AACTypography *typographyLabelExternal;
+@property (nonatomic, strong) AACTypography *typographyValueStacked;
 
 #pragma mark - Shape
 @property (nonatomic, strong) AACMeasurement *expandCollapseLeftPadding;

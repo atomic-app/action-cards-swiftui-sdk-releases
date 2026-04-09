@@ -164,6 +164,18 @@ typedef NS_ENUM(NSInteger, AACCardButtonType) {
 @end
 
 /**
+ Shared formats for rendering input-like nodes.
+ */
+typedef NS_ENUM(NSUInteger, AACCardNodeInputFormat) {
+    /// The label and value are displayed side-by-side, inside the input field.
+    AACCardNodeInputFormatInline,
+    /// The label is displayed above value, inside the input field.
+    AACCardNodeInputFormatStacked,
+    /// The label is displayed above the value, outside the input field.
+    AACCardNodeInputFormatExternal
+};
+
+/**
  A base class for button nodes that hold a url and a payload, such as link or submit buttons.
  */
 @interface AACCardNodeButton: AACCardBaseButton

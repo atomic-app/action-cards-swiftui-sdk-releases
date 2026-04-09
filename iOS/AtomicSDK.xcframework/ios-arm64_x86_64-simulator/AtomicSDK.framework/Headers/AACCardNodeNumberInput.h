@@ -11,6 +11,9 @@
  */
 @interface AACCardNodeNumberInput: AACCardNodeSubmittable
 
+/// The label displayed alongside the number input field.
+@property (nonatomic, copy, nullable) NSString* label;
+
 /// The placeholder text to display before editing begins.
 @property (nonatomic, copy, nullable) NSString* placeholder;
 
@@ -19,5 +22,11 @@
 
 /// An optional image to display to the left of the number input.
 @property (nonatomic, strong, nullable) NSURL* thumbnailUrl;
+
+/// The alternative text of the thumbnailUrl.
+@property (nonatomic, copy, nullable) NSString* thumbnailAltText;
+
+/// The format for rendering the number input.
+@property (nonatomic) AACCardNodeInputFormat format;
 
 @end

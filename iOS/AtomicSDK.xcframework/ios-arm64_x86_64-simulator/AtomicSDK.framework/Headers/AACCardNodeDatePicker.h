@@ -7,16 +7,6 @@
 #import <AtomicSDK/AACCardNode.h>
 
 /**
- Possible formats for rendering a date picker.
- */
-typedef NS_ENUM(NSUInteger, AACCardNodeDatePickerFormat) {
-    /// The date picker renders with the label on the left and value on the right.
-    AACCardNodeDatePickerFormatInline,
-    /// The date picker renders with the label on top and value on the bottom.
-    AACCardNodeDatePickerFormatStacked
-};
-
-/**
  Possible formats displayed by the date picker (either date or time).
  
  Date pickers rendered in card subviews only support dates at this stage, but internally in the SDK
@@ -50,11 +40,14 @@ typedef NS_ENUM(NSUInteger, AACCardNodeDatePickerMode) {
 /// Optional URL to a thumbnail image to display to the left of the date picker's label.
 @property (nonatomic, strong, nullable) NSURL *thumbnailUrl;
 
+/// The alternative text of the thumbnailUrl.
+@property (nonatomic, copy, nullable) NSString* thumbnailAltText;
+
 /// The placeholder text to display when there is no `defaultValue` and no value has been selected.
 @property (nonatomic, copy, nonnull) NSString *placeholder;
 
 /// The format for rendering the date picker.
-@property (nonatomic) AACCardNodeDatePickerFormat format;
+@property (nonatomic) AACCardNodeInputFormat format;
 
 #pragma mark - Internal SDK properties
 
