@@ -7,6 +7,7 @@
 #import <AtomicSDK/AACCardNode.h>
 #import <AtomicSDK/AACCardNodeList.h>
 #import <AtomicSDK/AACCardNodeCustomIcon.h>
+#import <AtomicSDK/AACCardNodeText.h>
 #import <AtomicSDK/AACCardNodeTextClickToExpandInfo.h>
 
 /**
@@ -45,6 +46,9 @@
 /// This property is set during parsing the card layout.
 @property (nonatomic) BOOL isLastItem;
 
+/// The visual appearance variant to use when rendering the list item.
+@property (nonatomic) AACCardNodeTextAppearance appearance;
+
 /**
  * @brief Configuration for the "click to expand" behavior of the markdown list items in a text block.
  *
@@ -65,5 +69,15 @@
  * markdown lists. It's essential to know which text element they belong to for click-to-expand to work.
  */
 @property (nonatomic, copy, nonnull) NSString *textBlockId;
+
+/**
+ * @brief Whether the icon owner (the first node generated from the Workbench text block) is a list item.
+ *
+ * When a text block with an icon is split into multiple nodes, the real icon is assigned to the first
+ * node only and the rest receive an empty placeholder icon to reserve the indent. List items are always
+ * leading-aligned, so when the owner is a list item the icon column must be shown for the whole group
+ * regardless of the body text alignment. Defaults to NO.
+ */
+@property (nonatomic) BOOL iconOwnerIsList;
 
 @end

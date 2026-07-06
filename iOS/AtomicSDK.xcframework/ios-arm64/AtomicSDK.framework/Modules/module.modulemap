@@ -7,5 +7,4 @@ framework module AtomicSDK {
 
 module AtomicSDK.Swift {
   header "AtomicSDK-Swift.h"
-  requires objc
 }

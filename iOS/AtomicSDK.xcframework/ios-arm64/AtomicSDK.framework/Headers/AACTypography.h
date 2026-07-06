@@ -115,6 +115,17 @@ typedef NS_ENUM(NSUInteger, AACTypographyTransform) {
 @property (nonatomic, readonly) AACTypographyTransform transform;
 
 /**
+ Whether this typography style explicitly defines a text alignment.
+ */
+@property (nonatomic, readonly) BOOL hasTextAlignment;
+
+/**
+ The text alignment explicitly defined by this typography style.
+ Defaults to `NSTextAlignmentLeft` when no alignment is defined.
+ */
+@property (nonatomic, readonly) NSTextAlignment textAlignment;
+
+/**
  Applies attributes necessary to render the given string in the style dictated
  by this typography style.
  

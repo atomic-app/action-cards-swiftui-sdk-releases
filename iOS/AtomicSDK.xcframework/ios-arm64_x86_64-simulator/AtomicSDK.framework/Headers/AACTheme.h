@@ -74,6 +74,7 @@ typedef NS_CLOSED_ENUM(NSInteger, AACThemeVerticalAlignment) {
 @property (nonatomic, strong) AACColor *borderMediaThumb;
 @property (nonatomic, strong) AACColor *borderComponent;
 @property (nonatomic, strong) AACColor *borderSheetItemDivider;
+@property (nonatomic, strong) AACColor *borderCategoryIcon;
 
 @property (nonatomic, strong) AACColor *backgroundDefault;
 @property (nonatomic, strong) AACColor *backgroundCard;
@@ -97,15 +98,25 @@ typedef NS_CLOSED_ENUM(NSInteger, AACThemeVerticalAlignment) {
 @property (nonatomic, strong) AACColor *backgroundOptions;
 @property (nonatomic, strong) AACColor *backgroundUploadPlaceholder;
 @property (nonatomic, strong) AACColor *backgroundModalContainer;
+@property (nonatomic, strong) AACColor *backgroundCategoryIcon;
 
 - (AACColor *)textButton:(AACCardButtonType)buttonType;
 - (AACColor *)textButtonPressed:(AACCardButtonType)buttonType;
 @property (nonatomic, strong) AACColor *textExpandCollapse;
 @property (nonatomic, strong) AACColor *textListTitle;
 @property (nonatomic, strong) AACColor *textCategory;
+@property (nonatomic, strong) AACColor *textCategorySubText;
 @property (nonatomic, strong) AACColor *textHeadline;
+@property (nonatomic, strong) AACColor *textHeadlineH2;
+@property (nonatomic, strong) AACColor *textHeadlineH3;
 @property (nonatomic, strong) AACColor *textBody;
+@property (nonatomic, strong) AACColor *textBodySecondary;
+@property (nonatomic, strong) AACColor *textBodyTertiary;
 @property (nonatomic, strong) AACColor *textLink;
+@property (nonatomic, strong) AACColor *textLinkSecondary;
+@property (nonatomic, strong) AACColor *textLinkTertiary;
+@property (nonatomic, strong) AACColor *textExpandCollapseSecondary;
+@property (nonatomic, strong) AACColor *textExpandCollapseTertiary;
 @property (nonatomic, strong) AACColor *textMediaTitle;
 @property (nonatomic, strong) AACColor *textMediaSubtitle;
 @property (nonatomic, strong) AACColor *textMediaAction;
@@ -135,10 +146,14 @@ typedef NS_CLOSED_ENUM(NSInteger, AACThemeVerticalAlignment) {
 @property (nonatomic, strong) AACColor *iconOptions;
 @property (nonatomic, strong) AACColor *iconOptionsActive;
 @property (nonatomic, strong, nullable) AACColor *iconBody;
+@property (nonatomic, strong, nullable) AACColor *iconBodySecondary;
+@property (nonatomic, strong, nullable) AACColor *iconBodyTertiary;
 @property (nonatomic, strong) AACColor *iconListAction;
 @property (nonatomic, strong) AACColor *iconMediaBanner;
 @property (nonatomic, strong) AACColor *iconMediaControl;
 @property (nonatomic, strong) AACColor *iconBullet;
+@property (nonatomic, strong) AACColor *iconBulletSecondary;
+@property (nonatomic, strong) AACColor *iconBulletTertiary;
 @property (nonatomic, strong) AACColor *iconLoadingSpinner;
 @property (nonatomic, strong) AACColor *iconCardCompletion;
 @property (nonatomic, strong) AACColor *iconQuickActionPrimary;
@@ -154,6 +169,8 @@ typedef NS_CLOSED_ENUM(NSInteger, AACThemeVerticalAlignment) {
 @property (nonatomic, strong) AACColor *iconSelectionIndicatorActive;
 @property (nonatomic, strong, nullable) AACColor *iconCategory;
 @property (nonatomic, strong, nullable) AACColor *iconHeadline;
+@property (nonatomic, strong, nullable) AACColor *iconHeadlineH2;
+@property (nonatomic, strong, nullable) AACColor *iconHeadlineH3;
 @property (nonatomic, strong) AACColor *iconUploadPlaceholder;
 @property (nonatomic, strong) AACColor *iconProcessingStateSpinner;
 @property (nonatomic, strong) AACColor *iconInputButton;
@@ -174,9 +191,28 @@ typedef NS_CLOSED_ENUM(NSInteger, AACThemeVerticalAlignment) {
 @property (nonatomic, strong) AACTypography *typographyExpandCollapse;
 @property (nonatomic, strong) AACTypography *typographyListTitle;
 @property (nonatomic, strong) AACTypography *typographyCategory;
+@property (nonatomic, strong) AACTypography *typographyCategorySubText;
 @property (nonatomic, strong) AACTypography *typographyHeadline;
+@property (nonatomic, strong) AACTypography *typographyHeadlineH2;
+@property (nonatomic, strong) AACTypography *typographyHeadlineH3;
 @property (nonatomic, strong) AACTypography *typographyBody;
+@property (nonatomic, strong) AACTypography *typographyBodySecondary;
+@property (nonatomic, strong) AACTypography *typographyBodyTertiary;
+/**
+ List-item typography variants derived from the body typographies with text alignment
+ stripped. Used internally by list-item rendering to enforce leading alignment,
+ regardless of any `align` value configured on the corresponding body typography in the
+ theme JSON. Every other property (font, size, weight, style, transform, scaling,
+ line height) is identical to the corresponding body typography by construction.
+ */
+@property (nonatomic, strong, readonly) AACTypography *typographyBodyListItem;
+@property (nonatomic, strong, readonly) AACTypography *typographyBodyListItemSecondary;
+@property (nonatomic, strong, readonly) AACTypography *typographyBodyListItemTertiary;
 @property (nonatomic, strong) AACTypography *typographyBullet;
+@property (nonatomic, strong) AACTypography *typographyBulletSecondary;
+@property (nonatomic, strong) AACTypography *typographyBulletTertiary;
+@property (nonatomic, strong) AACTypography *typographyExpandCollapseSecondary;
+@property (nonatomic, strong) AACTypography *typographyExpandCollapseTertiary;
 @property (nonatomic, strong) AACTypography *typographyMediaTitle;
 @property (nonatomic, strong) AACTypography *typographyMediaSubtitle;
 @property (nonatomic, strong) AACTypography *typographyMediaAction;
@@ -203,6 +239,8 @@ typedef NS_CLOSED_ENUM(NSInteger, AACThemeVerticalAlignment) {
 
 #pragma mark - Shape
 @property (nonatomic, strong) AACMeasurement *expandCollapseLeftPadding;
+@property (nonatomic, strong) AACMeasurement *expandCollapseSecondaryLeftPadding;
+@property (nonatomic, strong) AACMeasurement *expandCollapseTertiaryLeftPadding;
 // Remove these properties for now as they're removed from workbench.
 //@property (nonatomic) AACThemeVerticalAlignment modalContainerAlignment;
 //@property (nonatomic) AACMeasurement *modalContainerPadding;
@@ -217,7 +255,9 @@ typedef NS_CLOSED_ENUM(NSInteger, AACThemeVerticalAlignment) {
 @property (nonatomic) AACEdgeInsets *paddingSingleCardView;
 @property (nonatomic) AACEdgeInsets *paddingButtonGroup; // Defaults to card padding if not specified in the theme.
 @property (nonatomic) AACMeasurement *spaceBetweenElements;
+@property (nonatomic) AACMeasurement *spaceBetweenCategoryTexts;
 @property (nonatomic) AACMeasurement *spaceBetweenCards;
+@property (nonatomic) AACMeasurement *spaceBetweenCategoryTextsIcon;
 
 - (AACMeasurement *)borderRadiusButton:(AACCardButtonType)buttonType;
 - (AACMeasurement *)borderWidthButton:(AACCardButtonType)buttonType;
@@ -239,6 +279,7 @@ typedef NS_CLOSED_ENUM(NSInteger, AACThemeVerticalAlignment) {
 @property (nonatomic, strong) AACMeasurement *offsetCardShadow;
 @property (nonatomic, strong) AACMeasurement *blurNavigationShadow;
 @property (nonatomic, strong) AACMeasurement *offsetNavigationShadow;
+@property (nonatomic, strong) AACThemeShadow *categoryIconShadow;
 
 - (AACMeasurement *)borderRadiusCheckbox:(BOOL)isChecked;
 
@@ -247,9 +288,11 @@ typedef NS_CLOSED_ENUM(NSInteger, AACThemeVerticalAlignment) {
 @property (nonatomic, strong) AACMeasurement *borderRadiusMediaThumb;
 @property (nonatomic, strong) AACMeasurement *borderRadiusSheet;
 @property (nonatomic, strong) AACMeasurement *borderRadiusUploadPlaceholder;
+@property (nonatomic, strong) AACMeasurement *borderRadiusCategoryIcon;
 
 - (AACMeasurement *)borderWidthCheckbox:(BOOL)isChecked;
 @property (nonatomic, strong) AACMeasurement *borderWidthCard;
+@property (nonatomic, strong) AACMeasurement *borderWidthCategoryIcon;
 
 @property (nonatomic, nullable) AACHorizontalRule *horizontalRuleTop;
 @property (nonatomic, nullable) AACHorizontalRule *horizontalRuleBetween;

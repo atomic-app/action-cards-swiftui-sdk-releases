@@ -5,6 +5,7 @@
 //
 
 #import <AtomicSDK/AACCardNode.h>
+#import <AtomicSDK/AACCardNodeText.h>
 #import <AtomicSDK/AACCardNodeTextClickToExpandInfo.h>
 
 /**
@@ -28,6 +29,11 @@ typedef NS_ENUM(NSUInteger, AACCardNodeListStyle) {
  The style of list to render - either ordered or unordered.
  */
 @property (nonatomic) AACCardNodeListStyle style;
+
+/**
+ The visual appearance variant to use when rendering the list.
+ */
+@property (nonatomic) AACCardNodeTextAppearance appearance;
 
 /// Whether this node is the first node of a card.
 ///

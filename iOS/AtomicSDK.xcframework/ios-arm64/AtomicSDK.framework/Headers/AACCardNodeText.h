@@ -9,6 +9,12 @@
 #import <AtomicSDK/AACCardNodeCustomIcon.h>
 #import <AtomicSDK/AACCardNodeTextClickToExpandInfo.h>
 
+typedef NS_ENUM(NSInteger, AACCardNodeTextAppearance) {
+    AACCardNodeTextAppearancePrimary,
+    AACCardNodeTextAppearanceSecondary,
+    AACCardNodeTextAppearanceTertiary,
+};
+
 /**
  A body of text, with an optional icon to the left.
  The `text` property supports basic Markdown formatting; namely bold,
@@ -31,6 +37,11 @@
  To get the formatted text in a performant way, use `attributedText` instead.
  */
 @property (nonatomic, copy, nonnull) NSString* text;
+
+/**
+ The visual appearance variant to use when rendering the text.
+ */
+@property (nonatomic) AACCardNodeTextAppearance appearance;
 
 /**
  * @brief Configuration for the "click to expand" behavior of the text block.

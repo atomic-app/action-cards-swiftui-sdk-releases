@@ -1,15 +1,25 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AtomicSwiftUISDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AtomicSwiftUISDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
+import AVFoundation
 import AVKit
 import AtomicSDK
 @_exported import AtomicSwiftUISDK
 import Combine
+import Compression
+import CoreGraphics
+import CoreGraphics/*.CGFloat*/
+import CoreText
+import CryptoKit
+import Darwin
 import Foundation
+import Foundation/*.Data*/
+import Foundation/*.URL*/
 import Network
 import OSLog
 import PhotosUI
+import Security
 import Swift
 import SwiftUI
 import UIKit
@@ -99,12 +109,10 @@ public struct DatePickerNode : Swift.Equatable {
   public let validator: (any AtomicSwiftUISDK.Validator)?
   public let componentLayout: AtomicSwiftUISDK.ComponentLayout
   public let icon: AtomicSwiftUISDK.CustomIcon?
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Use 'icon' property instead.")
   public var thumbnailUrl: Foundation.URL? {
     get
   }
-  #endif
   public let minimumDate: Foundation.Date?
   public let maximumDate: Foundation.Date?
   public var arePickerOptionsEmpty: Swift.Bool {
@@ -128,12 +136,10 @@ public struct DropdownNode : Swift.Equatable {
   public let componentLayout: AtomicSwiftUISDK.ComponentLayout
   public let items: [AtomicSwiftUISDK.DropdownItem]
   public let icon: AtomicSwiftUISDK.CustomIcon?
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Use 'icon' property instead.")
   public var thumbnailUrl: Foundation.URL? {
     get
   }
-  #endif
   public var arePickerOptionsEmpty: Swift.Bool {
     get
   }
@@ -155,9 +161,7 @@ public struct ComponentLayout : Swift.Equatable {
   public let kind: AtomicSwiftUISDK.ComponentLayoutKind
   public let placeholder: Swift.String?
   public let label: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(kind: AtomicSwiftUISDK.ComponentLayoutKind, placeholder: Swift.String? = nil, label: Swift.String? = nil)
-  #endif
   public static func == (a: AtomicSwiftUISDK.ComponentLayout, b: AtomicSwiftUISDK.ComponentLayout) -> Swift.Bool
 }
 public protocol LayoutDescribable {
@@ -173,11 +177,9 @@ extension AtomicSwiftUISDK.LayoutDescribable {
 }
 public struct NumberInputData : Swift.Equatable {
   public let stringValue: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public var numberValue: Foundation.Decimal? {
     get
   }
-  #endif
   public static func == (a: AtomicSwiftUISDK.NumberInputData, b: AtomicSwiftUISDK.NumberInputData) -> Swift.Bool
 }
 public struct NumberEditorNode : Swift.Equatable, AtomicSwiftUISDK.LayoutDescribable {
@@ -188,12 +190,10 @@ public struct NumberEditorNode : Swift.Equatable, AtomicSwiftUISDK.LayoutDescrib
   public let defaultValue: Swift.String?
   public let componentLayout: AtomicSwiftUISDK.ComponentLayout
   public let icon: AtomicSwiftUISDK.CustomIcon?
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Use 'icon' property instead.")
   public var thumbnailUrl: Foundation.URL? {
     get
   }
-  #endif
   public let validator: (any AtomicSwiftUISDK.Validator)?
 }
 extension AtomicSwiftUISDK.NumberEditorNode {
@@ -207,12 +207,10 @@ public struct StepperNode : Swift.Equatable {
   public let label: Swift.String
   public let defaultValue: Swift.String?
   public let icon: AtomicSwiftUISDK.CustomIcon?
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Use 'icon' property instead.")
   public var thumbnailUrl: Foundation.URL? {
     get
   }
-  #endif
   public let minimumValue: Foundation.Decimal
   public let maximumValue: Foundation.Decimal
   public let stepValue: Foundation.Decimal
@@ -228,12 +226,10 @@ public struct SwitchNode : Swift.Equatable {
   public let defaultValue: Swift.Bool?
   public let label: Swift.String
   public let icon: AtomicSwiftUISDK.CustomIcon?
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Use 'icon' property instead.")
   public var thumbnailUrl: Foundation.URL? {
     get
   }
-  #endif
   public let validator: (any AtomicSwiftUISDK.Validator)?
 }
 extension AtomicSwiftUISDK.SwitchNode {
@@ -248,12 +244,10 @@ public struct TextEditorNode : Swift.Equatable, AtomicSwiftUISDK.LayoutDescribab
   public let numberOfLines: Swift.Int
   public let icon: AtomicSwiftUISDK.CustomIcon?
   public let validator: (any AtomicSwiftUISDK.Validator)?
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Use 'icon' property instead.")
   public var thumbnailUrl: Foundation.URL? {
     get
   }
-  #endif
 }
 extension AtomicSwiftUISDK.TextEditorNode {
   public static func == (lhs: AtomicSwiftUISDK.TextEditorNode, rhs: AtomicSwiftUISDK.TextEditorNode) -> Swift.Bool
@@ -261,36 +255,30 @@ extension AtomicSwiftUISDK.TextEditorNode {
 public enum ValidationResult : Swift.Equatable {
   case valid
   case invalid(Swift.String?)
-  #if compiler(>=5.3) && $NonescapableTypes
   public var message: Swift.String? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var accessibilityLabel: Swift.String? {
     get
   }
-  #endif
   public static func == (a: AtomicSwiftUISDK.ValidationResult, b: AtomicSwiftUISDK.ValidationResult) -> Swift.Bool
 }
 public protocol Validator {
-  #if compiler(>=5.3) && $NonescapableTypes
   func validate(_ value: Any?) -> AtomicSwiftUISDK.ValidationResult
-  #endif
 }
 public struct ButtonContainerNode : Swift.Equatable {
   public let cardId: Swift.String
   public let buttons: [AtomicSwiftUISDK.ButtonNode]
   public static func == (a: AtomicSwiftUISDK.ButtonContainerNode, b: AtomicSwiftUISDK.ButtonContainerNode) -> Swift.Bool
 }
-public enum VerticalButtonWidthStyle : Swift.Equatable {
+public enum ButtonWidthStyle : Swift.Equatable {
   case hugsLabel(alignment: SwiftUICore.HorizontalAlignment)
   case fillsContainer
-  public static func == (a: AtomicSwiftUISDK.VerticalButtonWidthStyle, b: AtomicSwiftUISDK.VerticalButtonWidthStyle) -> Swift.Bool
+  public static func == (a: AtomicSwiftUISDK.ButtonWidthStyle, b: AtomicSwiftUISDK.ButtonWidthStyle) -> Swift.Bool
 }
 public enum ButtonLayout : Swift.Equatable {
-  case vertical(widthStyle: AtomicSwiftUISDK.VerticalButtonWidthStyle)
-  case horizontal
+  case vertical(widthStyle: AtomicSwiftUISDK.ButtonWidthStyle)
+  case horizontal(widthStyle: AtomicSwiftUISDK.ButtonWidthStyle)
   public static func == (a: AtomicSwiftUISDK.ButtonLayout, b: AtomicSwiftUISDK.ButtonLayout) -> Swift.Bool
 }
 public enum SubmitPostActionType {
@@ -329,23 +317,66 @@ public struct ButtonNode : Swift.Identifiable, Swift.Hashable, Swift.Equatable {
   public let icon: AtomicSwiftUISDK.CustomIcon?
   public let action: AtomicSwiftUISDK.ButtonAction
   public let type: AtomicSwiftUISDK.ButtonType
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(id: Foundation.UUID = UUID(), text: Swift.String, icon: AtomicSwiftUISDK.CustomIcon?, action: AtomicSwiftUISDK.ButtonAction, type: AtomicSwiftUISDK.ButtonType)
-  #endif
   public func hash(into hasher: inout Swift.Hasher)
   public typealias ID = Foundation.UUID
   public var hashValue: Swift.Int {
     get
   }
 }
-public struct CategoryNode : Swift.Equatable {
+public enum CategoryTextRole : Swift.Equatable {
+  case main
+  case sub
+  public static func == (a: AtomicSwiftUISDK.CategoryTextRole, b: AtomicSwiftUISDK.CategoryTextRole) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct CategoryTextItem : Swift.Equatable {
+  public let role: AtomicSwiftUISDK.CategoryTextRole
   public let text: Swift.String
+  public static func == (a: AtomicSwiftUISDK.CategoryTextItem, b: AtomicSwiftUISDK.CategoryTextItem) -> Swift.Bool
+}
+public enum CategoryIconAlignment : Swift.Equatable {
+  case top
+  case center
+  public static func == (a: AtomicSwiftUISDK.CategoryIconAlignment, b: AtomicSwiftUISDK.CategoryIconAlignment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum CategoryIconDisplay : Swift.Equatable {
+  case matchHeaderHeight
+  case matchTextBlockHeight
+  case fixedSize(alignment: AtomicSwiftUISDK.CategoryIconAlignment, iconDimensionHeight: CoreFoundation.CGFloat)
+  public static func == (a: AtomicSwiftUISDK.CategoryIconDisplay, b: AtomicSwiftUISDK.CategoryIconDisplay) -> Swift.Bool
+}
+public struct CategoryNode : Swift.Equatable {
+  public let orderedVisibleTextItems: [AtomicSwiftUISDK.CategoryTextItem]
   public let icon: AtomicSwiftUISDK.CustomIcon?
+  public let iconDisplay: AtomicSwiftUISDK.CategoryIconDisplay
+  @available(*, deprecated, message: "Use orderedVisibleTextItems instead.")
+  public var text: Swift.String {
+    get
+  }
   public static func == (a: AtomicSwiftUISDK.CategoryNode, b: AtomicSwiftUISDK.CategoryNode) -> Swift.Bool
+}
+public enum HeadlineAppearance : Swift.Equatable {
+  case h1
+  case h2
+  case h3
+  public static func == (a: AtomicSwiftUISDK.HeadlineAppearance, b: AtomicSwiftUISDK.HeadlineAppearance) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public struct HeadlineNode : Swift.Equatable {
   public let text: Swift.String
   public let icon: AtomicSwiftUISDK.CustomIcon?
+  public let appearance: AtomicSwiftUISDK.HeadlineAppearance
   public static func == (a: AtomicSwiftUISDK.HeadlineNode, b: AtomicSwiftUISDK.HeadlineNode) -> Swift.Bool
 }
 public enum ListItemStyle : Swift.Equatable {
@@ -360,6 +391,9 @@ public struct ListItemNode : Swift.Equatable {
   public let isFirstItem: Swift.Bool
   public let isLastItem: Swift.Bool
   public let clickToExpandInfo: AtomicSwiftUISDK.ClickToExpand?
+  public let appearance: AtomicSwiftUISDK.TextBlockAppearance
+  public let iconOwnerIsList: Swift.Bool
+  public init(text: Swift.String, icon: AtomicSwiftUISDK.CustomIcon?, style: AtomicSwiftUISDK.ListItemStyle, isFirstItem: Swift.Bool, isLastItem: Swift.Bool, clickToExpandInfo: AtomicSwiftUISDK.ClickToExpand?, appearance: AtomicSwiftUISDK.TextBlockAppearance, iconOwnerIsList: Swift.Bool = false)
   public static func == (a: AtomicSwiftUISDK.ListItemNode, b: AtomicSwiftUISDK.ListItemNode) -> Swift.Bool
 }
 public enum MediaLayout : Swift.Equatable {
@@ -410,10 +444,21 @@ extension AtomicSwiftUISDK.ImageAction : Swift.Equatable {
 extension AtomicSwiftUISDK.MediaNode {
   public static func == (lhs: AtomicSwiftUISDK.MediaNode, rhs: AtomicSwiftUISDK.MediaNode) -> Swift.Bool
 }
+public enum TextBlockAppearance : Swift.Equatable {
+  case primary
+  case secondary
+  case tertiary
+  public static func == (a: AtomicSwiftUISDK.TextBlockAppearance, b: AtomicSwiftUISDK.TextBlockAppearance) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public struct TextBlockNode : Swift.Equatable {
   public let text: Swift.String
   public let icon: AtomicSwiftUISDK.CustomIcon?
   public let clickToExpandInfo: AtomicSwiftUISDK.ClickToExpand?
+  public let appearance: AtomicSwiftUISDK.TextBlockAppearance
   public static func == (a: AtomicSwiftUISDK.TextBlockNode, b: AtomicSwiftUISDK.TextBlockNode) -> Swift.Bool
 }
 public struct CardComponent : Swift.Identifiable, Swift.Equatable, Swift.Hashable {
@@ -433,9 +478,7 @@ public enum ClickToExpandAction {
   public var attributedValue: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(attributedValue: Swift.String)
-  #endif
   public static func == (a: AtomicSwiftUISDK.ClickToExpandAction, b: AtomicSwiftUISDK.ClickToExpandAction) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -480,10 +523,32 @@ extension AtomicSwiftUISDK.Component {
   }
   public static func == (lhs: AtomicSwiftUISDK.Component, rhs: AtomicSwiftUISDK.Component) -> Swift.Bool
 }
+public enum CustomIconImageType : Swift.Equatable {
+  case svg
+  case raster
+  case auto
+  public static func == (a: AtomicSwiftUISDK.CustomIconImageType, b: AtomicSwiftUISDK.CustomIconImageType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum CustomIconContent : Swift.Equatable {
+  case image(url: Foundation.URL, type: AtomicSwiftUISDK.CustomIconImageType, fallbackFontAwesomeIconName: Swift.String?)
+  case fontAwesome(name: Swift.String)
+  public static func == (a: AtomicSwiftUISDK.CustomIconContent, b: AtomicSwiftUISDK.CustomIconContent) -> Swift.Bool
+}
 public struct CustomIcon : Swift.Equatable {
-  public let url: Foundation.URL?
-  public let fontAwesomeIconName: Swift.String?
+  public let content: AtomicSwiftUISDK.CustomIconContent
   public let alternativeText: Swift.String?
+  @available(*, deprecated, message: "Use content instead to distinguish primary image content from FontAwesome content.")
+  public var url: Foundation.URL? {
+    get
+  }
+  @available(*, deprecated, message: "Use content instead to distinguish a primary FontAwesome icon from an image fallback icon.")
+  public var fontAwesomeIconName: Swift.String? {
+    get
+  }
   public static func == (a: AtomicSwiftUISDK.CustomIcon, b: AtomicSwiftUISDK.CustomIcon) -> Swift.Bool
 }
 public struct SubviewCoreData : Swift.Hashable, Swift.CustomDebugStringConvertible {
@@ -546,9 +611,7 @@ public struct AACCertificatePin : Swift.Hashable {
 public struct AACCustomEvent {
   public let eventName: Swift.String
   public let properties: [Swift.AnyHashable : Any]?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(name: Swift.String, properties: [Swift.AnyHashable : Any]?)
-  #endif
 }
 public enum AACFontWeight {
   case weightRegular
@@ -586,8 +649,14 @@ public struct AACEmbeddedFont {
   public init(familyName: Swift.String, postscriptName: Swift.String, weight: AtomicSwiftUISDK.AACFontWeight, style: AtomicSwiftUISDK.AACFontStyle)
 }
 public struct AACPushNotification {
+  public let atomicPushId: Swift.String
+  public let endUserId: Swift.String
+  public let organisationId: Swift.String
   public let cardInstanceId: Swift.String
+  public let streamContainerIds: [Swift.String]
   public let containerId: Swift.String
+  public let ia: Foundation.NSNumber
+  public let sig: Swift.String
   public let detail: [Swift.String : Any]
 }
 public enum AACPushNotificationEnvironment {
@@ -632,9 +701,7 @@ public enum AACSDKEventType : Swift.UInt {
   case userFileUploadsFailed
   case userFileUploadsCompleted
   case unknown
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt)
-  #endif
   public typealias RawValue = Swift.UInt
   public var rawValue: Swift.UInt {
     get
@@ -644,9 +711,7 @@ public enum AACSDKEventStreamMode : Swift.UInt {
   case vertical
   case horizontal
   case single
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt)
-  #endif
   public typealias RawValue = Swift.UInt
   public var rawValue: Swift.UInt {
     get
@@ -655,9 +720,7 @@ public enum AACSDKEventStreamMode : Swift.UInt {
 public enum AACSDKEventCardViewState : Swift.UInt {
   case defaultView
   case subview
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt)
-  #endif
   public typealias RawValue = Swift.UInt
   public var rawValue: Swift.UInt {
     get
@@ -667,9 +730,7 @@ public enum AACSDKEventVoteDownReason : Swift.UInt {
   case notRelevant
   case tooOften
   case other
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt)
-  #endif
   public typealias RawValue = Swift.UInt
   public var rawValue: Swift.UInt {
     get
@@ -678,9 +739,7 @@ public enum AACSDKEventVoteDownReason : Swift.UInt {
 public enum AACSDKEventRedirectLinkMethod : Swift.UInt {
   case url
   case payload
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt)
-  #endif
   public typealias RawValue = Swift.UInt
   public var rawValue: Swift.UInt {
     get
@@ -691,9 +750,7 @@ public enum AACSDKEventRedirectDetailType : Swift.UInt {
   case linkButton
   case submitButton
   case textLink
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt)
-  #endif
   public typealias RawValue = Swift.UInt
   public var rawValue: Swift.UInt {
     get
@@ -704,9 +761,7 @@ public enum AACSDKEventActionSource : Swift.UInt {
   case overflow
   case swipe
   case cardButton
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt)
-  #endif
   public typealias RawValue = Swift.UInt
   public var rawValue: Swift.UInt {
     get
@@ -714,13 +769,9 @@ public enum AACSDKEventActionSource : Swift.UInt {
 }
 public protocol AACSDKEventHasViewState {
   var cardViewState: AtomicSwiftUISDK.AACSDKEventCardViewState { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   var subviewId: Swift.String? { get }
-  #endif
   var subviewLevel: Swift.UInt { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   var subviewTitle: Swift.String? { get }
-  #endif
 }
 @_hasMissingDesignatedInitializers public class AACSDKEvent {
   final public let eventType: AtomicSwiftUISDK.AACSDKEventType
@@ -838,7 +889,13 @@ public protocol AACSDKEventHasViewState {
   final public let cardInstanceId: Swift.String?
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AACSDKEventNotificationReceived : AtomicSwiftUISDK.AACSDKEventCREVT {
+@_hasMissingDesignatedInitializers public class AACSDKEventNotificationReceived : AtomicSwiftUISDK.AACSDKEventCREVT {
+  final public let atomicPushId: Swift.String
+  final public let organisationId: Swift.String
+  final public let streamContainerIds: [Swift.String]
+  final public let ia: Foundation.NSNumber
+  final public let sig: Swift.String
+  final public let detail: [Swift.AnyHashable : Any]
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class AACSDKEventUserFileUploadsData {
@@ -891,84 +948,50 @@ public class AACSession {
   public static func setSessionDelegate(_ sessionDelegate: any AtomicSwiftUISDK.AACSessionDelegate)
   public static func initialise(withEnvironmentId environmentId: Swift.String, apiKey: Swift.String)
   public static func enableDebugMode(_ level: Swift.Int)
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func login(withEnvironmentId environmentId: Swift.String, apiKey: Swift.String, sessionDelegate: any AtomicSwiftUISDK.AACSessionDelegate, apiBaseUrl: Foundation.URL?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, noasync, message: "Use 'logout()' instead.")
   @_disfavoredOverload public static func logout(_ completionHandler: AtomicSwiftUISDK.AACSessionLogoutCompletionHandler?)
-  #endif
   public static func logout() async throws
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, noasync, message: "Use 'logout(withNotificationsDeregistered:)' instead.")
   @_disfavoredOverload public static func logout(withNotificationsDeregistered deregisterNotifications: Swift.Bool, completionHandler: AtomicSwiftUISDK.AACSessionLogoutCompletionHandler?)
-  #endif
   public static func logout(withNotificationsDeregistered deregisterNotifications: Swift.Bool) async throws
   public static func stopObservingStreamContainer(_ token: any ObjectiveC.NSObjectProtocol)
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func observeCardCountForStreamContainer(withIdentifier streamContainerId: Swift.String, interval: Foundation.TimeInterval, filters: [AtomicSwiftUISDK.AACCardFilter]? = nil, handler: @escaping AtomicSwiftUISDK.AACSessionCardCountChangedHandler) -> any ObjectiveC.NSObjectProtocol
-  #endif
   public static func stopObservingCardCount(_ token: any ObjectiveC.NSObjectProtocol)
   @available(*, noasync, message: "Use 'requestCardCountForStreamContainer(withIdentifier:)' instead.")
   @_disfavoredOverload public static func requestCardCountForStreamContainer(withIdentifier streamContainerId: Swift.String, handler: @escaping AtomicSwiftUISDK.AACSessionCardCountChangedHandler)
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func requestCardCountForStreamContainer(withIdentifier streamContainerId: Swift.String) async -> Swift.Int?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Use registerDevice(forNotifications:environment:completionHandler:) instead.")
   public static func registerDevice(forNotifications deviceToken: Foundation.Data, completionHandler: AtomicSwiftUISDK.AACSessionPushNotificationRegistrationHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, noasync, message: "Use 'registerDevice(forNotifications:environment:)' instead.")
   @_disfavoredOverload public static func registerDevice(forNotifications deviceToken: Foundation.Data, environment: AtomicSwiftUISDK.AACPushNotificationEnvironment, completionHandler: AtomicSwiftUISDK.AACSessionPushNotificationRegistrationHandler?)
-  #endif
   public static func registerDevice(forNotifications deviceToken: Foundation.Data, environment: AtomicSwiftUISDK.AACPushNotificationEnvironment) async throws
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Use deregisterDeviceForNotifications(with:completionHandler:) instead.")
   public static func deregisterDeviceForNotifications(completionHandler: AtomicSwiftUISDK.AACSessionPushNotificationDeregisterHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, noasync, message: "Use 'deregisterDeviceForNotifications(with:)' instead.")
   @_disfavoredOverload public static func deregisterDeviceForNotifications(with environment: AtomicSwiftUISDK.AACPushNotificationEnvironment, completionHandler: AtomicSwiftUISDK.AACSessionPushNotificationDeregisterHandler?)
-  #endif
   public static func deregisterDeviceForNotifications(with environment: AtomicSwiftUISDK.AACPushNotificationEnvironment) async throws
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, noasync, message: "Use 'registerStreamContainers(forPushNotifications:notificationsEnabled:)' instead.")
   @_disfavoredOverload public static func registerStreamContainers(forPushNotifications streamContainerIds: [Swift.String], notificationsEnabled: Swift.Bool? = nil, completionHandler: AtomicSwiftUISDK.AACSessionPushNotificationRegistrationHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func registerStreamContainers(forPushNotifications streamContainerIds: [Swift.String], notificationsEnabled: Swift.Bool? = nil) async throws
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func notification(fromPushPayload payload: [Swift.AnyHashable : Any]) -> AtomicSwiftUISDK.AACPushNotification?
-  #endif
   @available(*, noasync, message: "Use 'trackPushNotificationReceived(_:)' instead.")
   @_disfavoredOverload public static func trackPushNotificationReceived(_ payload: [Swift.AnyHashable : Any], completionHandler: @escaping AtomicSwiftUISDK.AACSessionPushNotificationReceivedHandler)
   public static func trackPushNotificationReceived(_ payload: [Swift.AnyHashable : Any]) async throws
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func setRequestDelegate(_ delegate: (any AtomicSwiftUISDK.AACRequestDelegate)?)
-  #endif
   @available(*, noasync, message: "Use 'userMetrics()' instead.")
   @_disfavoredOverload public static func userMetrics(completionHandler: @escaping AtomicSwiftUISDK.AACSessionUserMetricsHandler)
   public static func userMetrics() async throws -> AtomicSwiftUISDK.AACUserMetrics
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, noasync, message: "Use 'send(_:)' instead.")
   @_disfavoredOverload public static func send(_ customEvent: AtomicSwiftUISDK.AACCustomEvent, completionHandler: AtomicSwiftUISDK.AACSessionSendCustomEventCompletionHandler?)
-  #endif
   public static func send(_ customEvent: AtomicSwiftUISDK.AACCustomEvent) async throws
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, noasync, message: "Use 'updateUser(_:)' instead.")
   @_disfavoredOverload public static func updateUser(_ userSettings: AtomicSwiftUISDK.AACUserSettings, completionHandler: AtomicSwiftUISDK.AACSessionUpdateUserCompletionHandler?)
-  #endif
   public static func updateUser(_ userSettings: AtomicSwiftUISDK.AACUserSettings) async throws
   public static func setClientAppVersion(_ appVersion: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func observeSDKEvents(completionHandler: AtomicSwiftUISDK.AACSessionSDKEventsHandler?)
-  #endif
   public static func stopObservingSDKEvents()
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func observeStreamContainer(identifier streamContainerId: Swift.String, configuration: AtomicSwiftUISDK.StreamContainerObserverConfiguration? = nil, handler: @escaping AtomicSwiftUISDK.AACSessionStreamContainerChangedHandler) -> any ObjectiveC.NSObjectProtocol
-  #endif
   @available(*, noasync, message: "Use 'onCardAction(_:)' instead.")
   @_disfavoredOverload public static func onCardAction(_ action: AtomicSwiftUISDK.AACSessionCardAction, completionHandler: @escaping AtomicSwiftUISDK.AACSessionOnCardActionHandler)
   public static func onCardAction(_ action: AtomicSwiftUISDK.AACSessionCardAction) async throws
@@ -996,32 +1019,22 @@ public struct AACSessionCardAction {
   public let submitButtonName: Swift.String?
   public init(dismissActionWithContainerId containerId: Swift.String, cardId: Swift.String)
   public init(snoozeActionWithContainerId containerId: Swift.String, cardId: Swift.String, snoozeInterval: Foundation.TimeInterval)
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(submitActionWithContainerId containerId: Swift.String, cardId: Swift.String, submitButtonName: Swift.String, submitValues: [Swift.String : Any]?)
-  #endif
 }
 public typealias AACSessionAuthenticationTokenHandler = (_ authToken: Swift.String?) -> Swift.Void
 public protocol AACSessionDelegate {
   func cardSessionDidRequestAuthenticationToken(handler: @escaping AtomicSwiftUISDK.AACSessionAuthenticationTokenHandler)
-  #if compiler(>=5.3) && $NonescapableTypes
   func cardSessionDidRequestAuthenticationToken() async -> Swift.String?
-  #endif
   func expiryInterval() -> Foundation.TimeInterval
   func retryInterval() -> Foundation.TimeInterval
-  #if compiler(>=5.3) && $NonescapableTypes
   func tokenUserIdAttribute() -> Swift.String?
-  #endif
 }
 extension AtomicSwiftUISDK.AACSessionDelegate {
   public func expiryInterval() -> Foundation.TimeInterval
   public func retryInterval() -> Foundation.TimeInterval
-  #if compiler(>=5.3) && $NonescapableTypes
   public func tokenUserIdAttribute() -> Swift.String?
-  #endif
   public func cardSessionDidRequestAuthenticationToken(handler: @escaping AtomicSwiftUISDK.AACSessionAuthenticationTokenHandler)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func cardSessionDidRequestAuthenticationToken() async -> Swift.String?
-  #endif
 }
 public let AACSessionCardActionsErrorDomain: Swift.String
 public enum AACSessionCardActionsError {
@@ -1029,9 +1042,7 @@ public enum AACSessionCardActionsError {
   public enum Code : Swift.Int {
     case networkError
     case dataError
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -1045,9 +1056,7 @@ public enum AACSessionUserMetricsError {
   public enum Code : Swift.Int {
     case networkError
     case dataError
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -1061,9 +1070,7 @@ public enum AACSessionPushRegistrationError {
   public enum Code : Swift.Int {
     case codeNetworkError
     case domainDataError
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -1076,10 +1083,11 @@ public enum AACSessionPushTrackingError {
   public static let errorDomain: Swift.String
   public enum Code : Swift.Int {
     case invalidPayload
+    @available(*, deprecated, message: "Use networkError or dataError instead.")
     case failedToSend
-    #if compiler(>=5.3) && $NonescapableTypes
+    case networkError
+    case dataError
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -1094,9 +1102,7 @@ public enum AACSessionLogoutError {
     case networkError
     case dataError
     case aborted
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -1110,9 +1116,7 @@ public enum AACSessionSendCustomEventError {
   public enum Code : Swift.Int {
     case networkError
     case dataError
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -1126,9 +1130,7 @@ public enum AACSessionUpdateUserError {
   public enum Code : Swift.Int {
     case networkError
     case dataError
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -1166,48 +1168,34 @@ public enum AACUserNotificationTimeframeWeekdays {
 }
 public struct AACUserSettings {
   public init()
-  #if compiler(>=5.3) && $NonescapableTypes
   public var externalID: Swift.String? {
     get
     nonmutating set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var name: Swift.String? {
     get
     nonmutating set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var email: Swift.String? {
     get
     nonmutating set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var phone: Swift.String? {
     get
     nonmutating set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var city: Swift.String? {
     get
     nonmutating set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var country: Swift.String? {
     get
     nonmutating set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var region: Swift.String? {
     get
     nonmutating set
   }
-  #endif
   public var notificationsEnabled: Swift.Bool {
     get
     nonmutating set
@@ -1215,9 +1203,7 @@ public struct AACUserSettings {
   public func setNotificationTime(_ timeframes: [AtomicSwiftUISDK.AACUserNotificationTimeframe], weekday: AtomicSwiftUISDK.AACUserNotificationTimeframeWeekdays)
   public func setText(_ text: Swift.String, forCustomField fieldName: Swift.String)
   public func setDate(_ date: Foundation.Date, forCustomField fieldName: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func validate() -> Swift.String?
-  #endif
 }
 final public class StreamContainerObserverConfiguration {
   final public var cardListRefreshInterval: Swift.Double {
@@ -1258,9 +1244,7 @@ public struct Card {
   public let components: [AtomicSwiftUISDK.CardComponent]
   public let hasButtons: Swift.Bool
   public let subviewIds: Swift.Set<Swift.String>
-  #if compiler(>=5.3) && $NonescapableTypes
   public func subview(id: Swift.String) -> AtomicSwiftUISDK.SubviewData?
-  #endif
   public mutating func resolveRuntimeVariable(name: Swift.String, value: Swift.String)
 }
 @available(iOS 16.0, *)
@@ -1357,9 +1341,7 @@ public struct ContainerConfiguration {
     public typealias RawValue = Swift.Int
   }
   public init()
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(onEvent: AtomicSwiftUISDK.ContainerConfiguration.EventHandler?, onRuntimeVariablesRequested: AtomicSwiftUISDK.ContainerConfiguration.RuntimeVariablesHandler?)
-  #endif
   public enum PresentationStyle {
     case withoutButton
     case withActionButton
@@ -1566,8 +1548,13 @@ extension AtomicSwiftUISDK.DatePickerNode : AtomicSwiftUISDK.LayoutDescribable {
 extension AtomicSwiftUISDK.DropdownNode : AtomicSwiftUISDK.LayoutDescribable {}
 extension AtomicSwiftUISDK.ComponentLayoutKind : Swift.Hashable {}
 extension AtomicSwiftUISDK.ButtonType : Swift.Hashable {}
+extension AtomicSwiftUISDK.CategoryTextRole : Swift.Hashable {}
+extension AtomicSwiftUISDK.CategoryIconAlignment : Swift.Hashable {}
+extension AtomicSwiftUISDK.HeadlineAppearance : Swift.Hashable {}
+extension AtomicSwiftUISDK.TextBlockAppearance : Swift.Hashable {}
 extension AtomicSwiftUISDK.ClickToExpandAction : Swift.Equatable {}
 extension AtomicSwiftUISDK.ClickToExpandAction : Swift.Hashable {}
+extension AtomicSwiftUISDK.CustomIconImageType : Swift.Hashable {}
 extension AtomicSwiftUISDK.AACSessionCardActionsError.Code : Swift.Equatable {}
 extension AtomicSwiftUISDK.AACSessionCardActionsError.Code : Swift.Hashable {}
 extension AtomicSwiftUISDK.AACSessionCardActionsError.Code : Swift.RawRepresentable {}

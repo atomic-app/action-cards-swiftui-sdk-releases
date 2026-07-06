@@ -115,9 +115,16 @@
 #pragma mark - Node definitions
 
 /**
- A heading node, which represents a top-level title.
- Has only a `text` property.
+ A heading node, which represents a card headline.
+ Has text, optional icon, and appearance metadata.
  */
+
+typedef NS_ENUM(NSInteger, AACCardNodeHeading1Appearance) {
+    AACCardNodeHeading1AppearanceH1,
+    AACCardNodeHeading1AppearanceH2,
+    AACCardNodeHeading1AppearanceH3,
+};
+
 @interface AACCardNodeHeading1: AACCardNode
 
 /**
@@ -129,6 +136,11 @@
  The headline to display.
  */
 @property (nonatomic, copy, nonnull) NSString* text;
+
+/**
+ The visual appearance variant to use when rendering the headline.
+ */
+@property (nonatomic) AACCardNodeHeading1Appearance appearance;
 
 @end
 
@@ -213,6 +225,22 @@ typedef NS_ENUM(NSUInteger, AACCardNodeInputFormat) {
 /**
  A node that renders a category title (e.g. 'Leave Request').
  */
+typedef NS_ENUM(NSUInteger, AACCardNodeCategoryTextRole) {
+    AACCardNodeCategoryTextRoleMain,
+    AACCardNodeCategoryTextRoleSub
+};
+
+typedef NS_ENUM(NSUInteger, AACCardNodeCategoryIconDisplaySize) {
+    AACCardNodeCategoryIconDisplaySizeMatchHeaderHeight,
+    AACCardNodeCategoryIconDisplaySizeMatchTextBlockHeight,
+    AACCardNodeCategoryIconDisplaySizeFixedSize
+};
+
+typedef NS_ENUM(NSUInteger, AACCardNodeCategoryIconAlignment) {
+    AACCardNodeCategoryIconAlignmentTop,
+    AACCardNodeCategoryIconAlignmentCenter
+};
+
 @interface AACCardNodeCategory: AACCardNode
 
 /**
@@ -222,6 +250,21 @@ typedef NS_ENUM(NSUInteger, AACCardNodeInputFormat) {
 
 /// The title to display.
 @property (nonatomic, copy, nonnull) NSString* text;
+
+/// An optional sub header to display alongside the title.
+@property (nonatomic, copy, nullable) NSString *subText;
+
+/// The order in which visible category text roles should be displayed.
+@property (nonatomic, copy, nonnull) NSArray<NSNumber *> *textRoleOrder;
+
+/// The size mode to use when rendering the icon for this category.
+@property (nonatomic) AACCardNodeCategoryIconDisplaySize iconDisplaySize;
+
+/// The vertical alignment to use when rendering a fixed-size icon for this category.
+@property (nonatomic) AACCardNodeCategoryIconAlignment iconAlignment;
+
+/// The fixed icon height to use when `iconDisplaySize` is `AACCardNodeCategoryIconDisplaySizeFixedSize`.
+@property (nonatomic, strong, nullable) NSNumber *iconDimensionHeight;
 
 @end
 

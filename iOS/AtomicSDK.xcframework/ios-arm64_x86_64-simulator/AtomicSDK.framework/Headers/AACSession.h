@@ -205,7 +205,15 @@ typedef NS_ERROR_ENUM(AACSessionPushTrackingErrorDomain, AACSessionPushTrackingE
     /**
      The event, tracking push notification delivery, could not be sent to the Atomic Platform.
      */
-    AACSessionPushTrackingErrorCodeFailedToSend
+    AACSessionPushTrackingErrorCodeFailedToSend __attribute__((deprecated("Use AACSessionPushTrackingErrorCodeNetworkError or AACSessionPushTrackingErrorCodeDataError instead."))),
+    /**
+     Failed to track push notification delivery because the user's device was offline.
+     */
+    AACSessionPushTrackingErrorCodeNetworkError,
+    /**
+     Failed to track push notification delivery because an internal data error has happened.
+     */
+    AACSessionPushTrackingErrorCodeDataError
 };
 
 /**
@@ -587,12 +595,12 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
 
 /**
  Tracks that a push notification, with the given payload, was received by this device.
- If the payload does not represent an Atomic push notification, this method has no effect.
- This method dispatches an analytics event back to Atomic to indicate that the user's device received the notification.
+ If the payload does not represent an Atomic push notification, this method completes with an invalid payload error.
+ This method sends a notification receipt request back to Atomic to indicate that the user's device received the notification.
  It is the responsibility of the integrator to ensure that this method is called at the correct location to ensure accurate tracking.
  
  @param payload The push notification payload to inspect.
- @param completionHandler A completion handler called when the analytics request is complete. If the request
+ @param completionHandler A completion handler called when the notification receipt request is complete. If the request
  fails, an NSError object is provided.
  */
 + (void)trackPushNotificationReceived:(NSDictionary* __nonnull)payload

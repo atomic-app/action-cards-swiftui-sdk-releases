@@ -65,9 +65,9 @@ typedef NS_ENUM(NSUInteger, AACSDKEventType) {
     /// An API request to our client API fails in the SDK. This event is also triggered when the WebSockets failed to function and fall back to HTTP polling.
     AACSDKEventTypeRequestFailed,
     
-    /// A push notification on the user's device is received by the SDK.
+    /// A push notification receipt request has been received by the Atomic Platform.
     /// 
-    /// This event is only occurred when you call the SDK's track method. Read more in the documentation of `AACSDKEventNotificationReceived`.
+    /// This event is produced by the Atomic Platform after it receives a notification receipt request from the SDK.
     AACSDKEventTypeNotificationReceived,
     
     /// One or more file uploads have started as part of a card submission.
@@ -580,10 +580,32 @@ typedef NS_ENUM(NSUInteger, AACSDKEventActionSource) {
 
 /**
  Represents an event in which a push notification on the user's device is received by the SDK.
- 
- This event is only triggered when you call the method `[AACSession trackPushNotificationReceived:completionHandler:]`. Read more about tracking push notifications in the [iOS SDK guide](https://documentation.atomic.io/sdks/ios#4-optional-track-when-push-notifications-are-received).
+
+ This SDK event represents a notification receipt event received from the Atomic Platform.
+ Carries every field from the originating AACPushNotification. `endUserId`, `cardInstanceId`,
+ and `streamContainerId` (the singular form of `AACPushNotification.containerId`) are inherited
+ from `AACSDKEventCREVT` / `AACSDKEventSTEVT` / `AACSDKEventAuthEVT`.
  */
 @interface AACSDKEventNotificationReceived : AACSDKEventCREVT
+
+/// The unique ID of the push notification from the Atomic Platform.
+@property (nonatomic, readonly) NSString *atomicPushId;
+
+/// The ID of the organisation that sent the push notification.
+@property (nonatomic, readonly) NSString *organisationId;
+
+/// The IDs of the stream containers that the card is contained within.
+@property (nonatomic, readonly) NSArray<NSString *> *streamContainerIds;
+
+/// The issued-at timestamp from the Atomic push notification payload.
+@property (nonatomic, readonly) NSNumber *ia;
+
+/// The signature from the Atomic push notification payload.
+@property (nonatomic, readonly) NSString *sig;
+
+/// Custom data sent with the push notification payload, or an empty dictionary if there is none.
+@property (nonatomic, readonly) NSDictionary *detail;
+
 @end
 
 /**
