@@ -94,7 +94,10 @@ typedef NS_ENUM(NSUInteger, AACSDKEventStreamMode) {
     AACSDKEventStreamModeHorizontal,
     
     /// The stream container displays a single card only.
-    AACSDKEventStreamModeSingle
+    AACSDKEventStreamModeSingle,
+
+    /// The stream container displays the first card on a modal page.
+    AACSDKEventStreamModeModal
 };
 
 /**

@@ -366,6 +366,22 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
                              apiKey:(NSString *__nonnull)apiKey;
 
 /**
+ Initialises the Atomic SDK with the provided environment ID, API key and host context.
+
+ The host context is attached to every analytics event that the SDK emits for this session, inside the
+ top-level `hostContext` object on the event. The SDK holds the map until the host app logs out or
+ initialises again; initialising without a host context clears it. Values must be strings, numbers or
+ booleans. The Atomic Platform enforces limits on the number of keys and on key and value lengths.
+
+ @param environmentId The environment ID, available in the Atomic Workbench.
+ @param apiKey The API key, configured in the Atomic Workbench for this environment.
+ @param hostContext Custom key/value data to attach to every analytics event of this session, or nil to clear it.
+ */
++ (void)initialiseWithEnvironmentId:(NSString *__nonnull)environmentId
+                             apiKey:(NSString *__nonnull)apiKey
+                        hostContext:(NSDictionary<NSString *, id> *__nullable)hostContext;
+
+/**
  Sets the debug logging level within the SDK. This can be useful in debug
  builds when integrating the SDK. Defaults to `0`, which means no logs. Setting this takes immediate effect.
  
@@ -388,6 +404,27 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
                         apiKey:(NSString *__nonnull)apiKey
                sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
                     apiBaseUrl:(NSURL* __nullable)baseUrl;
+
+/**
+ Login to the Atomic SDK with credentials and a host context. It's the equivalent of calling
+ `initialiseWithEnvironmentId:apiKey:hostContext:`, `setSessionDelegate:` and `setApiBaseUrl:` in sequence.
+
+ The host context is attached to every analytics event that the SDK emits for this session, inside the
+ top-level `hostContext` object on the event. The SDK holds the map until the host app logs out or
+ initialises again; logging in without a host context clears it. Values must be strings, numbers or
+ booleans. The Atomic Platform enforces limits on the number of keys and on key and value lengths.
+
+ @param environmentId The environment ID, available in the Atomic Workbench.
+ @param apiKey The API key, configured in the Atomic Workbench for this environment.
+ @param sessionDelegate A delegate that supplies a user authentication token when requested by the SDK.
+ @param baseUrl The base URL to use when making API requests, found in the Atomic Workbench.
+ @param hostContext Custom key/value data to attach to every analytics event of this session, or nil to clear it.
+ */
++ (void)loginWithEnvironmentId:(NSString *__nonnull)environmentId
+                        apiKey:(NSString *__nonnull)apiKey
+               sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
+                    apiBaseUrl:(NSURL *__nullable)baseUrl
+                   hostContext:(NSDictionary<NSString *, id> *__nullable)hostContext;
 
 /**
  Purges all cached card data stored by the SDK, disable all SDK activities and sends any pending analytics events to the Atomic Platform.

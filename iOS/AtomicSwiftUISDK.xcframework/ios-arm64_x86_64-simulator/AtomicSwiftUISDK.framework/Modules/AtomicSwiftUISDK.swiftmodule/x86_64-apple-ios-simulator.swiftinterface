@@ -711,6 +711,7 @@ public enum AACSDKEventStreamMode : Swift.UInt {
   case vertical
   case horizontal
   case single
+  case modal
   public init?(rawValue: Swift.UInt)
   public typealias RawValue = Swift.UInt
   public var rawValue: Swift.UInt {
@@ -946,9 +947,9 @@ public class AACSession {
   public static func setApiBaseUrl(_ baseUrl: Foundation.URL)
   public static func setApiProtocol(_ protocol: AtomicSwiftUISDK.AACApiProtocol)
   public static func setSessionDelegate(_ sessionDelegate: any AtomicSwiftUISDK.AACSessionDelegate)
-  public static func initialise(withEnvironmentId environmentId: Swift.String, apiKey: Swift.String)
+  public static func initialise(withEnvironmentId environmentId: Swift.String, apiKey: Swift.String, hostContext: [Swift.String : Any]? = nil)
   public static func enableDebugMode(_ level: Swift.Int)
-  public static func login(withEnvironmentId environmentId: Swift.String, apiKey: Swift.String, sessionDelegate: any AtomicSwiftUISDK.AACSessionDelegate, apiBaseUrl: Foundation.URL?)
+  public static func login(withEnvironmentId environmentId: Swift.String, apiKey: Swift.String, sessionDelegate: any AtomicSwiftUISDK.AACSessionDelegate, apiBaseUrl: Foundation.URL?, hostContext: [Swift.String : Any]? = nil)
   @available(*, noasync, message: "Use 'logout()' instead.")
   @_disfavoredOverload public static func logout(_ completionHandler: AtomicSwiftUISDK.AACSessionLogoutCompletionHandler?)
   public static func logout() async throws
