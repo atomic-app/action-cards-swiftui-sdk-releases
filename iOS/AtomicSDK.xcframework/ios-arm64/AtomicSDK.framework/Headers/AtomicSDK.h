@@ -12,8 +12,8 @@ FOUNDATION_EXPORT double AtomicSDKVersionNumber;
 //! Project version string for Atomic SDK.
 FOUNDATION_EXPORT const unsigned char AtomicSDKVersionString[];
 
-#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_12_0
-#error The Atomic SDK supports iOS 12.0 and above.
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_16_0
+#error The Atomic SDK supports iOS 16.0 and above.
 #endif
 
 #import <AtomicSDK/AACSessionDelegate.h>

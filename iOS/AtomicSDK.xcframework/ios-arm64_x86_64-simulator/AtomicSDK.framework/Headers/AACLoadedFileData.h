@@ -31,15 +31,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) NSNumber *fileSize;
 
 /// Abstract data types of the file, which determines the extension of the platform filename.
-@property (nonatomic, readonly) UTType *utType API_AVAILABLE(ios(14.0));
+@property (nonatomic, readonly) UTType *utType;
 
-/// The content string used when uploading images via HTTP requests, determined by `utType`, or is 'image/jpeg'.
+/// The content string used when uploading images via HTTP requests, determined by `utType`.
 @property (nonatomic, readonly) NSString *contentTypeString;
 
-/// Get the legacy filename extension, only to satisfy iOS 14-.
-- (NSString *__nullable)getFallbackFilenameExtension;
-
-+ (instancetype)dataWithData:(NSData *)data platformFilename:(NSString *)platformFilename utType:(UTType *)utType API_AVAILABLE(ios(16.0));
++ (instancetype)dataWithData:(NSData *)data platformFilename:(NSString *)platformFilename utType:(UTType *)utType;
 
 @end
 

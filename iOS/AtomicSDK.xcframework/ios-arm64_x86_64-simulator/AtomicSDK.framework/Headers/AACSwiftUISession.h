@@ -51,11 +51,9 @@ typedef void(^AACSessionAppearanceCollectionCompletionHandler)(AACAppearanceColl
  themes used by different parts of the SDK, as well as custom fonts that the theme utilises.
  
  @param streamContainerId The ID of the stream container to fetch appearance information for.
- @param instanceId The unique request ID to identify stream container instances.
  @param completionHandler Completion handler called when the appearance request completes. If the `error` parameter is nil, the request was successful.
  */
 + (void)appearanceCollectionWithIdentifier:(NSString *)streamContainerId
-                                instanceId:(NSString *)instanceId
                          completionHandler:(AACSessionAppearanceCollectionCompletionHandler)completionHandler;
 
 /**

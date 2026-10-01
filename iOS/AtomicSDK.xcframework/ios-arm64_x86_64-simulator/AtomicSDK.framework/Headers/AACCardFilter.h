@@ -24,7 +24,7 @@
 /**
  Generates a priority value that can be used to filter cards.
  
- Card priority works on all operators.
+ Card priority works on all operators except `includes`, `excludes`, `is included in` and `is excluded from`.
  
  @param priority The priority value of card.
  */
@@ -33,7 +33,7 @@
 /**
  Generates a card template ID that can be used to filter cards.
  
- Card template ID works only on `equal`, `not equal`, `in` and `not in` operators.
+ Card template ID works on `equal`, `not equal`, `in`, `not in`, `includes`, `excludes`, `is included in` and `is excluded from` operators.
  
  @param templateId The unique ID of a card.
  */
@@ -43,7 +43,7 @@
  Generates a card template name that can be used to filter cards.
  For filtering untitled cards, pass an empty string to it.
   
- Card template name works only on `equal`, `not equal`, `in` and `not in` operators.
+ Card template name works on `equal`, `not equal`, `in`, `not in`, `includes`, `excludes`, `is included in` and `is excluded from` operators.
  
  @param templateName The name of a card.
  */
@@ -52,7 +52,7 @@
 /**
  Generates a date when a card instance is created, which can be used to filter cards.
  
- Created date works on all operators.
+ Created date works on all operators except `includes`, `excludes`, `is included in` and `is excluded from`.
  
  @param createdDate The date when a card instance is created, in UTC timezone.
  */
@@ -61,7 +61,7 @@
 /**
  Generates a string value of a given variable that can be used to filter cards.
  
- String variables work only on `equal`, `not equal`, `in` and `not in` operators.
+ String variables work on `equal`, `not equal`, `in`, `not in`, `includes`, `excludes`, `is included in` and `is excluded from` operators.
  
  @param name The name of the variable, it must be the `string` type in Atomic Workbench.
  @param string The value of that string variable.
@@ -71,7 +71,7 @@
 /**
  Generates a date value of a given variable that can be used to filter cards.
  
- Date variables work on all operators.
+ Date variables work on all operators except `includes`, `excludes`, `is included in` and `is excluded from`.
  
  @param name The name of the variable, it must be the `date` type in Atomic Workbench.
  @param date The value of that date variable.
@@ -81,7 +81,7 @@
 /**
  Generates a number of a given variable that can be used to filter cards.
  
- Number variables work on all operators.
+ Number variables work on all operators except `includes`, `excludes`, `is included in` and `is excluded from`.
  
  @param name The name of the variable, it must be the `number` type in Atomic Workbench.
  @param number The value of that number variable.
@@ -97,6 +97,96 @@
  @param boolean The value of that boolean variable.
  */
 + (AACCardFilterValue* __nonnull)byVariableName:(NSString* __nonnull)name boolean:(BOOL)boolean;
+
+/**
+ Generates a string value of the card's top-level content that can be used to filter cards.
+ 
+ Content strings work on `equal`, `not equal`, `in`, `not in`, `includes`, `excludes`, `is included in` and `is excluded from` operators.
+ 
+ @param key The dotted key path of the content value, relative to the card's default view. It starts with `content` or `actions`, followed by the element index and its attributes. For example `actions.0.attributes.values.targetPage`.
+ @param string The value of that content string.
+ */
++ (AACCardFilterValue* __nonnull)byCardContent:(NSString* __nonnull)key string:(NSString* __nonnull)string;
+
+/**
+ Generates a string value of a card subview's content that can be used to filter cards.
+ 
+ Content strings work on `equal`, `not equal`, `in`, `not in`, `includes`, `excludes`, `is included in` and `is excluded from` operators.
+ 
+ @param key The dotted key path of the content value, relative to the card's subviews. It starts with the subview ID, followed by `title`, `inputs` or `actions`. For example `<subview ID>.actions.0.attributes.text`.
+ @param string The value of that content string.
+ */
++ (AACCardFilterValue* __nonnull)bySubviewContent:(NSString* __nonnull)key string:(NSString* __nonnull)string;
+
+/**
+ Generates a number value of the card's top-level content that can be used to filter cards.
+ 
+ Content numbers work on `equal`, `not equal`, `greater than`, `greater than or equal`, `less than`, `less than or equal`, `in`, `not in` and `between` operators.
+ 
+ @param key The dotted key path of the content value, relative to the card's default view. It starts with `content` or `actions`, followed by the element index and its attributes. For example `content.0.attributes.maxDisplayLines`.
+ @param number The value of that content number.
+ */
++ (AACCardFilterValue* __nonnull)byCardContent:(NSString* __nonnull)key number:(NSNumber* __nonnull)number;
+
+/**
+ Generates a boolean value of the card's top-level content that can be used to filter cards.
+ 
+ Content booleans work only on `equal` and `not equal` operators.
+ 
+ @param key The dotted key path of the content value, relative to the card's default view. It starts with `content` or `actions`, followed by the element index and its attributes. For example `content.0.attributes.clickToExpandEnabled`.
+ @param boolean The value of that content boolean.
+ */
++ (AACCardFilterValue* __nonnull)byCardContent:(NSString* __nonnull)key boolean:(BOOL)boolean;
+
+/**
+ Generates a number value of a card subview's content that can be used to filter cards.
+ 
+ Content numbers work on `equal`, `not equal`, `greater than`, `greater than or equal`, `less than`, `less than or equal`, `in`, `not in` and `between` operators.
+ 
+ @param key The dotted key path of the content value, relative to the card's subviews. It starts with the subview ID, followed by `title`, `inputs` or `actions`. For example `<subview ID>.inputs.0.attributes.stepValue`.
+ @param number The value of that content number.
+ */
++ (AACCardFilterValue* __nonnull)bySubviewContent:(NSString* __nonnull)key number:(NSNumber* __nonnull)number;
+
+/**
+ Generates a boolean value of a card subview's content that can be used to filter cards.
+ 
+ Content booleans work only on `equal` and `not equal` operators.
+ 
+ @param key The dotted key path of the content value, relative to the card's subviews. It starts with the subview ID, followed by `title`, `inputs` or `actions`. For example `<subview ID>.inputs.0.attributes.enabledThumbnailIcon`.
+ @param boolean The value of that content boolean.
+ */
++ (AACCardFilterValue* __nonnull)bySubviewContent:(NSString* __nonnull)key boolean:(BOOL)boolean;
+
+/**
+ Generates a string value for a complete filter key that can be used to filter cards.
+
+ Strings work on `equal`, `not equal`, `in`, `not in`, `includes`, `excludes`, `is included in` and `is excluded from` operators.
+
+ @param key The complete filter key, with its namespace and without an operator. For example `metadata.cardDescription`. The key is not validated.
+ @param string The value to compare with.
+ */
++ (AACCardFilterValue* __nonnull)byFilterKey:(NSString* __nonnull)key string:(NSString* __nonnull)string;
+
+/**
+ Generates a number value for a complete filter key that can be used to filter cards.
+
+ Numbers work on `equal`, `not equal`, `greater than`, `greater than or equal`, `less than`, `less than or equal`, `in`, `not in` and `between` operators.
+
+ @param key The complete filter key, with its namespace and without an operator. For example `metadata.cardDescriptionMediaAttributes.dimension.height`. The key is not validated.
+ @param number The value to compare with.
+ */
++ (AACCardFilterValue* __nonnull)byFilterKey:(NSString* __nonnull)key number:(NSNumber* __nonnull)number;
+
+/**
+ Generates a boolean value for a complete filter key that can be used to filter cards.
+
+ Booleans work only on `equal` and `not equal` operators.
+
+ @param key The complete filter key, with its namespace and without an operator. For example `variables.isSpecial`. The key is not validated.
+ @param boolean The value to compare with.
+ */
++ (AACCardFilterValue* __nonnull)byFilterKey:(NSString* __nonnull)key boolean:(BOOL)boolean;
 
 @end
 
@@ -206,5 +296,43 @@
  */
 + (AACCardFilter* __nonnull)filterByCardsBetweenStartValue:(AACCardFilterValue* __nonnull)start endValue:(AACCardFilterValue* __nonnull)end
 NS_SWIFT_NAME(filter(byCardsBetweenStartValue:endValue:));
+
+/**
+ Generates a card list filter that is restricted to the card whose value contains the filter value.
+ 
+ `Includes` operator works only on string values.
+ 
+ @param value The value that the card's value must contain. For example, part of a card template name.
+ */
++ (AACCardFilter* __nonnull)filterByCardsIncluding:(AACCardFilterValue* __nonnull)value NS_SWIFT_NAME(filter(byCardsIncluding:));
+
+/**
+ Generates a card list filter that is restricted to the card whose value does not contain the filter value.
+ A card without the property never matches.
+ 
+ `Excludes` operator works only on string values.
+ 
+ @param value The value that the card's value must not contain. For example, part of a card template name.
+ */
++ (AACCardFilter* __nonnull)filterByCardsExcluding:(AACCardFilterValue* __nonnull)value NS_SWIFT_NAME(filter(byCardsExcluding:));
+
+/**
+ Generates a card list filter that is restricted to the card whose value is contained in the filter value.
+ 
+ `Is included in` operator works only on string values.
+ 
+ @param value The value that must contain the card's value. For example, the path of the current page.
+ */
++ (AACCardFilter* __nonnull)filterByCardsIncludedIn:(AACCardFilterValue* __nonnull)value NS_SWIFT_NAME(filter(byCardsIncludedIn:));
+
+/**
+ Generates a card list filter that is restricted to the card whose value is not contained in the filter value.
+ A card without the property never matches.
+ 
+ `Is excluded from` operator works only on string values.
+ 
+ @param value The value that must not contain the card's value. For example, the path of the current page.
+ */
++ (AACCardFilter* __nonnull)filterByCardsExcludedFrom:(AACCardFilterValue* __nonnull)value NS_SWIFT_NAME(filter(byCardsExcludedFrom:));
 
 @end

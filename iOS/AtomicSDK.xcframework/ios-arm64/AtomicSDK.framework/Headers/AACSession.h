@@ -96,6 +96,13 @@ typedef void(^AACSessionLogoutCompletionHandler)(NSError* __nullable error);
 typedef void(^AACSessionSendCustomEventCompletionHandler)(NSError* __nullable error);
 
 /**
+ Handler called when the request to flush queued analytics events completes.
+ If the request failed, a non-nil error object is returned, with an error in the `AACSessionFlushEventsErrorDomain` error domain.
+ Possible error codes are found in the `AACSessionFlushEventsErrorCode` enumeration.
+ */
+typedef void(^AACSessionFlushEventsCompletionHandler)(NSError* __nullable error);
+
+/**
  Handler called when the request to update a user setting completes.
  If the request failed, a non-nil error object is returned, with an error in the `AACSessionUpdateUserErrorDomain` error domain.
  Possible error codes are found in the `AACSessionUpdateUserErrorCode` enumeration.
@@ -280,6 +287,26 @@ typedef NS_ERROR_ENUM(AACSessionSendCustomEventErrorDomain, AACSessionSendCustom
 };
 
 /**
+ Error domain for errors arising from an unsuccessful attempt to flush queued analytics events to the platform.
+ */
+extern NSString* __nonnull const AACSessionFlushEventsErrorDomain;
+
+/**
+ Error codes associated with the flush events error domain.
+ The underlying error is supplied with `NSUnderlyingErrorKey` in the error's `userInfo` dictionary.
+ */
+typedef NS_ERROR_ENUM(AACSessionFlushEventsErrorDomain, AACSessionFlushEventsErrorCode) {
+    /**
+     The SDK failed to send the queued analytics events due to a network error.
+     */
+    AACSessionFlushEventsErrorCodeNetworkError,
+    /**
+     The SDK failed to send the queued analytics events due to a data error.
+     */
+    AACSessionFlushEventsErrorCodeDataError
+};
+
+/**
  Error domain for errors arising from an unsuccessful attempt to update user information on the platform.
  */
 extern NSString* __nonnull const AACSessionUpdateUserErrorDomain;
@@ -343,6 +370,15 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
  @param protocol The protocol that is going to be used by the SDK.
  */
 + (void)setApiProtocol:(AACApiProtocol)protocol;
+
+/**
+ Sets the interval, in seconds, at which queued analytics events are sent to the Atomic Platform when the SDK
+ uses the HTTP protocol. The default is 30 seconds. Values below 5 seconds are clamped to 5 seconds and a warning is logged.
+ The interval can be set before or after the SDK is initialized. It has no effect on WebSocket delivery.
+ 
+ @param interval The flush interval in seconds.
+ */
++ (void)setEventFlushInterval:(NSTimeInterval)interval;
 
 /**
  Set up a session delegate used by the SDK to acquire an authentication token.
@@ -696,6 +732,21 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
  cause of the error. `NSUnderlyingErrorKey` will also be populated in the error's `userInfo` dictionary.
  */
 + (void)sendCustomEvent:(AACCustomEvent* __nonnull)customEvent completionHandler:(AACSessionSendCustomEventCompletionHandler __nullable)completionHandler;
+
+/**
+ Sends every queued analytics event to the Atomic Platform immediately, instead of waiting for the next flush interval.
+ Only meaningful when the SDK uses the HTTP protocol. Over WebSockets, events are sent as they occur, so the queue is
+ normally empty and the call completes at once.
+
+ Calling this method before a session delegate has been set raises an exception.
+
+ @param completionHandler (Optional) A completion handler invoked with a nil error object if the queued events were sent,
+ or a non-nil error object if the sending failed.
+ If the `error` object is non-nil, the error domain will be `AACSessionFlushEventsErrorDomain` -
+ look for a specific error code in the `AACSessionFlushEventsErrorCode` enumeration to determine the
+ cause of the error. `NSUnderlyingErrorKey` will also be populated in the error's `userInfo` dictionary.
+ */
++ (void)flushEventsWithCompletionHandler:(AACSessionFlushEventsCompletionHandler __nullable)completionHandler;
 
 /**
  Update the user profile and preferences on the Atomic Platform, exclusively for the user identified by the authentication token provided by the
