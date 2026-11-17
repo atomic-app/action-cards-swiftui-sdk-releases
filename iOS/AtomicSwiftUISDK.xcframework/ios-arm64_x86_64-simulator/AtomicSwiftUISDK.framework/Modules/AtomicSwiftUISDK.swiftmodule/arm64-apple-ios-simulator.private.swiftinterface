@@ -386,14 +386,14 @@ public enum ListItemStyle : Swift::Equatable {
 }
 public struct ListItemNode : Swift::Equatable {
   public let text: Swift::String
-  public let icon: AtomicSwiftUISDK::CustomIcon?
+  public let icon: AtomicSwiftUISDK::TextBlockIcon?
   public let style: AtomicSwiftUISDK::ListItemStyle
   public let isFirstItem: Swift::Bool
   public let isLastItem: Swift::Bool
   public let clickToExpandInfo: AtomicSwiftUISDK::ClickToExpand?
   public let appearance: AtomicSwiftUISDK::TextBlockAppearance
   public let iconOwnerIsList: Swift::Bool
-  public init(text: Swift::String, icon: AtomicSwiftUISDK::CustomIcon?, style: AtomicSwiftUISDK::ListItemStyle, isFirstItem: Swift::Bool, isLastItem: Swift::Bool, clickToExpandInfo: AtomicSwiftUISDK::ClickToExpand?, appearance: AtomicSwiftUISDK::TextBlockAppearance, iconOwnerIsList: Swift::Bool = false)
+  public init(text: Swift::String, icon: AtomicSwiftUISDK::TextBlockIcon?, style: AtomicSwiftUISDK::ListItemStyle, isFirstItem: Swift::Bool, isLastItem: Swift::Bool, clickToExpandInfo: AtomicSwiftUISDK::ClickToExpand?, appearance: AtomicSwiftUISDK::TextBlockAppearance, iconOwnerIsList: Swift::Bool = false)
   public static func == (a: AtomicSwiftUISDK::ListItemNode, b: AtomicSwiftUISDK::ListItemNode) -> Swift::Bool
 }
 public enum MediaLayout : Swift::Equatable {
@@ -444,6 +444,14 @@ extension AtomicSwiftUISDK::ImageAction : Swift::Equatable {
 extension AtomicSwiftUISDK::MediaNode {
   public static func == (lhs: AtomicSwiftUISDK::MediaNode, rhs: AtomicSwiftUISDK::MediaNode) -> Swift::Bool
 }
+public enum TextBlockIcon : Swift::Equatable {
+  case custom(AtomicSwiftUISDK::CustomIcon)
+  case placeholder
+  public var customIcon: AtomicSwiftUISDK::CustomIcon? {
+    get
+  }
+  public static func == (a: AtomicSwiftUISDK::TextBlockIcon, b: AtomicSwiftUISDK::TextBlockIcon) -> Swift::Bool
+}
 public enum TextBlockAppearance : Swift::Equatable {
   case primary
   case secondary
@@ -456,7 +464,7 @@ public enum TextBlockAppearance : Swift::Equatable {
 }
 public struct TextBlockNode : Swift::Equatable {
   public let text: Swift::String
-  public let icon: AtomicSwiftUISDK::CustomIcon?
+  public let icon: AtomicSwiftUISDK::TextBlockIcon?
   public let clickToExpandInfo: AtomicSwiftUISDK::ClickToExpand?
   public let appearance: AtomicSwiftUISDK::TextBlockAppearance
   public static func == (a: AtomicSwiftUISDK::TextBlockNode, b: AtomicSwiftUISDK::TextBlockNode) -> Swift::Bool
